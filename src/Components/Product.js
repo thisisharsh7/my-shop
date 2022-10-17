@@ -1,7 +1,5 @@
 import React from 'react';
-import item1  from '../Images/items-1.png';
-import item2 from '../Images/items-2.png';
-import item3 from '../Images/items-3.png';
+import items  from '../Images/items.png';
 
 export default function Product(){
     return(
@@ -15,9 +13,7 @@ export default function Product(){
                 <button>Download Now <span>{">"}</span></button>
             </div>
             <div className='items-image'>
-                <img src={item3} alt="" />
-                <img src={item2} alt="" />
-                <img src={item1} alt="" />
+                <img src={items} alt="" />
             </div>
         </section>
     )

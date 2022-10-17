@@ -1,12 +1,7 @@
 import React from 'react';
 import GooglePlay from '../Images/google-play.png';
 import AppleStore from '../Images/apple-pay.png';
-import women from '../Images/young-woman-carrying-bag.png';
-import vector1 from '../Images/hero-vector-1.png';
-import vector2 from '../Images/hero-vector-2.png';
-import ellipse from '../Images/hero-ellipse.png';
-import triangle from '../Images/hero-triangle.png';
-
+import woman from '../Images/woman-carrying-bag.png';
 export default function Hero(){
     return(
         <>
@@ -26,12 +21,7 @@ export default function Hero(){
                     </ul>
                 </div>
                 <div className='hero-img'>
-                 
-                    <div className='hero-vector'>
-                        <img src={vector2} alt='' />
-                        <img src={vector1} alt=''/>
-                    </div>
-                        <img src={women} alt='' />
+                    <img src={woman} alt="" />
                 </div>
                 </div>
                 <div className='stats'>
