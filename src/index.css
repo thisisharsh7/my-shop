@@ -1,13 +1,139 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap');
+
+
+body{
+  color:black;
+  background-color: #f5f5f5;
+  font-family: 'Inter', sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+header{
+  border-bottom: 1px #e5e7eb solid;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav div{
+  display: flex;
+  width: 126.93px;
+  height: 38.29px;
+  gap:10px;
+}
+ul{
+  display: flex;
+  list-style: none;
+  gap:1rem; 
+}
+ul:first-of-type{
+  gap: 3.5rem;
+}
+ul li{
+  cursor: pointer;
+  color:#0a0839;
+  font-weight: 500;
+}
+ul li:hover{
+  color:#fd6636;
+}
+ul li button{
+  border: none;
+  padding: 0.8rem;
+  border: #fd6636 1px solid;
+  color: #fd6636;
+  border-radius: 1.5rem;
+  width: 155px;
+  height: 39px;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+ul li:nth-of-type(2) button{
+  background-color: #fd6636;
+  color: white;
+}
+section{
+  padding: 2rem 4rem;
+}
+.hero{
+  display: flex;
+  gap:5rem;
+  justify-content: space-between;
+}
+.text-hero{ 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.text-hero h1{
+  font-weight: 700;
+  font-size: 72px;
+  display: flex;
+  flex-direction: column;
+}
+.text-hero h1 span{
+  color:#fd6636;
+}
+.text-hero p{
+  color:#6c6b6b;
+  font-size: 20px;
+}
+.text-hero button{
+  background-color: #fd6636;
+  padding: 1rem;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+.text-hero ul{
+  padding: 0;
+}
+
+.hero-img img{
+  width: 376.09px;
+  height: 606px;
+}
+.hero ul {
+  display: flex;
+}
+.hero-vector img {
+  position: absolute;
+  z-index: -1;
+  width: 423.19px;
+  height: 347.93px;
+}
+.hero ul li img{
+  width: 177.2px;
+  height: 55.37px;
+}
+.stats{
+  display: flex;
+  color:#a4a4a3;
+  font-size: 20px;
+  font-weight: 500;
+  justify-content: center;
+  gap:8rem;
+}
+.stats p{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:0.3rem;
+}
+.stats p span:first-of-type{
+  font-size: 36px;
+  font-weight: 600;
+}
+.items-image{
+  display: flex;
+  align-items: flex-start;
+  gap:4rem;
+  justify-content: center;
+}
+.items-image img{
+  max-width: 358px;
 }
