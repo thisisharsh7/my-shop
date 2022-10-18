@@ -1,8 +1,8 @@
 import React from 'react';
-import icon1 from '../Images/icon-1.png';
-import icon2 from '../Images/icon-2.png';
-import icon3 from '../Images/icon-3.png';
-import icon4 from '../Images/icon-4.png';
+import icon1 from './Images/icon-1.png';
+import icon2 from './Images/icon-2.png';
+import icon3 from './Images/icon-3.png';
+import icon4 from './Images/icon-4.png';
 import Announcement from './Annoucement';
 
 export default function Store(){

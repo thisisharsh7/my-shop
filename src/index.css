@@ -23,7 +23,7 @@ header ul li:hover {
 }
 nav {
   position: relative;
-  padding: 20.5px 28.5px 15.6px 38px;
+  padding: 20.5px 30.5px 15.6px 40px;
   display: flex;
   gap: 8rem;
   align-items: center;
@@ -110,7 +110,9 @@ nav img {
   position: absolute;
   left: 0;
   right: 0;
+  z-index: 3;
   top: 102%;
+  background-color: white;
 }
 .mobile-nav ul {
   padding: 25px 40px;
@@ -139,6 +141,303 @@ nav img {
 }
 /*mobile navbar design end*/
 
+.hero {
+  display: flex;
+  gap: 5rem;
+  justify-content: space-between;
+}
+.text-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.text-hero h1 {
+  font-weight: 700;
+  font-size: 72px;
+  display: flex;
+  flex-direction: column;
+}
+.text-hero h1 span {
+  color: #fd6636;
+}
+.text-hero p {
+  color: #6c6b6b;
+  font-size: 20px;
+}
+.text-hero button {
+  background-color: #fd6636;
+  padding: 1rem;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+.text-hero ul {
+  padding: 0;
+}
+
+.hero-img img {
+  height: 620.0359497070312px;
+  width: 585.9017333984375px;
+}
+.hero ul {
+  display: flex;
+}
+.hero ul li img {
+  width: 177.2px;
+  height: 55.37px;
+}
+.stats {
+  display: flex;
+  color: #a4a4a3;
+  font-size: 20px;
+  font-weight: 500;
+  justify-content: center;
+  gap: 8rem;
+}
+.stats p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+.stats p span:first-of-type {
+  font-size: 36px;
+  font-weight: 600;
+}
+.items-image {
+  display: flex;
+  justify-content: center;
+}
+.items-image img {
+  height: 965px;
+  max-width: 1080px;
+}
+
+/*suggestion section styling start*/
+.suggestions {
+  display: flex;
+
+  background-color: red;
+}
+.sellers {
+  flex: 1;
+  background-color: #ff8963;
+  width: 100%;
+}
+.sellers button {
+  color: white;
+  background-color: #66200a;
+  padding: 10px 21px;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 14px;
+  font-weight: 500;
+}
+.customers button {
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #0b3864;
+  padding: 10px 21px;
+  border: none;
+  border-radius: 0.3rem;
+}
+.customers {
+  flex: 1;
+  background-color: #80c0ff;
+  width: 100%;
+}
+.suggestion-bg div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.suggestion-bg div div p {
+  font-weight: 600;
+}
+.sellers .suggestion-bg div div p {
+  color: #822f14;
+}
+.customers .suggestion-bg div div p {
+  color: #164d83;
+}
+.suggestion-bg div ~ p {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+.suggestion-bg h1 {
+  font-weight: 700;
+  color: white;
+  font-size: 2.8rem;
+}
+.suggestion-bg {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 3.2rem 2.5rem;
+}
+@media only screen and (max-width: 615px) {
+  .suggestions {
+    flex-direction: column;
+  }
+}
+/*suggestion section styling end*/
+
+
+/*comments design start*/
+
+.comments{
+  margin-top: 80px;
+  position: relative;
+  color:white;
+  display: flex;
+  background-repeat: repeat-x;
+  flex-direction: column;
+  background-color: black;
+  gap: 2rem;
+}
+.bgComment {
+  position: absolute;
+  width: 100%;
+  top:-110px;
+  height:100%;
+  z-index: -1;
+}
+.comments::before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  z-index: 10;
+}
+.comments-head{
+  padding-top: 20px ;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.comments-head ~ div{
+  display: flex;
+  padding:59px 30px;
+  padding-top:10px;
+  gap:30px;
+}
+.comment{
+  background-color: #232323;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap:4.5em;
+  flex: 1;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.5em;
+}
+.comment-head div{
+  display: flex;
+  gap: 0.4em;
+  justify-content: center;
+}
+.comment-head div img{
+  width: 22px;
+}
+.comment-head{
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+.comment-head ~ div{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+.comment-head ~ div h1{
+  font-weight: 500;
+  font-size: 23px;
+}
+.comment-head p{
+  line-height:1.6em ;
+  max-width: 23ch;
+  font-size: 19px;
+}
+.comment-head ~ div p{
+  font-size: 15px;
+}
+
+/*comments design end*/
+
+
+/*whyShop design start*/
+.whyShop{
+  padding: 4em 1.5em;
+  display: flex;
+  gap:3.5em;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: max-content;
+  margin: 0 auto;
+}
+.shopIntro{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+
+
+}
+.shopIntro h1{
+  color: #FF8963;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.shopIntro p{
+  font-size: 33px;
+  font-weight: 700;
+  color: #0A2540;
+
+}
+.announce-group{
+  display: flex;
+  gap: 8em;
+  justify-content: center;
+}
+.announce{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  font-size: 17px;
+  
+}
+.announce img{
+  width: 36px;
+}
+.announce h2:after{
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 21px;
+ background-color: #FF8963;
+  bottom: 5px;
+  left: -25px;
+}
+.announce h2{
+  color:#0A2540;
+  font-weight: 600;
+  position: relative;
+}
+.announce p{
+  max-width: 25ch;
+  color: #425466;
+  font-weight: 400;
+}
 /*footer design start */
 footer {
   padding-top: 1.6rem;
@@ -241,79 +540,3 @@ footer p {
 }
 
 /*footer design end */
-
-section {
-  padding: 2rem 4rem;
-}
-.hero {
-  display: flex;
-  gap: 5rem;
-  justify-content: space-between;
-}
-.text-hero {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.text-hero h1 {
-  font-weight: 700;
-  font-size: 72px;
-  display: flex;
-  flex-direction: column;
-}
-.text-hero h1 span {
-  color: #fd6636;
-}
-.text-hero p {
-  color: #6c6b6b;
-  font-size: 20px;
-}
-.text-hero button {
-  background-color: #fd6636;
-  padding: 1rem;
-  border: none;
-  color: white;
-  font-weight: 600;
-  font-size: 20px;
-}
-.text-hero ul {
-  padding: 0;
-}
-
-.hero-img img {
-  height: 620.0359497070312px;
-  width: 585.9017333984375px;
-}
-.hero ul {
-  display: flex;
-}
-.hero ul li img {
-  width: 177.2px;
-  height: 55.37px;
-}
-.stats {
-  display: flex;
-  color: #a4a4a3;
-  font-size: 20px;
-  font-weight: 500;
-  justify-content: center;
-  gap: 8rem;
-}
-.stats p {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.3rem;
-}
-.stats p span:first-of-type {
-  font-size: 36px;
-  font-weight: 600;
-}
-.items-image {
-  display: flex;
-  justify-content: center;
-}
-.items-image img {
-  height: 965px;
-  max-width: 1080px;
-}

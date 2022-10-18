@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../Images/logo.png";
+import logo from "./Images/logo.png";
 
 export default function Header() {
   const [show, setShow] = useState(false);

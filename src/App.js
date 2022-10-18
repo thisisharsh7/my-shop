@@ -5,7 +5,7 @@ import Header from "./Components/Header";
 import Hero from "./Components/Hero";
 import Product from "./Components/Product";
 import Store from "./Components/Store";
-import Suggestion from "./Components/Suggestion";
+import Suggestion from "./Components/Section/Suggestion";
 import Why from "./Components/Why";
 
 const App = () => {

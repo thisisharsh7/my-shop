@@ -1,5 +1,5 @@
 import React from 'react';
-import items  from '../Images/items.png';
+import items  from './Images/items.png';
 
 export default function Product(){
     return(

@@ -1,7 +1,7 @@
 import React from 'react';
-import GooglePlay from '../Images/google-play.png';
-import AppleStore from '../Images/apple-pay.png';
-import woman from '../Images/woman-carrying-bag.png';
+import GooglePlay from './Images/google-play.png';
+import AppleStore from './Images/apple-pay.png';
+import woman from './Images/woman-carrying-bag.png';
 export default function Hero(){
     return(
         <>
