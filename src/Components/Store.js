@@ -12,7 +12,7 @@ export default function Store() {
         <div className="bgStore">
             <img src={bgSt} alt="" />
         </div>
-      <div className="storeIntro">
+      <div className="Intro">
         <h1>For sellers</h1>
         <p>A quick guide for our SELLER'S AMRY</p>
         <p>
