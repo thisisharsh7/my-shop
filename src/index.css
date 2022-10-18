@@ -12,6 +12,17 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
+::-webkit-scrollbar{
+  width: 0.8em;
+}
+::-webkit-scrollbar-track {
+  background-color: white;
+  outline: 1px solid gray;
+}
+
+::-webkit-scrollbar-thumb {
+background-color: #FD6636;
+}
 
 /*header and navbar design start */
 header {
@@ -149,9 +160,12 @@ nav img {
   display: flex;
 }
 .sellers {
+  padding: 4.8em 0em;
   flex: 1;
-  background-color: #ff8963;
+  background-image: url('./Components/Home/Home-Images/redBg.png');
   width: 100%;
+  background-repeat: no-repeat;
+  display: flex;
 }
 .sellers button {
   color: white;
@@ -174,14 +188,17 @@ nav img {
   cursor: pointer;
 }
 .customers {
+  padding: 4.8em 0em;
   flex: 1;
   background-color: #80c0ff;
   width: 100%;
-}
+  background-image: url('./Components/Home/Home-Images/blueBg.png');
+  background-repeat: no-repeat;}
 .suggestion-bg div:first-of-type {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
+  max-width: 40ch;
 }
 .suggestion-bg div div p {
   font-weight: 600;
@@ -229,6 +246,7 @@ nav img {
   background-color: black;
   gap: 2rem;
 }
+
 .bgComment {
   position: absolute;
   width: 100%;
@@ -269,17 +287,14 @@ nav img {
   text-align: center;
   border-radius: 0.5em;
 }
-.comment-head div {
-  display: flex;
-  gap: 0.4em;
-  justify-content: center;
-}
-.comment-head div img {
-  width: 22px;
+
+.comment-head img {
+  width: 40px;
 }
 .comment-head {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 3em;
 }
 .comment-head ~ div {
@@ -304,7 +319,18 @@ nav img {
   overflow-x: scroll;
   margin-bottom: 3em;
 }
-
+.comments-scroll::-webkit-scrollbar{
+  height: 0.1em;
+ 
+}
+.comments-scroll::-webkit-scrollbar-track{
+  margin:0em 25vw;
+}
+@media only screen and (max-width:500px) {
+  .comments-scroll::-webkit-scrollbar-track{
+    margin:0em 3em;
+  }
+}
 /*comments design end*/
 
 /*whyShop design start*/

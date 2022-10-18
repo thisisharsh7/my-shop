@@ -1,6 +1,6 @@
 import React from "react";
-import items from "./Images/items.png";
-import arrow from "./Images/warrow.png";
+import items from "../Home/Home-Images/items.png";
+import arrow from "../Home/Home-Images/warrow.png";
 
 export default function Product() {
   return (
@@ -15,9 +15,13 @@ export default function Product() {
             <span>wait 3 Days</span> for the product to arrive, now search
             online what you want and buy offline as you like.
           </p>
-            <a href="https://play.google.com/store/apps" target="_blank" rel="noreferrer">
-              Download now <img src={arrow} alt="" />
-            </a>
+          <a
+            href="https://play.google.com/store/apps"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Download now <img src={arrow} alt="" />
+          </a>
         </div>
         <div className="productGroup">
           <img src={items} alt="" />

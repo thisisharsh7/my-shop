@@ -1,7 +1,7 @@
 import React from "react";
-import GooglePlay from "./Images/google-play.png";
-import AppleStore from "./Images/apple-pay.png";
-import woman from "./Images/woman-carrying-bag.png";
+import GooglePlay from "../Home/Home-Images/google-play.png";
+import AppleStore from "../Home/Home-Images/apple-pay.png";
+import woman from "../Home/Home-Images/woman-carrying-bag.png";
 export default function Hero() {
   return (
     <>
@@ -15,9 +15,13 @@ export default function Hero() {
               <p>
                 Now search online what you want and buy offline as you like.
               </p>
-                <a href="https://play.google.com/store/apps" target="_blank" rel="noreferrer">
-                  Join Early Access
-                </a>
+              <a
+                href="https://play.google.com/store/apps"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Join Early Access
+              </a>
               <ul>
                 <li>
                   <img src={GooglePlay} alt="" />
