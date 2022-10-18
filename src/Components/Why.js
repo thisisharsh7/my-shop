@@ -4,10 +4,11 @@ import triLayer from "./Images/triLayer.png";
 
 export default function Why() {
   return (
-    <section className="whyShop">
+    <section className="shopSection">
+    <div  className="whyShop">
       <div className="shopIntro">
         <h1>Why Myshop</h1>
-        <p>Use Us Twice Your'll Use Us For Life</p>
+        <p>Use Us Twice You'll Use Us For Life</p>
       </div>
       <div className="announce-group">
         <Announcement
@@ -25,6 +26,7 @@ export default function Why() {
           headText="Perfect Balance"
           paraText="Enjoy the benifits of both online and offline shopping right from one app."
         />
+      </div>
       </div>
     </section>
   );
