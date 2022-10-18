@@ -19,7 +19,7 @@ export default function Store() {
           Never created an <span>online store </span> before? No coding or
           design skills needed.
         </p>
-        <button>Learn More <img src={arrow} alt="" /> </button>
+        <a href="/" rel="noreferrer">Learn More <img src={arrow} alt="" /> </a>
         <div className="store-announce">
           <Announcement
             triLayer={cart}

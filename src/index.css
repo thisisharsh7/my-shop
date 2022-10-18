@@ -160,6 +160,7 @@ nav img {
   border: none;
   border-radius: 0.3rem;
   font-size: 14px;
+  cursor: pointer;
   font-weight: 500;
 }
 .customers button {
@@ -170,6 +171,7 @@ nav img {
   padding: 10px 21px;
   border: none;
   border-radius: 0.3rem;
+  cursor: pointer;
 }
 .customers {
   flex: 1;
@@ -446,7 +448,7 @@ nav img {
   color: #fd8863;
   font-weight: 400;
 }
-.Intro button {
+.Intro a{
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   display: flex;
@@ -458,8 +460,11 @@ nav img {
   border: none;
   padding: 0.8em 1.5em;
   border-radius: 2em;
+  text-decoration: none;
+  color:black;
+  
 }
-.Intro button img {
+.Intro a img {
   width: 18px;
 }
 .store-announce {
@@ -519,7 +524,7 @@ nav img {
   line-height: 1.2em;
   font-size: 28px;
 }
-.product .Intro button {
+.product .Intro a {
   background-color: #0081ff;
   color: white;
 }
@@ -562,13 +567,19 @@ nav img {
   }
 }
 @media only screen and (max-width: 500px) {
+  .product {
+    margin-top: 7em;
+  }
   .productGroup {
     height: 450px;
     max-width: 400px;
   }
+  .product .Intro p {
+    width: 100%;
+  }
   .product .Intro {
     padding: 1.8rem;
-    top: -2em;
+    top: -5em;
   }
 }
 
@@ -583,6 +594,12 @@ footer {
   display: flex;
   gap: 2rem;
   flex-direction: column;
+}
+.footer-inside p {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
 }
 .first-list {
   display: flex;
@@ -627,6 +644,8 @@ footer {
 }
 .subscribe {
   font-size: 1.5rem;
+  position: relative;
+  margin-bottom: 1em;
 }
 footer li div {
   background-color: white;
@@ -635,11 +654,21 @@ footer li div {
   align-items: center;
   border-right: none;
 }
+
 footer input {
   border: none;
+  height: 100%;
   padding-left: 8px;
 }
+footer form {
+  font-size: 1.3rem;
+  display: flex;
+}
+footer input:focus {
+  outline: none;
+}
 footer button {
+  cursor: pointer;
   border: none;
   background-color: #fd6636;
   color: white;
@@ -649,6 +678,17 @@ footer button {
 footer p {
   font-size: 14px;
   color: #6c6b6b;
+}
+#show {
+  color: #eb714a;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0em;
+  text-align: left;
+  bottom: -20px;
+  position: absolute;
+  padding-top: 0;
 }
 
 @media only screen and (max-width: 915px) {
@@ -666,6 +706,7 @@ footer p {
   }
   .footer-inside p {
     text-align: center;
+    padding-top: 2em;
   }
   .first-list {
     border-bottom: none;
@@ -673,6 +714,11 @@ footer p {
     flex-direction: column-reverse;
     gap: 2.5rem;
   }
+}
+#top-scroll img {
+  cursor: pointer;
+  height: 44px;
+  width: 44px;
 }
 
 /*footer design end */
@@ -699,8 +745,13 @@ footer p {
 }
 @media only screen and (max-width: 1020px) {
   .stats {
-    gap: 2.5em;
+    gap: 3em;
     flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .stats {
+    flex-direction: column;
   }
 }
 /*stats design end*/
@@ -734,7 +785,8 @@ footer p {
   font-size: 19px;
   max-width: 34ch;
 }
-.text-hero button {
+.text-hero a {
+  text-decoration: none;
   background-color: #fd6636;
   padding: 0.6em 1.5em;
   border: none;
@@ -766,10 +818,9 @@ footer p {
   }
 }
 @media only screen and (max-width: 450px) {
-  .hero button {
-    height: 39.96809005737305px;
-    width: 160px;
+  .hero a{
     font-size: 13px;
+    padding: 1em 2em;
   }
   .hero h1 {
     font-size: 38px;

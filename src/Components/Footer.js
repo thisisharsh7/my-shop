@@ -1,7 +1,22 @@
 import React from "react";
 import logo from "./Images/blogo.png";
+import up from './Images/Up.png';
 
 export default function Footer() {
+  function getInput(e){
+    const k = document.querySelector('input');
+    const s = document.querySelector('#show');
+    e.preventDefault();
+    if (/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(k.value)){
+      s.innerText = "Done!";
+    }else{
+      s.innerText = "Please enter a valid email ID";
+    }
+    k.value = "";
+  }
+  function scrollTop(){
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }
   return (
     <footer>
       <div className="footer-inside">
@@ -31,8 +46,7 @@ export default function Footer() {
             </li>
             <li className="subscribe">
               Subscribe for updates
-              <ul>
-                <li>
+                <form onSubmit={getInput}>
                   <div>
                     <input
                       name="email"
@@ -41,18 +55,19 @@ export default function Footer() {
                     />
                   </div>
                   <button>Done</button>
-                </li>
-              </ul>
+                </form>
+                <p id="show"></p>
             </li>
           </ul>
         </div>
         <div>
           <p>
             <span>© 2022 Equalle Technologies Private Limited</span>
-            <span>^</span>
+            <span id="top-scroll" onClick={scrollTop}><img src={up} alt="" /></span>
           </p>
         </div>
       </div>
+      
     </footer>
   );
 }

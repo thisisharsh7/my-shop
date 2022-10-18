@@ -6,27 +6,31 @@ export default function Hero() {
   return (
     <>
       <section>
-      <div className="hero-bg">
-        <div className="hero">
-          <div className="text-hero">
-            <h1>
-              Search online buy <span> offline.</span>
-            </h1>
-            <p>Now search online what you want and buy offline as you like.</p>
-            <button>Join Early Access</button>
-            <ul>
-              <li>
-                <img src={GooglePlay} alt="" />
-              </li>
-              <li>
-                <img src={AppleStore} alt="" />
-              </li>
-            </ul>
+        <div className="hero-bg">
+          <div className="hero">
+            <div className="text-hero">
+              <h1>
+                Search online buy <span> offline.</span>
+              </h1>
+              <p>
+                Now search online what you want and buy offline as you like.
+              </p>
+                <a href="https://play.google.com/store/apps" target="_blank" rel="noreferrer">
+                  Join Early Access
+                </a>
+              <ul>
+                <li>
+                  <img src={GooglePlay} alt="" />
+                </li>
+                <li>
+                  <img src={AppleStore} alt="" />
+                </li>
+              </ul>
+            </div>
+            <div className="hero-img">
+              <img src={woman} alt="" />
+            </div>
           </div>
-          <div className="hero-img">
-            <img src={woman} alt="" />
-          </div>
-        </div>
         </div>
         <div className="stats">
           <p>
