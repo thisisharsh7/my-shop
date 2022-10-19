@@ -13,7 +13,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0.8em;
 }
 ::-webkit-scrollbar-track {
@@ -22,7 +22,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-background-color: #FD6636;
+  background-color: #fd6636;
 }
 
 /*header and navbar design start */
@@ -67,10 +67,9 @@ nav img {
 }
 .desktop-nav ul li a {
   cursor: pointer;
-  color: #0a0839;
   font-weight: 500;
 }
-.desktop-nav ul:last-of-type li a{
+.desktop-nav ul:last-of-type li a {
   border: none;
   padding: 0.8rem;
   border: #fd6636 1px solid;
@@ -143,7 +142,9 @@ nav img {
 .hamburger {
   display: none;
 }
-
+.mobile-nav ul li a {
+  color: #0a083a;
+}
 @media only screen and (max-width: 990px) {
   nav {
     justify-content: space-between;
@@ -164,7 +165,7 @@ nav img {
 .sellers {
   padding: 4.8em 0em;
   flex: 1;
-  background-image: url('./Components/Home/Home-Images/redBg.png');
+  background-image: url("./Components/Home/Home-Images/redBg.png");
   width: 100%;
   background-repeat: no-repeat;
   display: flex;
@@ -194,8 +195,9 @@ nav img {
   flex: 1;
   background-color: #80c0ff;
   width: 100%;
-  background-image: url('./Components/Home/Home-Images/blueBg.png');
-  background-repeat: no-repeat;}
+  background-image: url("./Components/Home/Home-Images/blueBg.png");
+  background-repeat: no-repeat;
+}
 .suggestion-bg div:first-of-type {
   display: flex;
   flex-direction: column;
@@ -321,16 +323,15 @@ nav img {
   overflow-x: scroll;
   margin-bottom: 3em;
 }
-.comments-scroll::-webkit-scrollbar{
+.comments-scroll::-webkit-scrollbar {
   height: 0.1em;
- 
 }
-.comments-scroll::-webkit-scrollbar-track{
-  margin:0em 25vw;
+.comments-scroll::-webkit-scrollbar-track {
+  margin: 0em 25vw;
 }
-@media only screen and (max-width:500px) {
-  .comments-scroll::-webkit-scrollbar-track{
-    margin:0em 3em;
+@media only screen and (max-width: 500px) {
+  .comments-scroll::-webkit-scrollbar-track {
+    margin: 0em 3em;
   }
 }
 /*comments design end*/
@@ -476,7 +477,7 @@ nav img {
   color: #fd8863;
   font-weight: 400;
 }
-.Intro a{
+.Intro a {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   display: flex;
@@ -489,8 +490,7 @@ nav img {
   padding: 0.8em 1.5em;
   border-radius: 2em;
   text-decoration: none;
-  color:black;
-  
+  color: black;
 }
 .Intro a img {
   width: 18px;
@@ -646,8 +646,8 @@ footer {
   gap: 0.9rem;
   flex-direction: column;
 }
-.first-list li a{
-  color: #6c6c6c;;
+.first-list li a {
+  color: #6c6c6c;
 }
 
 .first-list li ul {
@@ -849,7 +849,7 @@ footer p {
   }
 }
 @media only screen and (max-width: 450px) {
-  .hero a{
+  .hero a {
     font-size: 13px;
     padding: 1em 2em;
   }
@@ -864,25 +864,28 @@ footer p {
 
 /*hero design end*/
 
-
 /*Terms and condition design start*/
-.terms , .policy{
+.terms,
+.policy {
   padding: 1.5em 3vw;
 }
-.terms-bg , .policy-bg{
+.terms-bg,
+.policy-bg {
   border-radius: 0.3em;
   border: 1px solid #57575778;
   padding: 1.2em 4.5vw;
-  color:#575757;
+  color: #575757;
 }
-.terms-bg  div h1 , .policy-bg div h1{
+.terms-bg div h1,
+.policy-bg div h1 {
   text-transform: uppercase;
   font-size: 1.5em;
-  padding: 1.3em 0em 0.8em 0em  ;
+  padding: 1.3em 0em 0.8em 0em;
   border-bottom: 1.4px solid #5757578a;
-  color:black;
+  color: black;
 }
-.terms-bg ul , .policy-bg ul{
+.terms-bg ul,
+.policy-bg ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -892,8 +895,8 @@ footer p {
   list-style: circle;
   list-style-position: outside;
 }
-.policy-bg ul h2{
-  color:black
+.policy-bg ul h2 {
+  color: black;
 }
 .policy-bg ul li {
   margin-top: 1.5em;
@@ -901,18 +904,15 @@ footer p {
   flex-direction: column;
   gap: 0.5em;
 }
-.policy-bg ul p{
+.policy-bg ul p {
   padding-top: 0.6em;
   display: flex;
-flex-direction: column;
-gap: 0.5em;
+  flex-direction: column;
+  gap: 0.5em;
 }
-.policy-bg ul{
-  
+.policy-bg ul {
   padding: 2em 0.2em;
 }
 /*Terms and condition design end*/
 
 /*Privacy policy design start*/
-
-
