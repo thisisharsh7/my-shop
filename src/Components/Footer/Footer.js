@@ -24,10 +24,10 @@ export default function Footer() {
         <div>
           <ul className="first-list">
             <li className="detail">
-            <Link to="/">
-            <img src={logo} alt="" />
-            </Link>
-              
+              <Link to="/home">
+                <img src={logo} alt="" />
+              </Link>
+
               <ul>
                 <li>Online Shopping For People Who Love Offline Shopping</li>
               </ul>

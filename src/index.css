@@ -68,6 +68,7 @@ nav img {
 .desktop-nav ul li a {
   cursor: pointer;
   font-weight: 500;
+  color: #0a083a;
 }
 .desktop-nav ul:last-of-type li a {
   border: none;
@@ -80,6 +81,9 @@ nav img {
   cursor: pointer;
   background-color: transparent;
   font-size: 0.9em;
+}
+.desktop-nav ul:first-of-type li a:hover {
+  color: #fd6636;
 }
 .desktop-nav ul:last-of-type li:nth-of-type(2) a {
   background-color: #fd6636;
