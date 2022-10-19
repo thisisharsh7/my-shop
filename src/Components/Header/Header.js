@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../Header/logo.png";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [show, setShow] = useState(false);
@@ -9,19 +10,17 @@ export default function Header() {
   return (
     <header>
       <nav>
-        <img src={logo} alt="" />
+        <Link to="/" ><img src={logo} alt="" /></Link>
         <div className="desktop-nav">
           <ul>
-            <li>Home</li>
-            <li>Seller Guide</li>
-            <li>FAQs</li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/guide">Seller Guide</Link></li>
+            <li><Link to="/faq">FAQs</Link></li>
           </ul>
           <ul>
-            <li>
-              <button>Contact Us</button>
+            <li><Link to="/contact">Contact Us</Link>
             </li>
-            <li>
-              <button>Join As Seller</button>
+            <li><Link to ="/contact">Join As Seller</Link>
             </li>
           </ul>
         </div>

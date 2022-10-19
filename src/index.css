@@ -65,23 +65,24 @@ nav img {
 .desktop-nav ul:first-of-type {
   gap: 3.5rem;
 }
-.desktop-nav ul li {
+.desktop-nav ul li a {
   cursor: pointer;
   color: #0a0839;
   font-weight: 500;
 }
-.desktop-nav ul li button {
+.desktop-nav ul:last-of-type li a{
   border: none;
   padding: 0.8rem;
   border: #fd6636 1px solid;
   color: #fd6636;
   border-radius: 1.5rem;
-  width: 145px;
+  padding: 0.8em 1.6em;
   font-weight: bold;
   cursor: pointer;
   background-color: transparent;
+  font-size: 0.9em;
 }
-.desktop-nav ul li:nth-of-type(2) button {
+.desktop-nav ul:last-of-type li:nth-of-type(2) a {
   background-color: #fd6636;
   color: white;
 }
