@@ -1117,7 +1117,47 @@ footer p {
     padding: 4px 20px;
   }
 }
-
+.faq-answers {
+  padding-top: 2.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.faq-answers details {
+  padding: 1em 1.4em;
+  border: 1px solid #e5e7eb;
+  font-size: 18px;
+  color: #0a2540;
+  position: relative;
+}
+.faq-answers details summary {
+  cursor: pointer;
+  position: relative;
+}
+.faq-answers details summary:after {
+  content: "";
+  background-image: url("./Components/Images/Vector.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 20px;
+  right: -5px;
+  transform: rotate(0deg);
+  transition: transform 500ms;
+}
+details[open] summary:after {
+  transform: rotate(180deg);
+  transition: transform 500ms;
+  font-size: 2rem;
+}
+.faq-answers details p {
+  color: #6c6b6b;
+  font-size: 15px;
+  padding-top: 1em;
+}
 /*faq design end here*/
 
 /*guide design start here*/
@@ -1309,3 +1349,4 @@ footer p {
     gap: 5em;
   }
 }
+/*seller guide design completed*/

@@ -30,9 +30,71 @@ export default function Faq() {
                             placeholder="Post your question here"
                         />
                     </div>
-                    <button type="button">POST</button>
+                    <button type="submit">POST</button>
                 </form>
                 <p id="send"></p>
+            </div>
+            <div className='faq-answers'>
+                <details>
+                    <summary>
+                        Is Writesonic free?
+                    </summary>
+                    <p>Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content. Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content.</p>
+                </details>
+                <details>
+                    <summary>
+                        Is Writesonic free?
+                    </summary>
+                    <p>Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content. Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content.</p>
+                </details>
+                <details>
+                    <summary>
+                        Is Writesonic free?
+                    </summary>
+                    <p>Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content. Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content.</p>
+                </details>
+                <details>
+                    <summary>
+                        Is Writesonic free?
+                    </summary>
+                    <p>Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content. Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content.</p>
+                </details>
+                <details>
+                    <summary>
+                        Is Writesonic free?
+                    </summary>
+                    <p>Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content. Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content.</p>
+                </details>
+                <details>
+                    <summary>
+                        Is Writesonic free?
+                    </summary>
+                    <p>Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content. Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content.</p>
+                </details>
+                <details>
+                    <summary>
+                        Is Writesonic free?
+                    </summary>
+                    <p>Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content. Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content.</p>
+                </details>
+                <details>
+                    <summary>
+                        Is Writesonic free?
+                    </summary>
+                    <p>Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content. Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content.</p>
+                </details>
+                <details>
+                    <summary>
+                        Is Writesonic free?
+                    </summary>
+                    <p>Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content. Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content.</p>
+                </details>
+                <details>
+                    <summary>
+                        Is Writesonic free?
+                    </summary>
+                    <p>Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content. Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content.</p>
+                </details>
             </div>
         </section>
     )
