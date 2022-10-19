@@ -1119,3 +1119,97 @@ footer p {
 }
 
 /*faq design end here*/
+
+/*guide design start here*/
+.guide{
+  padding: 3rem 1.8rem;
+}
+.guide-intro{
+  display: flex;
+  gap: 3vw;
+  justify-content: center;
+}
+.guide-intro h1{
+  text-transform: uppercase;
+font-family: Inter;
+font-size: 130px;
+font-weight: 700;
+line-height: 154px;
+text-align: left;
+color:white;
+text-shadow: -1.5px -1.5px 0 #FD6636, 1.5px -1.5px 0 #FD6636, -1.5px 1.5px 0 #FD6636, 1.5px 1.5px 0 #FD6636;
+}
+.guide-intro h1 span{
+  color:#fd6636;
+}
+.guide-intro img{
+width: 649px;
+
+}
+@media only screen and (max-width:1130px) {
+  .guide-intro img{
+    width: 549px;
+    
+    }
+    .guide-intro h1{
+      font-size: 85px;
+      line-height: 120px;
+    }
+}
+@media only screen and (max-width:900px) {
+  .guide{
+    padding: 2rem 0.8rem;
+  }
+  .guide-intro{
+    flex-direction: column;
+    gap: 2em;
+    
+  }
+  .guide-intro img{
+    width: 100%;
+  
+    }
+    .guide-intro h1{
+      width: 100%;
+      font-size: 85px;
+      line-height: 120px;
+    }
+}
+.fb{
+  background-image: url("./Components/Images/fb.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 5.4em 5em;
+  color:white;
+  gap:1.5em;
+}
+.fb h1{
+  font-size: 2em;
+  max-width: 20ch;
+}
+.fb a{
+  color:#0163AF;
+  background-color:white;
+  width: max-content;
+  font-weight: bold;
+  padding: 0.8em 2em;
+}
+@media only screen and (max-width:1400px) {
+  .fb{
+    display: none;
+  }
+}
+@media only screen and (max-width:500px) {
+    .guide-intro h1{
+      font-size: 73px;
+      font-weight: 700;
+      line-height: 88px;
+    }
+    .guide-intro img{
+      height: 383.99969482421875px;
+
+    }
+}
