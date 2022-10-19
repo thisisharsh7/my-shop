@@ -868,7 +868,7 @@ footer p {
 
 /*hero design end*/
 
-/*Terms and condition design start*/
+/*Terms and condition, Privacy and policy design start*/
 .terms,
 .policy {
   padding: 1.5em 3vw;
@@ -917,6 +917,97 @@ footer p {
 .policy-bg ul {
   padding: 2em 0.2em;
 }
-/*Terms and condition design end*/
+/*Terms and condition, Privacy and policy design end*/
 
-/*Privacy policy design start*/
+/*contact design start here*/
+.contact {
+  padding: 3em 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  flex: 1;
+}
+
+.contact-form div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #575757;
+}
+.contact-form div h1 {
+  font-weight: 700;
+  font-size: 2em;
+  color: #0a2540;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4em;
+  color: red;
+}
+.contact form input {
+  padding: 0.8em 1.6em;
+  border: none;
+  border: 2px solid #e5e7eb;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+.contact form input:focus {
+  outline: none;
+}
+.contact-form form textarea {
+  height: 195px;
+  border: none;
+  border: 2px solid #e5e7eb;
+  font-weight: 500;
+  font-family: Intel;
+  font-size: 1.1em;
+  resize: none;
+  padding: 0.8em 1.6em;
+}
+.contact-form form textarea:focus {
+  outline: none;
+}
+.contact form input[type="submit"] {
+  background-color: #fd6636;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.contactImg img {
+  height: 420px;
+  width: 276px;
+}
+.contactImg {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+}
+.contactImg div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contactImg p {
+  display: flex;
+  align-items: center;
+  gap: 1.3em;
+  color: #575757;
+}
+.contactImg p img {
+  height: 30px;
+  width: 30px;
+}
+@media only screen and (max-width: 750px) {
+  .contact {
+    flex-direction: column;
+    gap: 3em;
+  }
+}
+/*contact design end here*/
