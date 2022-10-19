@@ -58,7 +58,7 @@ export default function Footer() {
                     placeholder="Enter your email ID"
                   />
                 </div>
-                <button>Done</button>
+                <button type="button">Done</button>
               </form>
               <p id="show"></p>
             </li>
