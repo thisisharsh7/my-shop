@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../Footer/logo.png";
 import up from "../Footer/Up.png";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   function getInput(e) {
@@ -23,7 +24,10 @@ export default function Footer() {
         <div>
           <ul className="first-list">
             <li className="detail">
-              <img src={logo} alt="" />
+            <Link to="/">
+            <img src={logo} alt="" />
+            </Link>
+              
               <ul>
                 <li>Online Shopping For People Who Love Offline Shopping</li>
               </ul>
@@ -31,17 +35,17 @@ export default function Footer() {
             <li>
               Our Information
               <ul>
-                <li>Privacy Policy</li>
-                <li>Terms and Conditions</li>
+                <li><Link to="/policy">Privacy Policy</Link></li>
+                <li><Link to="/terms">Terms and Conditions</Link></li>
               </ul>
             </li>
             <li>
               Social Media
               <ul>
-                <li>Instagram</li>
-                <li>Facebook</li>
-                <li>Twitter</li>
-                <li>LinkedIn</li>
+                <li><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a></li>
+                <li><a href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a></li>
+                <li><a href="https://twitter.com/" target="_blank" rel="noreferrer">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a></li>
               </ul>
             </li>
             <li className="subscribe">
