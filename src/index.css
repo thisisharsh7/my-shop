@@ -1121,61 +1121,58 @@ footer p {
 /*faq design end here*/
 
 /*guide design start here*/
-.guide{
-  padding: 3rem 1.8rem;
+.guide {
+  padding: 3em 1.8em;
 }
-.guide-intro{
+.guide-intro {
   display: flex;
   gap: 3vw;
   justify-content: center;
 }
-.guide-intro h1{
+.guide-intro h1 {
   text-transform: uppercase;
-font-family: Inter;
-font-size: 130px;
-font-weight: 700;
-line-height: 154px;
-text-align: left;
-color:white;
-text-shadow: -1.5px -1.5px 0 #FD6636, 1.5px -1.5px 0 #FD6636, -1.5px 1.5px 0 #FD6636, 1.5px 1.5px 0 #FD6636;
+  font-family: Inter;
+  font-size: 130px;
+  font-weight: 700;
+  line-height: 154px;
+  text-align: left;
+  color: white;
+  text-shadow: -1.5px -1.5px 0 #fd6636, 1.5px -1.5px 0 #fd6636,
+    -1.5px 1.5px 0 #fd6636, 1.5px 1.5px 0 #fd6636;
 }
-.guide-intro h1 span{
-  color:#fd6636;
+.guide-intro h1 span {
+  color: #fd6636;
 }
-.guide-intro img{
-width: 649px;
-
+.guide-intro img {
+  width: 649px;
 }
-@media only screen and (max-width:1130px) {
-  .guide-intro img{
+@media only screen and (max-width: 1130px) {
+  .guide-intro img {
     width: 549px;
-    
-    }
-    .guide-intro h1{
-      font-size: 85px;
-      line-height: 120px;
-    }
+  }
+  .guide-intro h1 {
+    font-size: 85px;
+    line-height: 120px;
+  }
 }
-@media only screen and (max-width:900px) {
-  .guide{
+@media only screen and (max-width: 900px) {
+  .guide {
     padding: 2rem 0.8rem;
   }
-  .guide-intro{
+  .guide-intro {
     flex-direction: column;
     gap: 2em;
-    
   }
-  .guide-intro img{
+  .guide-intro img {
     width: 100%;
-  
-    }
-    .guide-intro h1{
-      width: 100%;
-      font-size: 85px;
-      line-height: 120px;
-    }
+  }
+  .guide-intro h1 {
+    width: 100%;
+    font-size: 85px;
+    line-height: 120px;
+  }
 }
-.fb{
+.fb {
   background-image: url("./Components/Images/fb.png");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -1183,33 +1180,132 @@ width: 649px;
   flex-direction: column;
   justify-items: center;
   padding: 5.4em 5em;
-  color:white;
-  gap:1.5em;
+  color: white;
+  gap: 1.5em;
 }
-.fb h1{
+.fb h1 {
   font-size: 2em;
   max-width: 20ch;
 }
-.fb a{
-  color:#0163AF;
-  background-color:white;
+.fb a {
+  color: #0163af;
+  background-color: white;
   width: max-content;
   font-weight: bold;
   padding: 0.8em 2em;
 }
-@media only screen and (max-width:1400px) {
-  .fb{
+.guideList {
+  padding-top: 5em;
+  padding-bottom: 1.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  position: relative;
+}
+.ellipse {
+  position: absolute;
+  height: 2970px;
+  top: 290px;
+  left: 520px;
+  width: 20px;
+}
+.mobEllipse {
+  display: none;
+}
+.sGuide {
+  display: flex;
+  align-items: center;
+  gap: 8vw;
+  padding: 0.5em;
+}
+.guideText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.guideText h2 {
+  font-size: 25px;
+  line-height: 24px;
+  padding: 0.15em 0em 0.4em 0em;
+  font-weight: 600;
+}
+.guideText p:last-of-type {
+  color: #717171;
+}
+.guide .isguide:nth-of-type(1) .guideText p:nth-of-type(1) {
+  color: #f76f0d;
+}
+.guide .isguide:nth-of-type(2) .guideText p:nth-of-type(1) {
+  color: #17b31b;
+}
+.guide .isguide:nth-of-type(3) .guideText p:nth-of-type(1) {
+  color: #cec540;
+}
+.guide .isguide:nth-of-type(4) .guideText p:nth-of-type(1) {
+  color: #a1d774;
+}
+.guide .isguide:nth-of-type(5) .guideText p:nth-of-type(1) {
+  color: #92a4e4;
+}
+.guide .isguide:nth-of-type(6) .guideText p:nth-of-type(1) {
+  color: #f789d0;
+}
+.guide .isguide:nth-of-type(7) .guideText p:nth-of-type(1) {
+  color: #845ef1;
+}
+.sGuide img {
+  width: 500px;
+}
+@media only screen and (max-width: 900px) {
+  .sGuide img {
+    width: 400px;
+  }
+  .ellipse {
+    left: 410px;
+    top: 230px;
+    height: 2410px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .fb {
     display: none;
   }
 }
-@media only screen and (max-width:500px) {
-    .guide-intro h1{
-      font-size: 73px;
-      font-weight: 700;
-      line-height: 88px;
-    }
-    .guide-intro img{
-      height: 383.99969482421875px;
-
-    }
+@media only screen and (max-width: 600px) {
+  .sGuide {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .guide-intro h1 {
+    font-size: 73px;
+    font-weight: 700;
+    line-height: 88px;
+  }
+  .guide-intro img {
+    height: 383.99969482421875px;
+  }
+  .sGuide img {
+    width: 100%;
+  }
+  .ellipse {
+    display: none;
+  }
+  .isguide {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+  }
+  .mobEllipse {
+    display: block;
+    width: 23px;
+    height: 94px;
+  }
+  .guideList {
+    gap: 5em;
+  }
 }
