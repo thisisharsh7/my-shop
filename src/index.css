@@ -795,9 +795,9 @@ footer p {
 .hero {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 80px;
   justify-content: center;
-  margin: 4em 1.3em 2em 2.2em;
+  margin: 3em 1.3em 2em 2.2em;
 }
 .text-hero {
   display: flex;
@@ -811,9 +811,6 @@ footer p {
   font-size: 65px;
   max-width: 34ch;
   color: #0a083a;
-}
-.text-hero h1 span {
-  color: #fd6636;
 }
 .text-hero p {
   color: #6c6b6b;
@@ -836,21 +833,32 @@ footer p {
   gap: 1.3em;
 }
 .hero-img {
-  max-width: 585.9017333984375px;
+  width: 585.9017333984375px;
+  height: 620.0359497070312px;
+  position: relative;
 }
 .hero-img img {
-  height: 620.0359497070312px;
+  height: 100%;
   width: 100%;
 }
 .hero ul li img {
   max-width: 177.2px;
   max-height: 55.37px;
 }
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 700px) {
   .hero {
     flex-direction: column;
     margin: 1.2em;
+    gap: 30px;
   }
+  .hero-img {
+    height: 313px;
+    width: 286.14227294921875px;
+  }
+}
+.relative-text {
+  position: relative;
+  height: 160px;
 }
 @media only screen and (max-width: 450px) {
   .hero a {
@@ -860,11 +868,31 @@ footer p {
   .hero h1 {
     font-size: 38px;
   }
+  .relative-text {
+    height: 77px;
+  }
   .hero ul li img {
     max-width: 122px;
     max-height: 38px;
   }
 }
+/*hero-animation*/
+.head-hero {
+  width: 100%;
+}
+
+.relative-text h1 {
+  color: #fd6636;
+}
+.online,
+.offline,
+.like {
+  position: absolute;
+  transition: all;
+  transition-duration: 1s;
+}
+
+/*hero-animation end*/
 
 /*hero design end*/
 

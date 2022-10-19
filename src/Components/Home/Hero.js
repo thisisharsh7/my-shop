@@ -1,17 +1,47 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import GooglePlay from "../Home/Home-Images/google-play.png";
 import AppleStore from "../Home/Home-Images/apple-pay.png";
-import woman from "../Home/Home-Images/woman-carrying-bag.png";
+import womanOnline from "../Home/Home-Images/woman-offline.png";
+import womanOffline from "../Home/Home-Images/woman-online.png";
+import womanLike from "../Home/Home-Images/woman-like.png";
+
+
 export default function Hero() {
+  const [offline, setOffline] = useState(1);
+  const [online, setOnline] = useState(0);
+  const [like, setLike] = useState(0);
+  useEffect(() => {
+    setTimeout(() => {
+      if (like) {
+        setOffline(1);
+        setLike(0);
+        setOnline(0);
+      } else if (offline) {
+        setOffline(0);
+        setLike(0);
+        setOnline(1);
+      } else {
+        setOffline(0);
+        setLike(1);
+        setOnline(0);
+      }
+    }, 2500)
+  })
   return (
     <>
       <section>
         <div className="hero-bg">
           <div className="hero">
             <div className="text-hero">
-              <h1>
-                Search online buy <span> offline.</span>
-              </h1>
+              <div className="head-hero">
+                <h1>
+                  Search online buy</h1>
+                <div className="relative-text">
+                  <h1 className="offline" style={{ opacity: offline }}> offline.</h1>
+                  <h1 className="online" style={{ opacity: online }}>online.</h1>
+                  <h1 className="like" style={{ opacity: like }}>anyway you like.</h1>
+                </div>
+              </div>
               <p>
                 Now search online what you want and buy offline as you like.
               </p>
@@ -32,7 +62,9 @@ export default function Hero() {
               </ul>
             </div>
             <div className="hero-img">
-              <img src={woman} alt="" />
+              <img src={womanOffline} alt="" className="offline" style={{ opacity: online }} />
+              <img src={womanOnline} alt="" className="online" style={{ opacity: offline }} />
+              <img src={womanLike} alt="" className="like" style={{ opacity: like }} />
             </div>
           </div>
         </div>
