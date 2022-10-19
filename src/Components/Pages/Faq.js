@@ -1,11 +1,39 @@
 import React from 'react';
 
-export default function Faq(){
-    return(
-        <section>
-            <h1>
-                This is faq section.
-            </h1>
+export default function Faq() {
+    function getQuery(e) {
+        e.preventDefault();
+        const k = document.querySelector("#query");
+        const s = document.querySelector("#send");
+        if (k.value == "") {
+            s.innerText = "Query cannot be blank";
+        } else {
+            s.innerText = "Great! We will post the answer to your query soon.";
+        }
+        k.value = "";
+
+    }
+    return (
+        <section className='faq'>
+            <div className='faq-text'>
+                <h1>
+                    Ask us anything
+                </h1>
+                <p>Have any questions? We're here to assist you.</p>
+            </div>
+            <div className='form-query'>
+                <form onSubmit={getQuery}>
+                    <div>
+                        <input
+                            name="query"
+                            id="query"
+                            placeholder="Post your question here"
+                        />
+                    </div>
+                    <button type="button">POST</button>
+                </form>
+                <p id="send"></p>
+            </div>
         </section>
     )
 }

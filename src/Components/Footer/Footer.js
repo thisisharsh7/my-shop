@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   function getInput(e) {
-    const k = document.querySelector("input");
+    const k = document.querySelector("#email");
     const s = document.querySelector("#show");
     e.preventDefault();
     if (/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(k.value)) {

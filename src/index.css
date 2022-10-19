@@ -1011,3 +1011,83 @@ footer p {
   }
 }
 /*contact design end here*/
+
+/*faq design start here*/
+.faq {
+  padding: 4em 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.faq-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  text-align: center;
+}
+.faq-text h1 {
+  color: #0a2540;
+  font-size: 38px;
+}
+.faq form {
+  width: 100%;
+  display: flex;
+}
+.form-query {
+  position: relative;
+}
+.faq form div {
+  flex: 1;
+  display: flex;
+  border: 1px solid #57575782;
+  border-right: none;
+}
+.faq input {
+  border: none;
+  padding: 0.5em 1.2em;
+  font-size: 16px;
+  width: 100%;
+}
+.faq form {
+  font-size: 1.8rem;
+  display: flex;
+}
+.faq input:focus {
+  outline: none;
+}
+.faq form button {
+  cursor: pointer;
+  border: none;
+  background-color: #fd6636;
+  color: white;
+  font-weight: 500;
+  padding: 8px 30px;
+}
+.faq p {
+  font-size: 20px;
+  color: #6c6b6b;
+}
+#send {
+  color: #eb714a;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0em;
+  text-align: left;
+  top: 100%;
+  position: absolute;
+  margin-top: 0.5em;
+}
+@media only screen and (max-width: 500px) {
+  .faq-text h1 {
+    font-size: 28px;
+  }
+  .faq-text p {
+    font-size: 15px;
+  }
+  .faq form button {
+    padding: 4px 20px;
+  }
+}
+
+/*faq design end here*/
