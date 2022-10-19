@@ -132,6 +132,7 @@ nav img {
   z-index: 3;
   top: 102%;
   background-color: white;
+  box-shadow: -2px 14px 13px -9px rgba(0,0,0,0.26);
 }
 .mobile-nav ul {
   padding: 25px 40px;
@@ -155,10 +156,24 @@ nav img {
     gap: 0rem;
     gap: 20px;
   }
-  .mobile-nav.active,
+  .mobile-nav{
+    display: flex;
+    opacity: 0;
+    top:-280px;
+    transition: all 500ms;
+  }
   .hamburger {
     display: flex;
   }
+  
+  .mobile-nav.active{
+    top: 100%;
+    opacity: 1;
+    transition: all 500ms;
+  }
+}
+.blew{
+  background-color: red;
 }
 /*mobile navbar design end*/
 

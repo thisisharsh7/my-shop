@@ -11,7 +11,7 @@ export default function Header() {
       <nav>
         <NavLink to="/home" style={({ isActive }) => ({
           color: isActive ? '#fd6636' : '',
-        })}  ><img src={logo} alt="" /></NavLink>
+        })} ><img src={logo} alt="" /></NavLink>
         <div className="desktop-nav">
           <ul>
             <li><NavLink to="/home" style={({ isActive }) => ({
@@ -38,18 +38,18 @@ export default function Header() {
           <ul>
             <li><NavLink to="/home" style={({ isActive }) => ({
               color: isActive ? '#fd6636' : '',
-            })} >Home</NavLink></li>
-            <li>Plans</li>
+            })} onClick={toggleShow} >Home</NavLink></li>
+            <li onClick={toggleShow} >Plans</li>
             <li><NavLink to="/guide" style={({ isActive }) => ({
               color: isActive ? '#fd6636' : '',
-            })} >Seller Guide</NavLink></li>
+            })} onClick={toggleShow}  >Seller Guide</NavLink></li>
             <li><NavLink to="/faq" style={({ isActive }) => ({
               color: isActive ? '#fd6636' : '',
-            })} >FAQs</NavLink></li>
+            })} onClick={toggleShow}  >FAQs</NavLink></li>
             <li><NavLink to="/contact" style={({ isActive }) => ({
               color: isActive ? '#fd6636' : '',
-            })} >Contact Us</NavLink></li>
-            <li>Join As Seller</li>
+            })} onClick={toggleShow} >Contact Us</NavLink></li>
+            <li onClick={toggleShow} >Join As Seller</li>
           </ul>
         </div>
       </nav>
