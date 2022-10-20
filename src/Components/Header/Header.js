@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import logo from "../Header/logo.png";
+import hamburger from '../Header/hamburger.svg';
 import { NavLink } from "react-router-dom";
+import './header.css';
+
+
 export default function Header() {
   const [show, setShow] = useState(false);
   function toggleShow() {
@@ -32,7 +36,7 @@ export default function Header() {
           </ul>
         </div>
         <div className="hamburger" onClick={toggleShow}>
-          <div className="mid-line"></div>
+          <img src={hamburger} alt="" />
         </div>
         <div className={show ? "mobile-nav active" : "mobile-nav"}>
           <ul>
