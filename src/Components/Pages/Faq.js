@@ -5,7 +5,7 @@ export default function Faq() {
         e.preventDefault();
         const k = document.querySelector("#query");
         const s = document.querySelector("#send");
-        if (k.value == "") {
+        if (k.value === "") {
             s.innerText = "Query cannot be blank";
         } else {
             s.innerText = "Great! We will post the answer to your query soon.";
