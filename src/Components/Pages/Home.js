@@ -5,6 +5,7 @@ import Store from '../Home/Store';
 import Why from '../Home/Why';
 import Comments from '../Home/Comments';
 import Suggestion from '../Home/Suggestion';
+import '../Home/home.css';
 
 export default function Home (){
     return(
