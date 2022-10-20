@@ -65,53 +65,61 @@ body {
 
 /*contact design start here*/
 .contact {
-  padding: 3em 1.5em;
+  padding: 85px 75px;
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
 }
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 2.5em;
+  gap: 46px;
   flex: 1;
 }
-
 .contact-form div {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
   color: #575757;
 }
 .contact-form div h1 {
   font-weight: 700;
-  font-size: 2em;
+  font-size: 36px;
+  line-height: 43.57px;
   color: #0a2540;
 }
 .contact form {
   display: flex;
   flex-direction: column;
-  gap: 2.4em;
-  color: red;
+  gap: 28px;
 }
 .contact form input {
-  padding: 0.8em 1.6em;
   border: none;
   border: 2px solid #e5e7eb;
-  font-weight: 500;
-  font-size: 0.9em;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0em;
+  padding: 14px 18px;
 }
 .contact form input:focus {
   outline: none;
 }
-.contact-form form textarea {
+.area {
   height: 195px;
   border: none;
   border: 2px solid #e5e7eb;
-  font-weight: 500;
-  font-family: Intel;
-  font-size: 1.1em;
   resize: none;
-  padding: 0.8em 1.6em;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0em;
+  padding: 14px 18px;
 }
 .contact-form form textarea:focus {
   outline: none;
@@ -121,6 +129,7 @@ body {
   color: white;
   border: none;
   cursor: pointer;
+  font-size: 23px;
 }
 .contactImg img {
   height: 420px;
@@ -130,18 +139,18 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 44px;
   align-items: center;
 }
 .contactImg div {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 20px;
 }
 .contactImg p {
   display: flex;
   align-items: center;
-  gap: 1.3em;
+  gap: 18px;
   color: #575757;
 }
 .contactImg p img {
@@ -150,8 +159,43 @@ body {
 }
 @media only screen and (max-width: 750px) {
   .contact {
+    padding: 60px 20px;
     flex-direction: column;
-    gap: 3em;
+    gap: 35px;
+  }
+  .contact-form {
+    gap: 30px;
+  }
+  .contact-form div {
+    font-size: 15px;
+    line-height: 16.94px;
+    gap: 12px;
+  }
+  .contact-form div h1 {
+    font-size: 24px;
+    line-height: 29.05px;
+  }
+  .contact-form form input,
+  .area {
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+  .contact form input[type="submit"] {
+    font-size: 18px;
+  }
+  .contactImg {
+    flex-direction: column-reverse;
+  }
+  .contactImg {
+    font-size: 15px;
+  }
+  .contactImg div {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .contactImg img {
+    height: 344px;
+    width: 219px;
   }
 }
 /*contact design end here*/
@@ -195,7 +239,7 @@ body {
 .form-query form div {
   border-radius: 0px 5px 5px 0px;
   background-color: white;
-  border:2px solid #e5e7eb;
+  border: 2px solid #e5e7eb;
   border-right: 0px;
 }
 

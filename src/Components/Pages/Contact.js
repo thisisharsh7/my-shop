@@ -15,7 +15,7 @@ export default function Contact() {
                 <form>
                     <input type="text" name="username" placeholder="Enter your name" />
                     <input type="email" name="email" placeholder="Enter your email address" />
-                    <textarea name="message" placeholder="Send us a message" />
+                    <textarea className='area' name="message" placeholder="Send us a message" />
                     <input type="submit" name="submit" />
                 </form>
             </div>
