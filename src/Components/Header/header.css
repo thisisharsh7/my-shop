@@ -15,11 +15,9 @@ nav {
 nav a {
   display: flex;
 }
-nav img {
+.logo {
   width: 160.00006103515625px;
   cursor: pointer;
-}
-@media only screen and (max-width: 900px) {
 }
 /* header and navbar design end */
 
@@ -115,8 +113,9 @@ nav img {
   }
   .hamburger {
     display: flex;
+    z-index: 20;
+    cursor: pointer;
   }
-
   .mobile-nav.active {
     top: 100%;
     opacity: 1;
