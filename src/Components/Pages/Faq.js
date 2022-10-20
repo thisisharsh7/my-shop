@@ -30,7 +30,9 @@ export default function Faq() {
                             placeholder="Post your question here"
                         />
                     </div>
-                    <button type="submit">POST</button>
+                    <div>
+                        <input type="submit" value="POST" />
+                    </div>
                 </form>
                 <p id="send"></p>
             </div>

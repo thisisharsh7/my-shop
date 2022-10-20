@@ -12,8 +12,7 @@ body {
   font-family: "Inter", sans-serif;
   max-width: 1440px;
   margin: 0 auto;
-}
-/*Terms and condition, Privacy and policy design start*/
+} /*Terms and condition, Privacy and policy design start*/
 .terms,
 .policy {
   padding: 1.5em 3vw;
@@ -159,20 +158,28 @@ body {
 
 /*faq design start here*/
 .faq {
-  padding: 4em 1.5em;
+  padding: 80px;
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 54px;
 }
 .faq-text {
   display: flex;
   flex-direction: column;
-  gap: 0.3em;
+  gap: 28px;
   text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
 }
 .faq-text h1 {
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 52px;
+  letter-spacing: -0.02em;
   color: #0a2540;
-  font-size: 38px;
+  text-align: center;
 }
 .faq form {
   width: 100%;
@@ -181,32 +188,46 @@ body {
 .form-query {
   position: relative;
 }
-.faq form div {
-  flex: 1;
-  display: flex;
-  border: 1px solid #57575782;
-  border-right: none;
-}
-.faq input {
-  border: none;
-  padding: 0.5em 1.2em;
-  font-size: 16px;
+.form-query form div:first-of-type {
   width: 100%;
 }
-.faq form {
-  font-size: 1.8rem;
-  display: flex;
+.form-query form div {
+  background-color: white;
+  border: 1.5px solid #e5e7eb;
+  border-right: 0px;
 }
-.faq input:focus {
+
+.form-query form input {
+  background-color: transparent;
+  border: none;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #6c6b6b;
+  letter-spacing: 0em;
+  padding: 15px 17px 13px 18px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.form-query form div:last-of-type {
+  background-color: #fd6636;
+  border-color: #fd6636;
+  border-right: 1.5px;
+}
+input:focus {
   outline: none;
 }
-.faq form button {
-  cursor: pointer;
-  border: none;
-  background-color: #fd6636;
+.form-query form div:last-of-type input {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
   color: white;
-  font-weight: 500;
-  padding: 8px 30px;
+  cursor: pointer;
 }
 .faq p {
   font-size: 20px;
@@ -214,31 +235,20 @@ body {
 }
 #send {
   color: #eb714a;
-  font-family: Inter;
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 0em;
-  text-align: left;
   top: 100%;
   position: absolute;
-  margin-top: 0.5em;
-}
-@media only screen and (max-width: 500px) {
-  .faq-text h1 {
-    font-size: 28px;
-  }
-  .faq-text p {
-    font-size: 15px;
-  }
-  .faq form button {
-    padding: 4px 20px;
-  }
+  margin-top: 10px;
+  left: 17px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0em;
 }
 .faq-answers {
-  padding-top: 2.5em;
+  padding-top: 8px;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 24px;
 }
 .faq-answers details {
   padding: 1em 1.4em;
@@ -272,8 +282,41 @@ details[open] summary:after {
 }
 .faq-answers details p {
   color: #6c6b6b;
+  padding-top: 18px;
   font-size: 15px;
-  padding-top: 1em;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+@media only screen and (max-width: 565px) {
+  .faq {
+    padding: 54px 20px;
+    gap: 30px;
+  }
+  .faq-text {
+    gap: 15px;
+  }
+  .faq-text h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .form-query form div input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+  }
+  .form-query form div:last-of-type input {
+    padding: 10px 16px;
+    font-size: 16px;
+  }
+  .faq-text p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .faq-answers {
+    padding-top: 30px;
+  }
 }
 /*faq design end here*/
 
