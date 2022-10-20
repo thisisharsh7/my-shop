@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../Footer/logo.png";
 import up from "../Footer/Up.png";
+import './footer.css';
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -25,7 +26,7 @@ export default function Footer() {
           <ul className="first-list">
             <li className="detail">
               <Link to="/home">
-                <img src={logo} alt="" />
+                <img src={logo} alt="" className="logo" />
               </Link>
 
               <ul>
@@ -58,19 +59,18 @@ export default function Footer() {
                     placeholder="Enter your email ID"
                   />
                 </div>
-                <button type="submit">Done</button>
+                <div>
+                  <input type="submit" value="Done" />
+                </div>
+
               </form>
               <p id="show"></p>
             </li>
           </ul>
         </div>
-        <div>
-          <p>
-            <span>© 2022 Equalle Technologies Private Limited</span>
-            <span id="top-scroll" onClick={scrollTop}>
-              <img src={up} alt="" />
-            </span>
-          </p>
+        <div className="attribution">
+          <p>© 2022 Equalle Technologies Private Limited</p>
+          <img id="top-scroll" onClick={scrollTop} src={up} alt="" />
         </div>
       </div>
     </footer>

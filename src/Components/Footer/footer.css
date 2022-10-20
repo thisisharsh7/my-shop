@@ -1,0 +1,152 @@
+footer {
+  padding: 75px;
+}
+.footer-inside {
+  display: flex;
+  flex-direction: column;
+}
+.first-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 80px;
+  gap: 30px;
+}
+.first-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #0a083a;
+  font-weight: 600;
+  font-size: 20.5px;
+}
+.first-list li a {
+  font-size: 15px;
+  color: #6c6c6c;
+  font-weight: 450;
+  line-height: 21px;
+}
+
+.first-list li ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.first-list ul li {
+  cursor: pointer;
+}
+.first-list li:first-of-type ul li:first-of-type {
+  color: #6c6b6b;
+  max-width: 23ch;
+  line-height: 24px;
+  padding-top: 3px;
+  font-size: 16px;
+  font-weight: 450;
+  cursor: text;
+}
+.first-list li:last-of-type ul li:first-of-type {
+  flex-direction: row;
+  cursor: text;
+}
+.subscribe form {
+  display: flex;
+  width: 280px;
+  align-items: center;
+}
+.subscribe {
+  position: relative;
+}
+.subscribe form div {
+  background-color: white;
+  border: 1.5px solid #d2d2d1;
+  border-right: 0px;
+}
+
+.subscribe form input {
+  background-color: transparent;
+  border: none;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #6c6b6b;
+  letter-spacing: 0em;
+  padding: 2.5px 14px 4px 15px;
+}
+.subscribe form div:last-of-type {
+  background-color: #eb714a;
+  border-color: #eb714a;
+  border-right: 1.5px;
+}
+input:focus {
+  outline: none;
+}
+.subscribe form div:last-of-type input {
+  color: white;
+  cursor: pointer;
+  padding: 2.5px 14px 4px 15px;
+}
+#show {
+  color: #eb714a;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0em;
+  text-align: left;
+  bottom: -20px;
+  position: absolute;
+  padding-top: 0;
+}
+.attribution {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1.5px solid #c1c0c04e;
+  font-size: 14px;
+  color: #6c6b6b;
+  padding: 36px 0px 9px 0px;
+  margin-right: 20px;
+}
+#top-scroll {
+  cursor: pointer;
+  height: 44px;
+  width: 44px;
+}
+@media only screen and (max-width: 1210px) {
+  footer {
+    padding: 50px 35px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  footer {
+    padding: 0;
+  }
+  .first-list {
+    padding: 60px 28px;
+  }
+  .detail {
+    border-top: 1.5px solid #c1c0c04e;
+    width: 100%;
+    display: flex;
+    padding-top: 28px;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+  }
+  .attribution {
+    margin-right: 0px;
+    text-align: center;
+    padding: 20px 8px;
+    border-top: none;
+    justify-content: center;
+    gap: 20px;
+  }
+  .first-list {
+    border-bottom: none;
+    padding-bottom: 3px;
+    flex-direction: column-reverse;
+    gap: 2.5rem;
+  }
+}
+/*footer design end */
