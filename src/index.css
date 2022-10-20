@@ -189,11 +189,13 @@ body {
   position: relative;
 }
 .form-query form div:first-of-type {
+  border-radius: 5px 0px 0px 5px;
   width: 100%;
 }
 .form-query form div {
+  border-radius: 0px 5px 5px 0px;
   background-color: white;
-  border: 1.5px solid #e5e7eb;
+  border:2px solid #e5e7eb;
   border-right: 0px;
 }
 
@@ -253,6 +255,7 @@ input:focus {
 .faq-answers details {
   padding: 1em 1.4em;
   border: 1px solid #e5e7eb;
+  border-radius: 5px;
   font-size: 18px;
   color: #0a2540;
   position: relative;
