@@ -57,6 +57,7 @@ footer {
   position: relative;
 }
 .subscribe form div {
+  margin-top: 12px;
   background-color: white;
   border: 1.5px solid #d2d2d1;
   border-right: 0px;
@@ -117,13 +118,12 @@ input:focus {
     padding: 50px 35px;
   }
 }
-
 @media only screen and (max-width: 960px) {
   footer {
     padding: 0;
   }
   .first-list {
-    padding: 60px 28px;
+    padding: 60px 24px;
   }
   .detail {
     border-top: 1.5px solid #c1c0c04e;
