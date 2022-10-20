@@ -19,6 +19,14 @@ nav a {
   width: 170px;
   cursor: pointer;
 }
+@media only screen and (max-width:500px) {
+  .logo{
+    width: 140px;
+  }
+  .hamburger{
+    width: 30px;
+  }
+}
 /* header and navbar design end */
 
 /* desktop nav-bar design start */
