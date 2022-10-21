@@ -180,30 +180,33 @@
 .shopSection {
   display: flex;
   justify-content: center;
-  padding: 12em 0 9em 0;
-  margin: 0em 1.8em;
+  font-size: 24px;
 }
 .whyShop {
   display: flex;
-  gap: 4.2em;
   flex-direction: column;
   align-items: flex-start;
-  max-width: max-content;
+  padding: 20px;
+  margin:40px;
+  gap:2em;
+
 }
 .shopIntro {
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 0.6em;
 }
 .shopIntro h1 {
   color: #ff8963;
-  font-size: 24px;
   font-weight: 700;
+  font-size: 1em;
   text-transform: uppercase;
+  line-height: 31.8px;
 }
 .shopIntro p {
-  font-size: 33px;
+  font-size: 1.5em;
   font-weight: 700;
+  line-height: 1em;
   color: #0a2540;
 }
 .announce-group {
@@ -212,21 +215,15 @@
   justify-content: center;
   gap: 4.8em;
 }
-@media only screen and (max-width: 750px) {
-  .announce-group {
-    flex-direction: column;
-    gap: 2.4em;
-  }
-}
 .announce {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
  max-width: 9.3em;
- gap: 0.6em;
+ gap: 0.35em;
 }
 .announce img {
-  width: 36px;
+  width: 36px;  
   margin-bottom: 0.4em;
 }
 .announce h2:after {
@@ -235,7 +232,7 @@
   width: 3px;
   height: 18px;
   background-color: #ff8963;
-  left: -25px;
+  left: -20px;
 }
 .announce h2 {
   display: flex;
@@ -246,12 +243,36 @@
   position: relative;
 }
 .announce p {
-  font-size: 0.8em;
+  font-size: 0.75em;
   color: #425466;
   font-weight: 400;
+  padding-top: 0.4em;
   line-height: 1.35em;
 }
+@media only screen and (max-width: 750px) {
+  .shopSection{
+    justify-content: flex-start;
+    font-size: 22px;
+  }
+  .announce-group {
+    flex-direction: column;
+    gap: 2.3em;
+  }
+}
+@media only screen and (max-width: 480px){
+  .shopSection{
+    font-size: 17.8px;
+  }
+  .whyShop{
+    margin: 12px;
+  }
+}
 /*announce design end*/ 
+
+
+
+
+
 
 /*store design start*/
 .store {
