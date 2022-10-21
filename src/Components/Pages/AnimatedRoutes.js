@@ -5,6 +5,7 @@ import Faq from "./Faq";
 import Guide from "./Guide";
 import Contact from "./Contact";
 import Home from "./Home";
+import '../Home/home.css';
 import { AnimatePresence } from "framer-motion";
 import { Route, Routes, useLocation } from 'react-router-dom';
 

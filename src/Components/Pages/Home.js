@@ -5,7 +5,6 @@ import Store from '../Home/Store';
 import Why from '../Home/Why';
 import Comments from '../Home/Comments';
 import Suggestion from '../Home/Suggestion';
-import '../Home/home.css';
 import { motion } from 'framer-motion';
 
 export default function Home() {
@@ -13,7 +12,7 @@ export default function Home() {
         <motion.main
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0, transition: { duration: 0.3 } }}
+            exit={{ opacity: 0}}
         >
             <Hero />
             <Product />

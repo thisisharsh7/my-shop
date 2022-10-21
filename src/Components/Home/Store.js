@@ -12,11 +12,10 @@ export default function Store() {
   return (
     <section className="store">
       <div className="Intro">
-      <picture>
-      <source media="(max-width:899px)" srcSet={mbgSt}/>
-      <img  src={bgSt} alt="" className="bgStore" />
-      </picture>
-      <img/>
+        <picture>
+          <source media="(max-width:899px)" srcSet={mbgSt} />
+          <img src={bgSt} alt="" className="bgStore" />
+        </picture>
         <h1>For sellers</h1>
         <p>A quick guide for our SELLER'S AMRY</p>
         <p>

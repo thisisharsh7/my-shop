@@ -1,12 +1,8 @@
 import React from "react";
-import { motion } from 'framer-motion';
 
 export default function Policy() {
   return (
-    <motion.main
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.3 } }}
+    <main
     >
       <section className="policy">
         <div className="policy-bg">
@@ -226,6 +222,6 @@ export default function Policy() {
           </ul>
         </div>
       </section>
-    </motion.main>
+    </main>
   );
 }
