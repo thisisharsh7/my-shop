@@ -421,24 +421,24 @@
 
 /*product desing start*/
 .product-bg {
+  min-width:260px;
   background: linear-gradient(
     to top,
     #f5faff 0%,
     #f5faff 60.3%,
     rgba(245, 250, 255, 0) 100%
   );
-  z-index: 1;
-  display: flex;
-  justify-content: center;
+  height: 51vw;
+  padding-top: 60px;
 }
-.product {
-  padding-top: 10em;
-  position: relative;
-  margin-top: 5em;
-}
-.product .Intro h1,
+
 .product .Intro p {
   color: #425468;
+  padding-bottom: 0.2em;
+}
+.product .Intro {
+  margin-left: 13vw;
+  padding-top: 1.5vw;
 }
 
 .product .Intro h1 {
@@ -446,60 +446,94 @@
 }
 .product .Intro p:first-of-type {
   color: #0a2540;
+  max-width: 15em;
 }
 .product .Intro a {
   background-color: #0081ff;
   color: white;
 }
 .product .Intro h1 ~ p:last-of-type {
+  max-width: 27em;
+  font-size: 1.3em;
   color: #425468;
+  padding-bottom: 0.4em;
 }
 .product .Intro h1 ~ p:last-of-type span {
   font-weight: 700;
   color: #0081ff;
 }
-.productGroup img {
-  height: 965px;
-  width: 100%;
+.product {
+  position: relative;
 }
 .productGroup {
-  height: 778px;
-  max-width: 1080px;
-}
-.product .Intro {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding-bottom: 5px;
+  top: 160px;
+  bottom: 0px;
+  height: 965px;
+  z-index: 4;
+  left: 11%;
 }
-@media only screen and (max-width: 890px) {
-  .product {
-    padding-top: 15em;
-  }
-  .productGroup {
-    height: 600px;
-    max-width: 900px;
-  }
-  .product .Intro {
-    top: 0;
-  }
+.productGroup img {
+  width: 90%;
+}
+@media only screen and (max-width: 1010px) {
+.product-bg{
+  height: 80vw;
+  
+}
+.product .Intro{
+  margin-left: 7vw;
+ 
+}
+.productGroup{
+  top:190px;
+  left: 0;
+}
+.productGroup img{
+  width: 100%;
+}
+}
+@media only screen and (max-width: 600px) {
+.product-bg{
+  height: 500px
+  
+}
+.productGroup{
+  top:220px;
+  left: 0;
+}
 }
 @media only screen and (max-width: 500px) {
-  .product {
-    margin-top: 7em;
+  .product{
+    font-size: 14px;
   }
-  .productGroup {
-    height: 450px;
-    max-width: 400px;
+  .productGroup{
+   top:240px;
+    height: 324px;
   }
-  .product .Intro p {
-    width: 100%;
+
+}
+@media only screen and (max-width: 450px) {
+  .product .Intro{
+    margin: 5vw;
+    margin-left: 7vw;
   }
-  .product .Intro {
-    padding: 1.8rem;
-    top: -5em;
+  .productGroup img{
+    height: 360px;
   }
+
+  .productGroup{
+   top:260px;
+    height: 324px;
+  }
+
+}
+@media only screen and (max-width: 300px) {
+
+  .productGroup{
+   top:300px;
+  }
+
 }
 
 /*product desing end*/

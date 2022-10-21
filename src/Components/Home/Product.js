@@ -1,6 +1,7 @@
 import React from "react";
 import items from "../Home/Home-Images/items.png";
 import arrow from "../Home/Home-Images/warrow.png";
+import mitems from './Home-Images/mitems.png';
 
 export default function Product() {
   return (
@@ -23,9 +24,10 @@ export default function Product() {
             Download now <img src={arrow} alt="" />
           </a>
         </div>
-        <div className="productGroup">
+        <picture className="productGroup">
+          <source media="(max-width:500px)" srcSet={mitems} />
           <img src={items} alt="" />
-        </div>
+        </picture>
       </div>
     </section>
   );
