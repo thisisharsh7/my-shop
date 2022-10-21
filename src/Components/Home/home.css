@@ -544,8 +544,9 @@
   font-size: 36px;
   color: #a4a4a3;
   justify-content: space-evenly;
-  padding: 0em 1em;
+  padding: 0em 1em 0.4em 1em;
   font-weight: 600;
+  
 }
 .stats p {
   display: flex;
@@ -563,11 +564,11 @@
     gap: 1em;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 645px) {
   .stats {
     min-width: 200px;
     font-size: 25px;
-    gap: 1.4em;
+    gap: 1.2em;
 
     flex-wrap: wrap;
   }
