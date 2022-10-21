@@ -183,15 +183,15 @@
   min-width: 260px;
   font-size: 24px;
   padding-bottom: 2em;
+  padding-top: 2.5em;
 }
 .whyShop {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 20px;
-  margin:40px;
-  gap:2em;
-
+  margin: 40px;
+  gap: 2em;
 }
 .shopIntro {
   display: flex;
@@ -221,11 +221,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
- max-width: 9.3em;
- gap: 0.35em;
+  max-width: 9.3em;
+  gap: 0.35em;
 }
 .announce img {
-  width: 36px;  
+  width: 36px;
   margin-bottom: 0.4em;
 }
 .announce h2:after {
@@ -252,36 +252,31 @@
   line-height: 1.35em;
 }
 @media only screen and (max-width: 770px) {
-  .shopSection{
+  .shopSection {
     justify-content: flex-start;
     font-size: 22px;
+    padding-top: 3em;
   }
-  .whyShop{
-    margin:0;
+  .whyShop {
+    margin: 0;
     margin-left: 30px;
-    
   }
 }
 @media only screen and (max-width: 750px) {
-  .announce-group{
+  .announce-group {
     flex-direction: column;
     gap: 1.8em;
   }
 }
-@media only screen and (max-width: 480px){
-  .shopSection{
+@media only screen and (max-width: 480px) {
+  .shopSection {
     font-size: 17.8px;
   }
-  .whyShop{
+  .whyShop {
     margin: 12px;
   }
 }
-/*announce design end*/ 
-
-
-
-
-
+/*announce design end*/
 
 /*store design start*/
 .store {
@@ -305,9 +300,9 @@
   height: 100%;
   width: 100%;
 }
-.bgStore{
+.bgStore {
   position: absolute;
-  top:0;
+  top: 0;
   right: 0;
   z-index: -1;
   bottom: 0;
@@ -340,7 +335,7 @@
   font-weight: 700;
 }
 .Intro h1 ~ p:last-of-type {
-  font-size: 0.95em ;
+  font-size: 0.95em;
   font-weight: 300;
   max-width: 20em;
   color: #a4a4a3;
@@ -372,7 +367,7 @@
   font-size: 24px;
   gap: 2.1em;
 }
-.store-announce .announce{
+.store-announce .announce {
   max-width: 11.5em;
   gap: 0.7em;
 }
@@ -391,13 +386,13 @@
   .store {
     flex-direction: column;
     align-items: flex-start;
-    gap:2em;
+    gap: 2em;
     padding: 2.5em 1.8em 3.6em 2.5em;
   }
   .store .bgStore img {
     height: 80%;
   }
-  .storeEnter{
+  .storeEnter {
     width: 90%;
   }
 }
@@ -407,21 +402,20 @@
   }
 }
 @media only screen and (max-width: 480px) {
-  .store{
+  .store {
     font-size: 16px;
     padding: 3.4em 1.7em;
     min-width: 200px;
     gap: 3.2em;
   }
-  .storeEnter{
+  .storeEnter {
     width: 100%;
     height: 359px;
   }
   .store-announce .announce h2:after {
-  left:-0.7em;
+    left: -0.7em;
   }
 }
-
 
 /*store design end*/
 
@@ -516,7 +510,7 @@
   font-size: 36px;
   color: #a4a4a3;
   justify-content: space-evenly;
-  padding:0em 1em;
+  padding: 0em 1em;
   font-weight: 600;
 }
 .stats p {
@@ -532,15 +526,15 @@
   .stats {
     min-width: 200px;
     font-size: 30px;
-    gap:1em;
+    gap: 1em;
   }
 }
 @media only screen and (max-width: 600px) {
   .stats {
     min-width: 200px;
     font-size: 25px;
-    gap:1.4em;
-    
+    gap: 1.4em;
+
     flex-wrap: wrap;
   }
 }
@@ -682,7 +676,6 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 50px;
-
   }
 }
 @media only screen and (max-width: 530px) {
