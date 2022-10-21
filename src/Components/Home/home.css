@@ -183,7 +183,7 @@
   min-width: 260px;
   font-size: 24px;
   padding-bottom: 2em;
-  padding-top: 2.5em;
+  padding-top: 1.5em;
 }
 .whyShop {
   display: flex;
@@ -293,7 +293,7 @@
   position: relative;
   z-index: 3;
   font-size: 24px;
-  padding: 7em 1.8em 5.5em 3em;
+  padding: 6.5em 1.8em 6.5em 3em;
   gap: 2em;
 }
 .storeEnter img {
