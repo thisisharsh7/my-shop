@@ -81,98 +81,126 @@
 /*comments design start*/
 
 .comments {
-  margin-top: 80px;
+  background-color: black;
+  min-width:260px;
+  margin-top: 90px;
   position: relative;
   color: white;
   display: flex;
   background-repeat: repeat-x;
   flex-direction: column;
-  background-color: black;
-  gap: 2rem;
+  font-size: 24px;
+  gap: 1.9em;
 }
 
 .bgComment {
   position: absolute;
   width: 100%;
-  top: -110px;
+  top: -130px;
   height: 100%;
   z-index: -1;
 }
-.comments::before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  z-index: 10;
-}
 .comments-head {
-  padding-top: 20px;
   text-transform: uppercase;
-  font-size: 32px;
+  font-size: 1.75em;
   font-weight: 700;
-  line-height: 29px;
+  line-height: 1.2em;
   letter-spacing: 0px;
   text-align: center;
 }
 .comments-head ~ div {
   display: flex;
-  padding: 59px 30px;
-  padding-top: 10px;
-  gap: 30px;
+  gap: 1.8em;
+  padding: 0em 1.8em;
+ padding-bottom: 2.75em;
 }
 .comment {
   background-color: #232323;
-  padding: 30px;
+  border-radius: 0.2em;
   display: flex;
+ 
   flex-direction: column;
-  gap: 4.5em;
+  gap: 4em;
+  padding: 2.4em 2.3em 1.8em 2.3em;
   flex: 1;
   align-items: center;
   text-align: center;
-  border-radius: 0.5em;
 }
 
 .comment-head img {
-  width: 40px;
+  width: 2.1em;
 }
 .comment-head {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3em;
+  gap: 2.3em;
 }
 .comment-head ~ div {
   display: flex;
   flex-direction: column;
-  gap: 0.2em;
 }
 .comment-head ~ div h1 {
   font-weight: 500;
-  font-size: 23px;
+  font-size: 1em;
+  line-height: 1.6em;
 }
 .comment-head p {
   line-height: 1.6em;
-  width: 23ch;
-  font-size: 19px;
+  width: 25ch;
+  font-size: 0.825em;
+  line-height: 1.6em;
 }
 
 .comment-head ~ div p {
-  font-size: 15px;
+  font-size: 0.68em ;
+  line-height: 1.6em;
 }
 .comments-scroll {
   overflow-x: scroll;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
-.comments-scroll::-webkit-scrollbar {
-  height: 0.1em;
+.comments-scroll::-webkit-scrollbar{
+    background-color: black;
+    width: 1.2em;
 }
-.comments-scroll::-webkit-scrollbar-track {
-  margin: 0em 25vw;
-}
-@media only screen and (max-width: 500px) {
-  .comments-scroll::-webkit-scrollbar-track {
-    margin: 0em 3em;
+  
+  .comments-scroll::-webkit-scrollbar-track{
+    background: white;
+    border-top: 8px solid black;
+    border-bottom: 8px solid black;
+    margin-left:10em;
+    margin-right:10em;
+    border-radius: 15px;
   }
+  
+  .comments-scroll::-webkit-scrollbar-thumb{
+    min-width:100px;  
+    background:#fd6636;
+    border-radius: 15px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .comments{
+      font-size: 22px;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .comments{
+      font-size: 18px;
+    }
+  }
+@media only screen and (max-width: 570px) {
+  .comments-scroll::-webkit-scrollbar-track{
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  .comments{
+      font-size: 16px;
+  }
+
 }
 /*comments design end*/
 
