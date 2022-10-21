@@ -22,7 +22,8 @@
   font-size: 1em;
   padding: 0.45em 1.5em 0.46em 1.5em;
 }
-.sellers , .customers{
+.sellers,
+.customers {
   padding: 8vw 5vw 7vw 6vw;
   box-sizing: border-box;
 }
@@ -70,7 +71,6 @@
   font-size: 3em;
   font-weight: 700;
   color: white;
-  
 }
 .suggestion-bg {
   display: flex;
@@ -83,7 +83,8 @@
     flex-direction: column;
     font-size: 15px;
   }
-  .sellers , .customers{
+  .sellers,
+  .customers {
     padding: 10vw 6vw 16vw 11vw;
   }
 }
