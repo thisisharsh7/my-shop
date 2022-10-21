@@ -180,7 +180,9 @@
 .shopSection {
   display: flex;
   justify-content: center;
+  min-width: 260px;
   font-size: 24px;
+  padding: 2em 0em;
 }
 .whyShop {
   display: flex;
@@ -283,13 +285,22 @@
   position: relative;
   z-index: 3;
   font-size: 24px;
-  padding: 1em 1.8em 1em 3em;
+  padding: 7em 1.8em 5.5em 3em;
   gap: 2em;
-  background-color: black;
 }
 .storeEnter img {
   height: 100%;
   width: 100%;
+}
+.bgStore{
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 .storeEnter {
   height: 22.4em;
@@ -368,6 +379,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap:2em;
+    padding: 11.3em 1.8em 3.6em 3em;
   }
   .store .bgStore img {
     height: 80%;
@@ -377,6 +389,9 @@
   }
 }
 @media only screen and (max-width: 620px) {
+  .store {
+    padding: 3em 1.8em 14em 3em;  
+  }
   .store-announce {
     flex-direction: column;
   }
@@ -390,6 +405,8 @@
     padding:1.7em;
     min-width: 240px;
     gap: 3.2em;
+      padding: 1em 1.8em 20em 3em;
+
   }
   .storeEnter{
     width: 100%;

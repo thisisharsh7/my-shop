@@ -4,12 +4,14 @@ import cart from "../Home/Home-Images/store-cart.png";
 import storeEnter from "../Home/Home-Images/storeEntrance.png";
 import tools from "../Home/Home-Images/store-tools.png";
 import { Link } from "react-router-dom";
+import bgSt from './Home-Images/bgStore.png';
 import arrow from "../Home/Home-Images/arrow.png";
 
 export default function Store() {
   return (
     <section className="store">
       <div className="Intro">
+      <img  src={bgSt} alt="" className="bgStore" />
         <h1>For sellers</h1>
         <p>A quick guide for our SELLER'S AMRY</p>
         <p>
