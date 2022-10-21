@@ -82,7 +82,7 @@
 
 .comments {
   background-color: black;
-  min-width:260px;
+  min-width: 260px;
   margin-top: 90px;
   position: relative;
   color: white;
@@ -112,13 +112,13 @@
   display: flex;
   gap: 1.8em;
   padding: 0em 1.8em;
- padding-bottom: 2.75em;
+  padding-bottom: 2.75em;
 }
 .comment {
   background-color: #232323;
   border-radius: 0.2em;
   display: flex;
- 
+
   flex-direction: column;
   gap: 4em;
   padding: 2.4em 2.3em 1.8em 2.3em;
@@ -153,54 +153,53 @@
 }
 
 .comment-head ~ div p {
-  font-size: 0.68em ;
+  font-size: 0.68em;
   line-height: 1.6em;
 }
 .comments-scroll {
   overflow-x: scroll;
   margin-bottom: 2em;
 }
-.comments-scroll::-webkit-scrollbar{
-    background-color: black;
-    width: 1.2em;
+.comments-scroll::-webkit-scrollbar {
+  background-color: black;
+  width: 1.2em;
 }
-  
-  .comments-scroll::-webkit-scrollbar-track{
-    background: white;
-    border-top: 8px solid black;
-    border-bottom: 8px solid black;
-    margin-left:10em;
-    margin-right:10em;
-    border-radius: 15px;
+
+.comments-scroll::-webkit-scrollbar-track {
+  background: white;
+  border-top: 8px solid black;
+  border-bottom: 8px solid black;
+  margin-left: 10em;
+  margin-right: 10em;
+  border-radius: 15px;
+}
+
+.comments-scroll::-webkit-scrollbar-thumb {
+  min-width: 100px;
+  background: #fd6636;
+  border-radius: 15px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+@media only screen and (max-width: 1200px) {
+  .comments {
+    font-size: 22px;
   }
-  
-  .comments-scroll::-webkit-scrollbar-thumb{
-    min-width:100px;  
-    background:#fd6636;
-    border-radius: 15px;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
+}
+@media only screen and (max-width: 900px) {
+  .comments {
+    font-size: 18px;
   }
-  
-  @media only screen and (max-width: 1200px) {
-    .comments{
-      font-size: 22px;
-    }
-  }
-  @media only screen and (max-width: 900px) {
-    .comments{
-      font-size: 18px;
-    }
-  }
+}
 @media only screen and (max-width: 570px) {
-  .comments-scroll::-webkit-scrollbar-track{
+  .comments-scroll::-webkit-scrollbar-track {
     margin-left: 3em;
     margin-right: 3em;
   }
-  .comments{
-      font-size: 16px;
+  .comments {
+    font-size: 16px;
   }
-
 }
 /*comments design end*/
 
@@ -354,7 +353,6 @@
   color: #ff8963;
   text-transform: uppercase;
   font-weight: 700;
-  
 }
 .Intro h1 ~ p:first-of-type {
   letter-spacing: 0em;
@@ -451,7 +449,7 @@
 
 /*product desing start*/
 .product-bg {
-  min-width:260px;
+  min-width: 260px;
   background: linear-gradient(
     to top,
     #f5faff 0%,
@@ -508,63 +506,56 @@
   width: 90%;
 }
 @media only screen and (max-width: 1010px) {
-.product-bg{
-  height: 80vw;
-  
-}
-.product .Intro{
-  margin-left: 7vw;
- 
-}
-.productGroup{
-  top:190px;
-  left: 0;
-}
-.productGroup img{
-  width: 100%;
-}
+  .product-bg {
+    height: 80vw;
+  }
+  .product .Intro {
+    margin-left: 7vw;
+  }
+  .productGroup {
+    top: 190px;
+    left: 0;
+  }
+  .productGroup img {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 600px) {
-.product-bg{
-  height: 500px
-  
-}
-.productGroup{
-  top:220px;
-  left: 0;
-}
+  .product-bg {
+    height: 500px;
+  }
+  .productGroup {
+    top: 220px;
+    left: 0;
+  }
 }
 @media only screen and (max-width: 500px) {
-  .product{
+  .product {
     font-size: 14px;
   }
-  .productGroup{
-   top:240px;
+  .productGroup {
+    top: 240px;
     height: 324px;
   }
-
 }
 @media only screen and (max-width: 450px) {
-  .product .Intro{
+  .product .Intro {
     margin: 5vw;
     margin-left: 7vw;
   }
-  .productGroup img{
+  .productGroup img {
     height: 360px;
   }
 
-  .productGroup{
-   top:260px;
+  .productGroup {
+    top: 260px;
     height: 324px;
   }
-
 }
 @media only screen and (max-width: 300px) {
-
-  .productGroup{
-   top:300px;
+  .productGroup {
+    top: 300px;
   }
-
 }
 
 /*product desing end*/
@@ -577,7 +568,6 @@
   justify-content: space-evenly;
   padding: 0em 1em 1em 1em;
   font-weight: 600;
-  
 }
 .stats p {
   display: flex;
@@ -749,7 +739,6 @@
     margin: 45px 20px;
     min-width: 240px;
     margin-bottom: 10px;
-  
   }
   .text-hero p {
     font-size: max(14px, 5vw);
