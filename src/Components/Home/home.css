@@ -207,47 +207,51 @@
   color: #0a2540;
 }
 .announce-group {
+  font-size: 24px;
   display: flex;
-  gap: 4em;
   justify-content: center;
-  padding: 0em 1.8em;
+  gap: 4.8em;
 }
 @media only screen and (max-width: 750px) {
   .announce-group {
     flex-direction: column;
+    gap: 2.4em;
   }
 }
 .announce {
   display: flex;
   flex-direction: column;
-  gap: 15px;
   align-items: flex-start;
-  font-size: 17px;
+ max-width: 9.3em;
+ gap: 0.6em;
 }
 .announce img {
   width: 36px;
+  margin-bottom: 0.4em;
 }
 .announce h2:after {
   position: absolute;
   content: "";
   width: 3px;
-  top: 0;
-  bottom: 0;
-  height: 100%;
+  height: 18px;
   background-color: #ff8963;
   left: -25px;
 }
 .announce h2 {
+  display: flex;
+  align-items: center;
   color: #0a2540;
   font-weight: 600;
+  font-size: 0.9em;
   position: relative;
 }
 .announce p {
-  max-width: 25ch;
+  font-size: 0.8em;
   color: #425466;
   font-weight: 400;
+  line-height: 1.35em;
 }
-/*announce design end*/
+/*announce design end*/ 
 
 /*store design start*/
 .store {
@@ -256,61 +260,44 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  gap: 1.2em;
   z-index: 3;
+  font-size: 24px;
+  padding: 1em 1.8em 1em 3em;
+  gap: 2em;
+  background-color: black;
 }
-.storeEnter {
-  align-self: center;
-}
-@media only screen and (max-width: 899px) {
-  .store {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .store .bgStore img {
-    height: 80%;
-  }
-}
-.store .bgStore {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  top: -190px;
-  bottom: -120px;
-}
-.store .bgStore img {
+.storeEnter img {
   height: 100%;
   width: 100%;
 }
-.storeEnter img {
-  height: 438px;
-  width: 305px;
-  border-radius: 0px;
+.storeEnter {
+  height: 22.4em;
+  width: 16.85em;
 }
 .Intro {
-  padding: 3em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1em;
+  gap: 0.9em;
 }
 .Intro h1 {
+  font-size: 1em;
   color: #ff8963;
-  font-weight: 700;
   text-transform: uppercase;
-  font-size: 24px;
+  font-weight: 700;
 }
 .Intro h1 ~ p:first-of-type {
-  font-size: 40px;
-  max-width: 20ch;
-  font-weight: 700;
   letter-spacing: 0em;
   text-align: left;
+  line-height: 1.3em;
+  font-size: 1.9em;
+  max-width: 12em;
+  font-weight: 700;
 }
 .Intro h1 ~ p:last-of-type {
-  font-size: 18px;
-  max-width: 40ch;
+  font-size: 0.95em ;
   font-weight: 300;
+  max-width: 20em;
   color: #a4a4a3;
 }
 .Intro h1 ~ p:last-of-type span {
@@ -318,16 +305,16 @@
   font-weight: 400;
 }
 .Intro a {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
   display: flex;
   align-items: center;
   gap: 8px;
   background-color: #ff8963;
-  font-size: 15px;
+  font-size: 0.85em;
   font-family: Inter;
+  margin-top: 1em;
+  margin-bottom: 1.8em;
   border: none;
-  padding: 0.8em 1.5em;
+  padding: 0.5em 1.2em;
   border-radius: 2em;
   text-decoration: none;
   color: black;
@@ -336,21 +323,15 @@
   width: 18px;
 }
 .store-announce {
-  padding-top: 2.5em;
   display: flex;
-  gap: 5em;
+  font-size: 24px;
+  gap: 2.1em;
 }
-@media only screen and (max-width: 615px) {
-  .store-announce {
-    flex-direction: column;
-  }
-  .Intro h1 ~ p:first-of-type {
-    font-size: 28px;
-  }
-  .store .bgStore {
-    top: -230px;
-  }
+.store-announce .announce{
+  max-width: 11.5em;
+  gap: 0.7em;
 }
+
 .store-announce .announce h2 {
   color: white;
 }
@@ -360,6 +341,49 @@
 .store-announce .announce p {
   color: #a4a4a3;
 }
+
+@media only screen and (max-width: 899px) {
+  .store {
+    flex-direction: column;
+    align-items: flex-start;
+    gap:2em;
+  }
+  .store .bgStore img {
+    height: 80%;
+  }
+  .storeEnter{
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .store-announce {
+    flex-direction: column;
+  }
+  .store .bgStore {
+    top: -230px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .store{
+    font-size: 16px;
+    padding:1.7em;
+    min-width: 240px;
+    gap: 3.2em;
+  }
+  .storeEnter{
+    width: 100%;
+    height: 359px;
+  }
+  .store-announce .announce h2:after {
+  left:-0.7em;
+  }
+
+  .store .bgStore {
+    top: -230px;
+  }
+}
+
+
 /*store design end*/
 
 /*product desing start*/
@@ -389,18 +413,12 @@
 }
 .product .Intro p:first-of-type {
   color: #0a2540;
-  line-height: 1.2em;
-  font-size: 28px;
 }
 .product .Intro a {
   background-color: #0081ff;
   color: white;
 }
 .product .Intro h1 ~ p:last-of-type {
-  font-weight: 400;
-  line-height: 1.2em;
-  font-size: 19px;
-  max-width: 48ch;
   color: #425468;
 }
 .product .Intro h1 ~ p:last-of-type span {
