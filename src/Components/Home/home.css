@@ -1,50 +1,55 @@
 /*suggestion section styling start*/
 .suggestions {
   display: flex;
+  font-size: 16px;
+  line-height: 1.5em;
+  min-width: 260px;
 }
 .sellers {
-  padding: 4.8em 0em;
   flex: 1;
   background-image: url("../Home/Home-Images/redBg.png");
+  background-color: #fd8863;
   width: 100%;
   background-repeat: no-repeat;
-  display: flex;
+  background-size: 100%;
 }
 .sellers a {
   color: white;
   background-color: #66200a;
-  padding: 10px 21px;
   border: none;
-  border-radius: 0.3rem;
-  font-size: 14px;
   cursor: pointer;
   font-weight: 500;
+  font-size: 1em;
+  padding: 0.45em 1.5em 0.46em 1.5em;
+}
+.sellers , .customers{
+  padding: 8vw 5vw 7vw 6vw;
+  box-sizing: border-box;
 }
 .customers a {
   color: white;
   font-weight: 500;
-  font-size: 14px;
   background-color: #0b3864;
-  padding: 10px 21px;
   border: none;
-  border-radius: 0.3rem;
   cursor: pointer;
+  font-size: 1em;
+  padding: 0.45em 1.5em 0.46em 1.5em;
 }
 .customers {
-  padding: 4.8em 0em;
   flex: 1;
   background-color: #80c0ff;
   width: 100%;
   background-image: url("../Home/Home-Images/blueBg.png");
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 .suggestion-bg div:first-of-type {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
-  max-width: 40ch;
+  gap: 0.5em;
 }
 .suggestion-bg div div p {
+  font-size: 1.32em;
   font-weight: 600;
 }
 .sellers .suggestion-bg div div p {
@@ -54,26 +59,32 @@
   color: #164d83;
 }
 .suggestion-bg div ~ p {
+  max-width: 25em;
+  font-size: 1em;
+  margin-top: 0.8em;
   color: white;
-  font-size: 15px;
   font-weight: 500;
-  padding-top: 10px;
 }
 .suggestion-bg h1 {
+  line-height: 1.3em;
+  font-size: 3em;
   font-weight: 700;
   color: white;
-  font-size: 2.8rem;
+  
 }
 .suggestion-bg {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.9em;
   align-items: flex-start;
-  padding: 3.2rem 2.5rem;
 }
-@media only screen and (max-width: 615px) {
+@media only screen and (max-width: 645px) {
   .suggestions {
     flex-direction: column;
+    font-size: 15px;
+  }
+  .sellers , .customers{
+    padding: 10vw 6vw 16vw 11vw;
   }
 }
 /*suggestion section styling end*/
