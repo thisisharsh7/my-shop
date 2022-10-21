@@ -25,7 +25,7 @@ export default function Hero() {
         setLike(1);
         setOnline(0);
       }
-    }, 2500)
+    }, 2300)
   })
   return (
     <>
@@ -62,8 +62,8 @@ export default function Hero() {
               </ul>
             </div>
             <div className="hero-img">
-              <img src={womanOffline} alt="" className="offline" style={{ opacity: online }} />
-              <img src={womanOnline} alt="" className="online" style={{ opacity: offline }} />
+              <img src={womanOffline} alt="" className="online" style={{ opacity: online }} />
+              <img src={womanOnline} alt="" className="offline" style={{ opacity: offline }} />
               <img src={womanLike} alt="" className="like" style={{ opacity: like }} />
             </div>
           </div>
