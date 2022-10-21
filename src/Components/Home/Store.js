@@ -5,13 +5,18 @@ import storeEnter from "../Home/Home-Images/storeEntrance.png";
 import tools from "../Home/Home-Images/store-tools.png";
 import { Link } from "react-router-dom";
 import bgSt from './Home-Images/bgStore.png';
+import mbgSt from './Home-Images/mbgSt.png';
 import arrow from "../Home/Home-Images/arrow.png";
 
 export default function Store() {
   return (
     <section className="store">
       <div className="Intro">
+      <picture>
+      <source media="(max-width:899px)" srcSet={mbgSt}/>
       <img  src={bgSt} alt="" className="bgStore" />
+      </picture>
+      <img/>
         <h1>For sellers</h1>
         <p>A quick guide for our SELLER'S AMRY</p>
         <p>
