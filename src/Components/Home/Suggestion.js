@@ -15,7 +15,7 @@ export default function Suggestion() {
               improve
             </p>
           </div>
-          <button>Post a suggestion</button>
+          <a href="https://docs.google.com/forms/d/1rxj3r8JgYz4-wi_fKLbkC0hTaOglByuid3VZB-C7axI/viewform?edit_requested=true" target="_blank" rel="noreferrer">Post a suggestion</a>
         </div>
       </div>
       <div className="customers">
@@ -30,7 +30,7 @@ export default function Suggestion() {
               improve
             </p>
           </div>
-          <button>Post a suggestion</button>
+          <a href="https://docs.google.com/forms/d/1rxj3r8JgYz4-wi_fKLbkC0hTaOglByuid3VZB-C7axI/viewform?edit_requested=true" target="_blank" rel="noreferrer">Post a suggestion</a>
         </div>
       </div>
     </section>

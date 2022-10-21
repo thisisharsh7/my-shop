@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   display: flex;
 }
-.sellers button {
+.sellers a {
   color: white;
   background-color: #66200a;
   padding: 10px 21px;
@@ -20,7 +20,7 @@
   cursor: pointer;
   font-weight: 500;
 }
-.customers button {
+.customers a {
   color: white;
   font-weight: 500;
   font-size: 14px;
