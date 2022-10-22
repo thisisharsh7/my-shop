@@ -25,7 +25,7 @@ export default function Hero() {
         setLike(1);
         setOnline(0);
       }
-    }, 2300)
+    }, 2200)
   })
   return (
     <>

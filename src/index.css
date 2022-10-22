@@ -322,15 +322,16 @@ input:focus {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  top: 0;
+
   height: 100%;
-  width: 20px;
+  width: 15px;
+  top:0;
   right: -5px;
-  transform: rotate(0deg);
+  transform: rotate(180deg);
   transition: transform 500ms;
 }
 details[open] summary:after {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
   transition: transform 500ms;
   font-size: 2rem;
 }
