@@ -171,25 +171,26 @@
   margin-bottom: 2em;
 }
 .comments-scroll::-webkit-scrollbar {
+  width: 4em;
   background-color: black;
-  width: 1.2em;
+  height: 0.65em;
 }
 
 .comments-scroll::-webkit-scrollbar-track {
-  background: white;
-  border-top: 8px solid black;
-  border-bottom: 8px solid black;
+  background-color: white;
+  border-top: 7.5px solid black;
+  border-bottom: 7.5px solid black;
   margin-left: 10em;
+  border-radius: 7px;
   margin-right: 10em;
-  border-radius: 15px;
 }
 
 .comments-scroll::-webkit-scrollbar-thumb {
   min-width: 100px;
-  background: #fd6636;
-  border-radius: 15px solid;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
+  background-color: #fd6636;
+  border-radius: 15px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -203,9 +204,14 @@
   }
 }
 @media only screen and (max-width: 570px) {
+  .comments-scroll::-webkit-scrollbar {
+    height: 1em;
+
+    width: 2.8em;
+  }
   .comments-scroll::-webkit-scrollbar-track {
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-left: 4em;
+    margin-right: 4em;
   }
   .comments {
     font-size: 16px;
