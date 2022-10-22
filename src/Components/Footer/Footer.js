@@ -25,7 +25,7 @@ export default function Footer() {
         <div>
           <ul className="first-list">
             <li className="detail">
-              <Link to="/home">
+              <Link to="/home" aria-label="Home">
                 <img src={logo} alt="" className="logo" />
               </Link>
 

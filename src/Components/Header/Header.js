@@ -13,9 +13,7 @@ export default function Header() {
   return (
     <header>
       <nav>
-        <NavLink to="/home" style={({ isActive }) => ({
-          color: isActive ? '#fd6636' : '',
-        })} ><img src={logo} alt="" className="logo" /></NavLink>
+        <NavLink to="/home" aria-label="Home" ><img src={logo} alt="" className="logo" /></NavLink>
         <div className="desktop-nav">
           <ul>
             <li><NavLink to="/home" style={({ isActive }) => ({
