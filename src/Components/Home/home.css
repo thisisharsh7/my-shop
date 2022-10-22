@@ -187,7 +187,7 @@
 .comments-scroll::-webkit-scrollbar-thumb {
   min-width: 100px;
   background: #fd6636;
-  border-radius: 15px;
+  border-radius: 15px solid;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
 }

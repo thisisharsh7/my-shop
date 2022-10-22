@@ -14,7 +14,6 @@ import efour from "../Images/Guide/efour.png";
 import efive from "../Images/Guide/efive.png";
 import esix from "../Images/Guide/esix.png";
 import eseven from "../Images/Guide/eseven.png";
-import ellipse from "../Images/Guide/ellipse.png";
 import fbI from "../Images/Guide/fb.png";
 import twoStoreStats from "../Images/storeStats2.png";
 import headList from "../Images/Guide/headList.png";
