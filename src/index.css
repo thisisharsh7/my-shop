@@ -368,93 +368,106 @@ details[open] summary:after {
 /*faq design end here*/
 
 /*guide design start here*/
-.guide {
-  padding: 3em 1.8em;
+.guideList {
+  margin-bottom: 5em;
 }
 .guide-intro {
+  font-size: 128px;
+  padding: 0.8em 0.48em 1.1em 0.68em;
   display: flex;
-  gap: 3vw;
   justify-content: center;
+  gap: 0.4em;
 }
 .guide-intro h1 {
+  font-size: 1em;
   text-transform: uppercase;
-  font-family: Inter;
-  font-size: 130px;
+  max-width: 4.5em;
   font-weight: 700;
-  line-height: 154px;
+  line-height: 1.2em;
   text-align: left;
   color: white;
-  text-shadow: -1.5px -1.5px 0 #fd6636, 1.5px -1.5px 0 #fd6636,
-    -1.5px 1.5px 0 #fd6636, 1.5px 1.5px 0 #fd6636;
+  text-shadow: -1px -1px 0 #fd6636, 1px -1px 0 #fd6636, -1px 1px 0 #fd6636,
+    1px 1px 0 #fd6636;
+  line-height: 1.2em;
+  letter-spacing: -3px;
 }
 .guide-intro h1 span {
   color: #fd6636;
 }
 .guide-intro img {
-  width: 649px;
+  width: 5.15em;
+  height: 100%;
 }
-@media only screen and (max-width: 1130px) {
-  .guide-intro img {
-    width: 549px;
-  }
-  .guide-intro h1 {
-    font-size: 85px;
-    line-height: 120px;
+@media only screen and (max-width: 1140px) {
+  .guide-intro {
+    font-size: 90px;
   }
 }
 @media only screen and (max-width: 900px) {
-  .guide {
-    padding: 2rem 0.8rem;
-  }
   .guide-intro {
+    font-size: 70px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .guide-intro {
+    font-size: 70px;
+    padding: 36px 18px 30px 24px;
     flex-direction: column;
-    gap: 2em;
+  }
+  .guide-intro h1 {
+    max-width: 100%;
+    line-height: 88px;
+    letter-spacing: -1.718181848526001px;
   }
   .guide-intro img {
     width: 100%;
-  }
-  .guide-intro h1 {
-    width: 100%;
-    font-size: 85px;
-    line-height: 120px;
+    height: 100%;
   }
 }
-.fb {
-  background-image: url("./Components/Images/fb.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  padding: 5.4em 5em;
-  color: white;
-  gap: 1.5em;
+@media only screen and (max-width: 300px) {
+  .guide-intro {
+    padding: 36px 10px 30px 10px;
+  }
 }
-.fb h1 {
-  font-size: 2em;
-  max-width: 20ch;
-}
-.fb a {
-  color: #0163af;
-  background-color: white;
-  width: max-content;
-  font-weight: bold;
-  padding: 0.8em 2em;
-}
+
 .guideList {
-  padding-top: 5em;
-  padding-bottom: 1.2em;
+  padding: 10px 15px;
   display: flex;
   flex-direction: column;
-  gap: 1em;
   position: relative;
+  font-size: 16px;
+  gap: 18px;
 }
-.ellipse {
-  position: absolute;
-  height: 2970px;
-  top: 290px;
-  left: 520px;
-  width: 20px;
+.mguideHead {
+  font-size: 20px;
+  padding: 0px 2.4em 7em 3em;
+  display: flex;
+  align-items: flex-start;
+}
+.mguideHead img {
+  max-width: 490px;
+}
+
+.mguideList {
+  flex: 1;
+  display: flex;
+  max-width: 26em;
+  flex-direction: column;
+  padding-left: min(4em, 7vw);
+  gap: 15.38em;
+  padding-top: 5.9em;
+}
+.mguideList .guideText p:last-of-type {
+  font-size: 0.9em;
+  line-height: 1.2em;
+}
+.mguideList .guideText p:first-of-type {
+  font-size: 1.2em;
+}
+.mguideList .guideText h2 {
+  padding-top: 8px;
+  padding-bottom: 16px;
+  font-size: 1.45em;
 }
 .mobEllipse {
   display: none;
@@ -462,84 +475,151 @@ details[open] summary:after {
 .sGuide {
   display: flex;
   align-items: center;
-  gap: 8vw;
-  padding: 0.5em;
+  gap: 1.4em;
 }
+.isguide img {
+  width: 1em;
+  height: 5.9em;
+}
+.Sguide img {
+  width: 31em;
+}
+
 .guideText {
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18px;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.17em;
 }
 .guideText h2 {
-  font-size: 25px;
-  line-height: 24px;
-  padding: 0.15em 0em 0.4em 0em;
-  font-weight: 600;
+  font-size: 1.4em;
+  line-height: 1.7em;
 }
 .guideText p:last-of-type {
+  font-size: 0.85em;
+  font-weight: 500;
+  line-height: 1.094em;
+  padding-bottom: 0.5em;
   color: #717171;
 }
-.guide .isguide:nth-of-type(1) .guideText p:nth-of-type(1) {
+
+.guide .isguide:nth-of-type(1) .guideText p:nth-of-type(1),
+.mguideList .guideText:nth-of-type(1) p:first-of-type {
   color: #f76f0d;
 }
-.guide .isguide:nth-of-type(2) .guideText p:nth-of-type(1) {
+.guide .isguide:nth-of-type(2) .guideText p:nth-of-type(1),
+.mguideList .guideText:nth-of-type(2) p:first-of-type {
   color: #17b31b;
 }
-.guide .isguide:nth-of-type(3) .guideText p:nth-of-type(1) {
+.guide .isguide:nth-of-type(3) .guideText p:nth-of-type(1),
+.mguideList .guideText:nth-of-type(3) p:first-of-type {
   color: #cec540;
 }
-.guide .isguide:nth-of-type(4) .guideText p:nth-of-type(1) {
+.guide .isguide:nth-of-type(4) .guideText p:nth-of-type(1),
+.mguideList .guideText:nth-of-type(4) p:first-of-type {
   color: #a1d774;
 }
-.guide .isguide:nth-of-type(5) .guideText p:nth-of-type(1) {
+.guide .isguide:nth-of-type(5) .guideText p:nth-of-type(1),
+.mguideList .guideText:nth-of-type(5) p:first-of-type {
   color: #92a4e4;
 }
-.guide .isguide:nth-of-type(6) .guideText p:nth-of-type(1) {
+.guide .isguide:nth-of-type(6) .guideText p:nth-of-type(1),
+.mguideList .guideText:nth-of-type(6) p:first-of-type {
   color: #f789d0;
 }
-.guide .isguide:nth-of-type(7) .guideText p:nth-of-type(1) {
+.guide .isguide:nth-of-type(7) .guideText p:nth-of-type(1),
+.mguideList .guideText:nth-of-type(7) p:first-of-type {
   color: #845ef1;
 }
-.sGuide img {
-  width: 500px;
+
+.fb {
+  color: white;
+  font-size: 21px;
+  line-height: 1.2em;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 2.2em;
+  padding: 4vw 20vw 6vw 7vw;
+  border-radius: 6px;
+  background: linear-gradient(137.41deg, #0062ae 0%, #0080ff 99.24%);
+}
+.fb img {
+  position: absolute;
+  bottom: 0;
+  right: 5em;
+  height: 13em;
+  width: 7em;
+  border-radius: 0px;
+}
+.fb h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+  max-width: 14em;
+}
+.fb a {
+  color: #0163af;
+  background-color: white;
+  padding: 0.8em 1.78em;
+  width: max-content;
+  font-size: 1em;
+  font-weight: bold;
+}
+.guideList {
+  display: none;
+}
+@media only screen and (max-width: 1120px) {
+  .fb {
+    font-size: 19px;
+  }
+  .mguideHead {
+    font-size: 18.9px;
+  }
 }
 @media only screen and (max-width: 900px) {
+  .mguideHead {
+    font-size: 15px;
+  }
+  .mguideHead img {
+    width: 50%;
+    height: 2400px;
+  }
+  .mguideList h2 {
+    line-height: 1.2em;
+  }
+  .mguideList {
+    gap: calc(2400px / 9.85);
+    padding-top: 6.5em;
+    padding-left: 4vw;
+  }
+  .fb {
+    font-size: 16px;
+  }
   .sGuide img {
     width: 400px;
   }
-  .ellipse {
-    left: 410px;
-    top: 230px;
-    height: 2410px;
+  .mguideHead {
+    padding-left: 2vw;
   }
 }
-@media only screen and (max-width: 1400px) {
-  .fb {
+@media only screen and (max-width: 765px) {
+  .guideList {
+    display: flex;
+  }
+  .mguideHead {
     display: none;
   }
-}
-@media only screen and (max-width: 600px) {
+  .mobEllipse {
+    display: block;
+    width: 23px;
+    align-self: center;
+    height: 94px;
+  }
   .sGuide {
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
-  }
-  .guide-intro h1 {
-    font-size: 73px;
-    font-weight: 700;
-    line-height: 88px;
-  }
-  .guide-intro img {
-    height: 383.99969482421875px;
-  }
-  .sGuide img {
-    width: 100%;
-  }
-  .ellipse {
-    display: none;
   }
   .isguide {
     display: flex;
@@ -547,13 +627,50 @@ details[open] summary:after {
     gap: 1.5em;
     align-items: center;
   }
-  .mobEllipse {
-    display: block;
-    width: 23px;
-    height: 94px;
+  .sGuide img {
+    height: 100%;
+    width: 50%;
   }
+}
+
+@media only screen and (max-width: 525px) {
+  .fb {
+    padding: 7vw 22vw 6.7em 11vw;
+    box-sizing: border-box;
+    font-size: 15.5px;
+  }
+  .fb img {
+    font-size: 11px;
+    right: 35px;
+  }
+
+  .sGuide img {
+    width: 100%;
+  }
+  .guide-intro img {
+    height: 383.99969482421875px;
+  }
+}
+
+@media only screen and (max-width: 605px) {
+  .fb {
+    font-size: 12px;
+  }
+  .guide-intro h1 {
+    font-size: 73px;
+    font-weight: 700;
+    line-height: 88px;
+  }
+
   .guideList {
-    gap: 5em;
+    margin-left: 0.5em;
+    margin-right: 1.5em;
+    gap: 3.5em;
+  }
+  .guideList h2 {
+    padding-top: 0.18em;
+    line-height: 1.2em;
+    padding-bottom: 0.4em;
   }
 }
 /*seller guide design completed*/
