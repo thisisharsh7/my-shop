@@ -583,18 +583,17 @@ details[open] summary:after {
   .mguideHead {
     font-size: 18.9px;
   }
-  .mguideList{
-    gap:16em;
+  .mguideList {
+    gap: 16em;
   }
-  .mguideHead h2{
+  .mguideHead h2 {
     line-height: 1.2em;
   }
 }
-@media only screen and (max-width:970px) {
-    .mguideList{
-      background-color: red;
-      gap: 14.5em;
-    }
+@media only screen and (max-width: 970px) {
+  .mguideList {
+    gap: 14.5em;
+  }
 }
 @media only screen and (max-width: 900px) {
   .mguideHead {
@@ -669,8 +668,8 @@ details[open] summary:after {
   .guide-intro img {
     height: 383.99969482421875px;
   }
-   .guideText p:last-of-type {
-      font-size: 0.95em;
+  .guideText p:last-of-type {
+    font-size: 0.95em;
   }
 }
 
