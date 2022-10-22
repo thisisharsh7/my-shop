@@ -149,4 +149,12 @@ input:focus {
     gap: 2.5rem;
   }
 }
+@media only screen and (max-width: 300px) {
+  .subscribe form {
+    flex-wrap: wrap;
+  }
+  .subscribe form div{
+    border-right: 1px solid #6c6b6b82;
+  }
+}
 /*footer design end */
