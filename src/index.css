@@ -373,6 +373,14 @@ details[open] summary:after {
     padding-top: 30px;
   }
 }
+@media only screen and (max-width: 409px){
+.faq-answers{
+  padding-top: 43px;
+}
+#send{
+  margin-top: 8px;
+}
+}
 /*faq design end here*/
 
 /*guide design start here*/
