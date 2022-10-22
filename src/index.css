@@ -12,7 +12,14 @@ body {
   font-family: "Inter", sans-serif;
   max-width: 1440px;
   margin: 0 auto;
-} /*Terms and condition, Privacy and policy design start*/
+}
+main,
+header,
+footer {
+  min-width: 270px;
+}
+
+/*Terms and condition, Privacy and policy design start*/
 .terms,
 .policy {
   padding: 1.5em 3vw;
