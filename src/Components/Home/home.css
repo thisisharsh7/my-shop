@@ -493,6 +493,7 @@
   max-width: 27em;
   font-size: 1.3em;
   color: #425468;
+  line-height: 1.42em;
   padding-bottom: 0.4em;
 }
 .product .Intro h1 ~ p:last-of-type span {
@@ -548,14 +549,17 @@
 }
 @media only screen and (max-width: 450px) {
   .product .Intro {
-    font-size: 13.5px;
+    padding-top: 2em;
+    font-size: 13px;
+    margin: 0 15px;
+    z-index: 5;
   }
   .productGroup img {
     height: 360px;
   }
 
   .productGroup {
-    top: 260px;
+    top: 290px;
     height: 324px;
   }
 }
