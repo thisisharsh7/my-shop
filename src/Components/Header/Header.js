@@ -41,7 +41,6 @@ export default function Header() {
             <li><NavLink to="/home" style={({ isActive }) => ({
               color: isActive ? '#fd6636' : '',
             })} onClick={toggleShow} >Home</NavLink></li>
-            <li onClick={toggleShow} >Plans</li>
             <li><NavLink to="/guide" style={({ isActive }) => ({
               color: isActive ? '#fd6636' : '',
             })} onClick={toggleShow}  >Seller Guide</NavLink></li>
