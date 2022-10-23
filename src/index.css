@@ -10,13 +10,17 @@ body {
   color: black;
   background-color: white;
   font-family: "Inter", sans-serif;
-  max-width: 1520px;
   margin: 0 auto;
 }
 main,
 header,
 footer {
   min-width: 270px;
+}
+header,
+footer {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /*Terms and condition, Privacy and policy design start*/
@@ -72,6 +76,8 @@ footer {
 
 /*contact design start here*/
 .contact {
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 85px 75px;
   display: flex;
   flex-wrap: wrap;
@@ -445,7 +451,10 @@ details[open] summary:after {
     padding: 36px 10px 30px 10px;
   }
 }
-
+.mguideHead {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .guideList {
   padding: 10px 15px;
   display: flex;
