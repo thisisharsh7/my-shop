@@ -378,7 +378,7 @@
 }
 .Intro h1 ~ p:last-of-type {
   font-size: 0.95em;
-  font-weight:350;
+  font-weight: 350;
   max-width: 20em;
   color: #a4a4a3;
 }
@@ -438,7 +438,7 @@
   }
 }
 @media only screen and (max-width: 620px) {
-  .Intro{
+  .Intro {
     gap: 1.3em;
   }
   .store-announce {
@@ -447,9 +447,9 @@
   }
   .Intro h1 ~ p:last-of-type {
     font-size: 1.05em;
-    font-weight:600;
+    font-weight: 600;
   }
-  .product .Intro h1 ~ p:last-of-type{
+  .product .Intro h1 ~ p:last-of-type {
     font-weight: 700;
     font-size: 1.05em;
   }
@@ -641,6 +641,7 @@
 .stats p {
   display: flex;
   flex-direction: column;
+  gap: 3px;
   align-items: center;
 }
 .stats p span:last-of-type {
@@ -656,9 +657,17 @@
 @media only screen and (max-width: 645px) {
   .stats {
     font-size: 25px;
-    gap: 1.2em;
-    padding-bottom: 0.6em;
+    gap: 1em;
     flex-wrap: wrap;
+    padding-bottom: 0.5em;
+  }
+  .stats p {
+    padding-top: 8px;
+  }
+}
+@media only screen and (max-width: 305px) {
+  .stats {
+    padding: 0em 3px;
   }
 }
 /*stats design end*/
@@ -697,6 +706,7 @@
 .text-hero p {
   color: #6c6b6b;
   font-size: 21px;
+  font-weight: 500;
   max-width: 34ch;
   padding-bottom: 20px;
 }
@@ -825,8 +835,8 @@
     width: 100%;
   }
   .hero a {
-    font-size: 12.5px;
-    padding: 1em 2em;
+    font-size: 14px;
+    padding: 11px 20px;
   }
   .text-hero h1 {
     width: max-content;
