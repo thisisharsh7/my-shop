@@ -325,7 +325,7 @@ input:focus {
 
   height: 100%;
   width: 15px;
-  top:0;
+  top: 0;
   right: -5px;
   transform: rotate(180deg);
   transition: transform 500ms;
@@ -373,13 +373,13 @@ details[open] summary:after {
     padding-top: 30px;
   }
 }
-@media only screen and (max-width: 409px){
-.faq-answers{
-  padding-top: 43px;
-}
-#send{
-  margin-top: 8px;
-}
+@media only screen and (max-width: 409px) {
+  .faq-answers {
+    padding-top: 43px;
+  }
+  #send {
+    margin-top: 8px;
+  }
 }
 /*faq design end here*/
 
@@ -494,7 +494,6 @@ details[open] summary:after {
   gap: 1.4em;
 }
 .isguide img {
-  width: 1em;
   height: 5.9em;
 }
 .Sguide img {
