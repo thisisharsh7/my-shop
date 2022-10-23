@@ -469,7 +469,10 @@
     rgba(245, 250, 255, 0) 100%
   );
   height: min(800px, 51vw);
-  padding-top: 50px;
+  padding-top:120px;
+}
+.product .Intro{
+  font-size: 24px;
 }
 
 .product .Intro p {
@@ -478,7 +481,7 @@
 }
 .product .Intro {
   margin-left: min(12.5vw, 200px);
-  padding-top: 1.5vw;
+  padding-top: 0.4vw;
   position: relative;
 }
 
@@ -487,26 +490,27 @@
 }
 .product .Intro p:first-of-type {
   color: #0a2540;
+  font-size: 1.65em;
   max-width: 15em;
+  line-height: 1.2em;
+  
 }
 .product .Intro a {
   background-color: #0081ff;
   color: white;
-  padding: 0.8em 1.5em;
-  font-size: 1.1em;
+  padding: 0.5em 1.2em;
 }
 .product .Intro h1 ~ p:last-of-type {
+  font-weight: 500;
   max-width: 27em;
-  font-size: 1.3em;
   color: #425468;
-  line-height: 1.42em;
-  padding-bottom: 0.4em;
+  line-height: 1.4em
 }
 .product .Intro h1 ~ p:last-of-type span {
-  font-weight: 700;
+  font-weight: 600;
   color: #0081ff;
 }
-.product {
+.product {  
   position: relative;
 }
 .productGroup {
@@ -535,6 +539,11 @@
     width: 100%;
   }
 }
+@media only screen and (max-width:850px) {
+  .product .Intro{
+    font-size: 20px;
+  }
+}
 @media only screen and (max-width: 600px) {
   .product-bg {
     height: 500px;
@@ -545,27 +554,31 @@
   }
 }
 @media only screen and (max-width: 500px) {
-  .product {
-    font-size: 14px;
+  .product .Intro {
+    font-size: 16px;
   }
   .productGroup {
-    top: 240px;
-    height: 324px;
+    top: 190px;
+    height: 300px;
+    width: 100%;
+  }
+  .product .Intro a{
+    padding: 0.55em 0.8em;
   }
 }
 @media only screen and (max-width: 450px) {
   .product .Intro {
     padding-top: 2em;
-    font-size: 13px;
     margin: 0 15px;
     z-index: 5;
   }
+
   .productGroup img {
     height: 360px;
   }
 
   .productGroup {
-    top: 290px;
+    top: 250px;
     height: 324px;
   }
 }

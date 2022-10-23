@@ -12,8 +12,8 @@ export default function Product() {
           <p>Online shopping for people who love offline shopping.</p>
 
           <p>
-            Now no need to <span>spend 6 Hours in market</span> or{" "}
-            <span>wait 3 Days</span> for the product to arrive, now search
+            Now no need to <span>Spend 6 Hours In Market</span> or{" "}
+            <span>Wait 3 Days</span> for the product to arrive, now search
             online what you want and buy offline as you like.
           </p>
           <a
