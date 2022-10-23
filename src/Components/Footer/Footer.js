@@ -1,20 +1,27 @@
-import React from "react";
+import React, { useRef } from "react";
 import logo from "../Footer/logo.png";
 import up from "../Footer/Up.png";
 import './footer.css';
+import emailjs from '@emailjs/browser';
 import { Link } from "react-router-dom";
 
 export default function Footer() {
-  function getInput(e) {
+  const subscribe = useRef();
+  function getSubs(e) {
     const k = document.querySelector("#email");
     const s = document.querySelector("#show");
     e.preventDefault();
     if (/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(k.value)) {
-      s.innerText = "Done!";
+      emailjs.sendForm('service_u65dn0o', 'template_cwxksxg', subscribe.current, 'kaobwBiU0Spgr3VIe').then((result) => {
+        s.innerText = "Done!";
+      }, (error) => {
+        alert('error');
+      });
     } else {
       s.innerText = "Please enter a valid email ID";
     }
     k.value = "";
+
   }
   function scrollTop() {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -51,10 +58,10 @@ export default function Footer() {
             </li>
             <li className="subscribe">
               Subscribe for updates
-              <form onSubmit={getInput}>
+              <form ref={subscribe} onSubmit={getSubs}>
                 <div>
                   <input
-                    name="email"
+                    name="useremail"
                     id="email"
                     placeholder="Enter your email ID"
                   />

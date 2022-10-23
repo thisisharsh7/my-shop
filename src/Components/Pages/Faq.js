@@ -11,9 +11,8 @@ export default function Faq() {
         if (k.value === "") {
             s.innerText = "Query cannot be blank";
         } else {
-            s.innerText = "Great! We will post the answer to your query soon.";
             emailjs.sendForm('service_u65dn0o', 'template_k1jhtyk', form.current, 'kaobwBiU0Spgr3VIe').then((result) => {
-                console.log(result.text);
+                s.innerText = "Great! We will post the answer to your query soon.";
             }, (error) => {
                 alert('error');
             });
