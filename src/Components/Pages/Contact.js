@@ -20,9 +20,9 @@ export default function Contact() {
                     </div>
                     <form>
                         <input type="text" name="username" placeholder="Enter your name" />
-                        <input type="email" name="email" placeholder="Enter your email address" />
-                        <textarea className='area' name="message" placeholder="Send us a message" />
-                        <input type="submit" name="submit" />
+                        <input type="email" name="useremail" placeholder="Enter your email address" />
+                        <textarea className='area' name="usermessage" placeholder="Send us a message" />
+                        <input type="submit" name="submit" value="Submit"/>
                     </form>
                 </div>
                 <div className='contactImg'>
