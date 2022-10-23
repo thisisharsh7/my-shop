@@ -334,7 +334,7 @@
   justify-content: center;
   position: relative;
   font-size: 24px;
-  padding: 10em 1.8em 8.5em 3em;
+  padding: 9em 1.8em 8.5em 3em;
   gap: 2em;
 }
 .storeEnter img {
@@ -429,7 +429,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 2em;
-    padding:5.4em 1.8em 3.6em 2.7em;
+    padding: 5.4em 1.8em 3.6em 2.7em;
   }
   .store .bgStore img {
     height: 80%;
@@ -446,7 +446,7 @@
 @media only screen and (max-width: 480px) {
   .store {
     font-size: 16px;
-   padding: 7.5em 1.8em 4em 1.8em;
+    padding: 7.5em 1.8em 4em 1.8em;
 
     gap: 3.2em;
   }
@@ -469,21 +469,21 @@
     #f5faff 60.3%,
     rgba(245, 250, 255, 0) 100%
   );
-  height: min(800px, 51vw);
-  padding-top:120px;
 }
-.product .Intro{
+.product {
   font-size: 24px;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+.product .Intro {
+  padding-left: 1.35em;
+  padding-right: 1.35em;
 }
 
 .product .Intro p {
   color: #425468;
   padding-bottom: 0.2em;
-}
-.product .Intro {
-  margin-left: min(12.5vw, 200px);
-  padding-top: 0.4vw;
-  position: relative;
 }
 
 .product .Intro h1 {
@@ -494,98 +494,125 @@
   font-size: 1.65em;
   max-width: 15em;
   line-height: 1.2em;
-  
 }
 .product .Intro a {
   background-color: #0081ff;
   color: white;
-  padding: 0.5em 1.2em;
+  padding: 0.6em 1.1em;
 }
 .product .Intro h1 ~ p:last-of-type {
   font-weight: 500;
   max-width: 27em;
   color: #425468;
-  line-height: 1.4em
+  line-height: 1.4em;
 }
 .product .Intro h1 ~ p:last-of-type span {
   font-weight: 600;
   color: #0081ff;
 }
-.product {  
-  position: relative;
-}
 .productGroup {
-  position: absolute;
-  top: 160px;
-  bottom: 0px;
-  height: 965px;
-  z-index: 2;
-  left: 11%;
+  width: 100%;
 }
-.productGroup img {
-  width: 90%;
+.siproduct {
+  width: 697px;
 }
-@media only screen and (max-width: 1010px) {
-  .product-bg {
-    height: 80vw;
-  }
-  .product .Intro {
-    margin-left: 5vw;
-  }
-  .productGroup {
-    top: 190px;
-    left: 0;
-  }
-  .productGroup img {
-    width: 100%;
-  }
+.fiproduct {
+  width: 408px;
 }
-@media only screen and (max-width:850px) {
-  .product .Intro{
-    font-size: 20px;
-  }
+.iproduct {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 0.5fr 0.6fr;
+  grid-template-rows: max-content 0.5fr;
+  place-content: center;
+  margin-bottom: -3.8em;
 }
-@media only screen and (max-width: 600px) {
-  .product-bg {
-    height: 500px;
-  }
-  .productGroup {
-    top: 220px;
-    left: 0;
-  }
+.iproduct .Intro {
+  grid-row-start: 1;
+  grid-column: 1/-1;
 }
-@media only screen and (max-width: 500px) {
-  .product .Intro {
-    font-size: 16px;
-  }
-  .productGroup {
-    top: 190px;
-    height: 300px;
-    width: 100%;
-  }
-  .product .Intro a{
-    padding: 0.55em 0.8em;
-  }
+.fiproduct {
+  padding-top: 7.7em;
+  grid-row: -1/1;
+  grid-column-start: 2;
 }
-@media only screen and (max-width: 450px) {
-  .product .Intro {
-    padding-top: 2em;
-    margin: 0 15px;
-    z-index: 5;
-  }
 
-  .productGroup img {
-    height: 360px;
+.siproduct {
+  grid-row: 2/-1;
+  margin-bottom: -4em;
+}
+@media only screen and (max-width: 1120px) {
+  .product .Intro {
+    padding-left: 3em;
+    padding-right: 1.35em;
   }
-
-  .productGroup {
-    top: 250px;
-    height: 324px;
+  .product-bg {
+    margin-bottom: -4.2em;
+  }
+  .siproduct {
+    width: 65vw;
+  }
+  .fiproduct {
+    width: 35vw;
   }
 }
-@media only screen and (max-width: 300px) {
-  .productGroup {
-    top: 300px;
+@media only screen and (max-width: 950px) {
+  .product .Intro {
+    padding-left: 2.5em;
+    padding-right: 1.35em;
+  }
+  .fiproduct {
+    padding-top: 10em;
+  }
+  .product-bg {
+    margin-bottom: -0.5em;
+  }
+  .iproduct {
+    margin-bottom: -1.5em;
+  }
+}
+@media only screen and (max-width: 655px) {
+  .product .Intro {
+    padding-left: 2.5em;
+    padding-right: 1.35em;
+  }
+  .product {
+    font-size: 21px;
+  }
+  .fiproduct {
+    padding-top: 13em;
+  }
+  .product-bg {
+    margin-bottom: -0.5em;
+  }
+  .iproduct {
+    margin-bottom: -1em;
+  }
+}
+@media only screen and (max-width: 481px) {
+  .product {
+    font-size: 17px;
+    margin-bottom: -5.2em;
+  }
+  .fiproduct {
+    padding: 0;
+    margin-top: -5.5em;
+    grid-row: 2/-1;
+  }
+  .product .Intro {
+    padding-left: 1.5em;
+    padding-right: 1.35em;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .product {
+    margin-bottom: 0em;
+  }
+  .siproduct {
+    display: none;
+  }
+  .fiproduct {
+    display: none;
   }
 }
 
@@ -783,7 +810,7 @@
     height: max(59px, 24vw);
   }
   .hero-img {
-    height: 350px;
+    height: 340px;
     width: 100%;
   }
   .hero a {
