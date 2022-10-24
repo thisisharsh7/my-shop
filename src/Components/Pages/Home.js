@@ -6,20 +6,26 @@ import Why from '../Home/Why';
 import Comments from '../Home/Comments';
 import Suggestion from '../Home/Suggestion';
 import { motion } from 'framer-motion';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 export default function Home() {
     return (
-        <motion.main
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0}}
-        >
-            <Hero />
-            <Product />
-            <Store />
-            <Why />
-            <Comments />
-            <Suggestion />
-        </motion.main>
+        <>
+            <Header />
+            <motion.main
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+            >
+                <Hero />
+                <Product />
+                <Store />
+                <Why />
+                <Comments />
+                <Suggestion />
+            </motion.main>
+            <Footer />
+        </>
     )
 }

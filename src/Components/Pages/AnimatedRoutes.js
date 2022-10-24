@@ -5,6 +5,7 @@ import Faq from "./Faq";
 import Guide from "./Guide";
 import Contact from "./Contact";
 import Home from "./Home";
+import Error from './Error';
 import '../Home/home.css';
 import { AnimatePresence } from "framer-motion";
 import { Route, Routes, useLocation } from 'react-router-dom';
@@ -15,12 +16,13 @@ export default function AnimatedRoutes() {
         <AnimatePresence>
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<Home />} />
-                <Route path="/home" element={<Home />} />
-                <Route path="/policy" element={<Policy />} />
-                <Route path="/terms" element={<Terms />} />
-                <Route path="/guide" element={<Guide />} />
-                <Route path="/faq" element={<Faq />} />
-                <Route path="/contact" element={<Contact />} />
+                <Route path="home" element={<Home />} />
+                <Route path="policy" element={<Policy />} />
+                <Route path="terms" element={<Terms />} />
+                <Route path="guide" element={<Guide />} />
+                <Route path="faq" element={<Faq />} />
+                <Route path="contact" element={<Contact />} />
+                <Route path='*' element={<Error />} />
             </Routes>
         </AnimatePresence>
     )

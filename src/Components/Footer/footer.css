@@ -84,6 +84,7 @@ input:focus {
 }
 .subscribe form div:last-of-type input {
   color: white;
+  font-weight: 400;
   cursor: pointer;
   padding: 2.5px 14px 4px 15px;
 }
