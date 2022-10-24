@@ -5,16 +5,21 @@ import emailjs from '@emailjs/browser';
 export default function Faq() {
     const form = useRef();
     function sendQuery(e) {
+        const pBg = document.querySelector('.pBg');
         const k = document.getElementById('query');
         const s = document.getElementById('send');
         e.preventDefault();
         if (k.value === "") {
             s.innerText = "Query cannot be blank";
         } else {
+            pBg.classList.toggle('ploader');
             emailjs.sendForm('service_u65dn0o', 'template_k1jhtyk', form.current, 'kaobwBiU0Spgr3VIe').then((result) => {
+
                 s.innerText = "Great! We will post the answer to your query soon.";
+                pBg.classList.toggle('ploader');
             }, (error) => {
-                alert('error');
+                alert('server error')
+                pBg.classList.toggle('ploader');
             });
         }
         k.value = "";
@@ -42,7 +47,7 @@ export default function Faq() {
                                 placeholder="Post your question here"
                             />
                         </div>
-                        <div>
+                        <div className='pBg'>
                             <input type="submit" value="POST" />
                         </div>
                     </form>

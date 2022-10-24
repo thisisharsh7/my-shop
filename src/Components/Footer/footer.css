@@ -162,3 +162,74 @@ input:focus {
   }
 }
 /*footer design end */
+
+/*loader animation here*/
+
+.floader,
+.ploader,
+.cloader {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.floader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #eb714a;
+  z-index: 2;
+  margin-left: -2px;
+  margin-top: -2px;
+  right: 0;
+}
+.ploader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #fd6636;
+  z-index: 2;
+  border-radius: 0em 1em 1em 0em;
+  right: 0;
+}
+.cloader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #fd6636;
+  z-index: 2;
+  right: 0;
+}
+.floader::before,
+.cloader::before,
+.ploader::before {
+  z-index: 3;
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30%;
+  height: 80%;
+  background-image: url("../Images/loader.png");
+  background-position: center;
+  background-size: 100%;
+  animation: load 900ms linear 0s infinite reverse;
+}
+.cloader::before {
+  width: 2em;
+  height: 2.5em;
+}
+
+@keyframes load {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*loader animation end here*/

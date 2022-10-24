@@ -1,27 +1,40 @@
 import React, { useRef } from "react";
 import logo from "../Footer/logo.png";
 import up from "../Footer/Up.png";
-import './footer.css';
-import emailjs from '@emailjs/browser';
+import "./footer.css";
+import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
   const subscribe = useRef();
   function getSubs(e) {
+    const sBg = document.querySelector(".sBg");
     const k = document.querySelector("#email");
     const s = document.querySelector("#show");
     e.preventDefault();
     if (/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(k.value)) {
-      emailjs.sendForm('service_u65dn0o', 'template_cwxksxg', subscribe.current, 'kaobwBiU0Spgr3VIe').then((result) => {
-        s.innerText = "Done!";
-      }, (error) => {
-        alert('error');
-      });
+      sBg.classList.toggle("floader");
+      emailjs
+        .sendForm(
+          "service_u65dn0o",
+          "template_cwxksxg",
+          subscribe.current,
+          "kaobwBiU0Spgr3VIe"
+        )
+        .then(
+          (result) => {
+            s.innerText = "Done!";
+            sBg.classList.toggle("floader");
+          },
+          (error) => {
+            alert("server error");
+            sBg.classList.toggle("floader");
+          }
+        );
     } else {
       s.innerText = "Please enter a valid email ID";
     }
     k.value = "";
-
   }
   function scrollTop() {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -43,17 +56,53 @@ export default function Footer() {
             <li>
               Our Information
               <ul>
-                <li><Link to="/policy">Privacy Policy</Link></li>
-                <li><Link to="/terms">Terms and Conditions</Link></li>
+                <li>
+                  <Link to="/policy">Privacy Policy</Link>
+                </li>
+                <li>
+                  <Link to="/terms">Terms and Conditions</Link>
+                </li>
               </ul>
             </li>
             <li>
               Social Media
               <ul>
-                <li><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a></li>
-                <li><a href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a></li>
-                <li><a href="https://twitter.com/" target="_blank" rel="noreferrer">Twitter</a></li>
-                <li><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    LinkedIn
+                  </a>
+                </li>
               </ul>
             </li>
             <li className="subscribe">
@@ -66,10 +115,9 @@ export default function Footer() {
                     placeholder="Enter your email ID"
                   />
                 </div>
-                <div>
+                <div className="sBg">
                   <input type="submit" value="Done" />
                 </div>
-
               </form>
               <p id="show"></p>
             </li>
