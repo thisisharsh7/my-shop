@@ -11,7 +11,7 @@ export default function Footer() {
     const k = document.querySelector("#email");
     const s = document.querySelector("#show");
     e.preventDefault();
-    if (/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(k.value)) {
+    if (/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(k.value)) {
       emailjs.sendForm('service_u65dn0o', 'template_cwxksxg', subscribe.current, 'kaobwBiU0Spgr3VIe').then((result) => {
         s.innerText = "Done!";
       }, (error) => {

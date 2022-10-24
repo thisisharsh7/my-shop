@@ -10,11 +10,21 @@ export default function Contact() {
     const form = useRef();
     function sendForm(e) {
         e.preventDefault();
-        emailjs.sendForm('service_u65dn0o', 'template_cwxksxg', form.current, 'kaobwBiU0Spgr3VIe').then((result) => {
-            alert('message send');
-        }, (error) => {
-            alert('error');
-        });
+        const email = document.getElementById("email");
+        const name = document.getElementById("name");
+        const msg = document.getElementById("message");
+        const email_pattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+        const name_pattern = /^[A-Za-z]+$/;
+        if (email.value !== " " && name.value !== " " && msg.value !== " " && email_pattern.test(email.value) && name_pattern.test(name.value)) {
+            emailjs.sendForm('service_u65dn0o', 'template_cwxksxg', form.current, 'kaobwBiU0Spgr3VIe').then((result) => {
+                alert('message send');
+            }, (error) => {
+                alert('error');
+            });
+        } else {
+            alert("input error")
+        }
+
         e.target.reset();
     }
     return (
@@ -30,9 +40,9 @@ export default function Contact() {
                         <p>We are here for you! How can we help?</p>
                     </div>
                     <form ref={form} onSubmit={sendForm}>
-                        <input type="text" name="username" placeholder="Enter your name" />
-                        <input type="email" name="useremail" placeholder="Enter your email address" />
-                        <textarea className='area' name="usermessage" placeholder="Send us a message" />
+                        <input id="name" type="text" name="username" placeholder="Enter your name" />
+                        <input id="email" type="email" name="useremail" placeholder="Enter your email address" />
+                        <textarea id="message" className='area' name="usermessage" placeholder="Send us a message" />
                         <input type="submit" name="submit" value="Submit" />
                     </form>
                 </div>
