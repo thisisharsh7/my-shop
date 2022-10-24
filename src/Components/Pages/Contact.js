@@ -15,6 +15,7 @@ export default function Contact() {
         }, (error) => {
             alert('error');
         });
+        e.target.reset();
     }
     return (
         <motion.main
