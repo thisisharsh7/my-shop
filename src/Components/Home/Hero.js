@@ -68,7 +68,7 @@ export default function Hero() {
         </div>
         <div className="stats">
           <p>
-            <span>90+</span>
+            <span>14+</span>
             <span>Picodes Covered</span>
           </p>
           <p>
@@ -76,11 +76,11 @@ export default function Hero() {
             <span>Average Ratings</span>
           </p>
           <p>
-            <span>50+</span>
+            <span>20+</span>
             <span>Shopkeepers</span>
           </p>
           <p>
-            <span>200+</span>
+            <span>100+</span>
             <span>Customers</span>
           </p>
         </div>
