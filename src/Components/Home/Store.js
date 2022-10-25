@@ -13,7 +13,7 @@ export default function Store() {
     <section className="store">
       <div className="Intro">
         <picture>
-          <source media="(max-width:899px)" srcSet={mbgSt} />
+          <source media="(max-width:720px)" srcSet={mbgSt} />
           <img src={bgSt} alt="" className="bgStore" />
         </picture>
         <h1>For sellers</h1>

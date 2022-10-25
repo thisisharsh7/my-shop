@@ -21,19 +21,17 @@ footer {
   font-size: 20.5px;
 }
 .first-list li a {
-  font-size: 15px;
+  font-size: 16px;
   color: #6c6c6c;
   font-weight: 450;
-  line-height: 21px;
+  line-height: 24px;
+  width: max-content;
 }
 
 .first-list li ul {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-}
-.first-list ul li {
-  cursor: pointer;
+  gap: 14px;
 }
 .first-list li:first-of-type ul li:first-of-type {
   color: #6c6b6b;

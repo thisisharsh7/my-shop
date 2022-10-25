@@ -93,7 +93,7 @@
 
 .comments {
   background-color: black;
-  margin-top: 90px;
+  margin-top: 100px;
   position: relative;
   color: white;
   display: flex;
@@ -106,7 +106,7 @@
 .bgComment {
   position: absolute;
   width: 100%;
-  top: -130px;
+  top: -150px;
   height: 100%;
   z-index: -1;
 }
@@ -423,21 +423,20 @@
   color: #a4a4a3;
 }
 
-@media only screen and (max-width: 899px) {
+@media only screen and (max-width: 959px) {
   .store {
     flex-direction: column;
     align-items: flex-start;
     gap: 2em;
-    padding: 6em 1.8em 3.6em 2.7em;
-  }
-  .store .bgStore img {
-    height: 80%;
-  }
-  .storeEnter {
-    width: 90%;
+    margin-top: -6.5em;
+    padding: 13em 1.8em 3.6em 2.7em;
   }
 }
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 720px) {
+  .store {
+    margin-top: 0em;
+    padding-top: 8em;
+  }
   .Intro {
     gap: 1.3em;
   }
@@ -457,19 +456,24 @@
 @media only screen and (max-width: 480px) {
   .store {
     font-size: 16px;
-    padding: 8.5em 1.8em 4em 1.8em;
+    margin-top: -6.5em;
+    padding: 8em 1.8em 4em 1.8em;
 
     gap: 3.2em;
   }
   .storeEnter {
-    width: 100%;
+    max-width: 100%;
     height: 359px;
   }
   .store-announce .announce h2:after {
     left: -0.7em;
   }
 }
-
+@media only screen and (max-width: 426px) {
+  .store {
+    margin-top: 0em;
+  }
+}
 /*store design end*/
 
 /*product desing start*/
@@ -673,7 +677,7 @@
 /*stats design end*/
 
 /*hero design start */
-.hero-bg{
+.hero-bg {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -776,11 +780,16 @@
   }
 }
 @media only screen and (max-width: 1017px) {
-  .hero-img {
-    height: 513px;
-    width: 486.14227294921875px;
+  .hero {
+    padding-bottom: 40px;
   }
-
+  .hero-img {
+    height: 340px;
+    width: 100%;
+  }
+  .hero-img .offline {
+    top: 5px;
+  }
   .hero-img .like,
   .hero-img .offline {
     right: 0;
@@ -789,13 +798,13 @@
     height: 100%;
   }
   .hero-img .like {
-    top: 0px;
-    height: 94%;
+    height: 90%;
   }
   .hero-img .online {
-    left: 38px;
+    top: 18px;
     width: 100%;
-    height: 93%;
+    height: 90%;
+    left: 38px;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -816,7 +825,15 @@
   .hero {
     flex-direction: column;
     align-items: flex-start;
-    gap: 50px;
+    gap: 40px;
+    padding-bottom: 0px;
+  }
+  .hero-img {
+    height: 420px;
+    width: 80%;
+  }
+  .hero-img .offline {
+    top: 5px;
   }
   .hero-img .online {
     left: 46px;
@@ -835,7 +852,7 @@
     height: max(59px, 24vw);
   }
   .hero-img {
-    height: 340px;
+    height: 400px;
     width: 100%;
   }
   .hero a {
@@ -855,6 +872,11 @@
   }
   .hero-img .online {
     left: 36px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .hero-img {
+    height: 350px;
   }
 }
 /*hero-animation*/
