@@ -18,7 +18,7 @@ export default function Why() {
           />
           <Announcement
             triLayer={triLayer}
-            headText="Close to the metal"
+            headText="Multi Manage"
             paraText="We handle everything from managing orders, products, marketing and inventory."
           />
           <Announcement
