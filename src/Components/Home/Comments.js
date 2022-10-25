@@ -9,28 +9,23 @@ export default function Comments() {
       <h1 className="comments-head">Testimonials</h1>
       <div className="comments-scroll">
         <Comment
-          para="Mattress Buying Guide - Duroflex. From our rich experience of 5 decades we know how crucial choosing the right mattress is to get deep and healthy sleep Mattress "
+          para="I tried so many e-commerce platforms for my business but they all were very costly and complex, MyShop makes managing my online store very easy and convenient. "
+          name="Shreyas Jain"
+          work="Seller"
+        />
+        <Comment
+          para="MyShop provides a great user experience for shopping. Usually I used to call the kirana store and order products on phone which was very tough but now with MyShop, it’s been a real smooth journey. "
           name="Aditi Kapoor"
           work="Customer"
         />
         <Comment
-          para="Mattress Buying Guide - Duroflex. From our rich experience of 5 decades we know how crucial choosing the right mattress is to get deep and healthy sleep Mattress "
-          name="Aditi Kapoor"
-          work="Customer"
+          para="After Covid, my customer walk-ins have been significantly reduced, MyShop is giving me the chance to compete with big e-commerce companies."
+          name="Ram Pathak"
+          work="Seller"
         />
         <Comment
-          para="Mattress Buying Guide - Duroflex. From our rich experience of 5 decades we know how crucial choosing the right mattress is to get deep and healthy sleep Mattress "
-          name="Aditi Kapoor"
-          work="Customer"
-        />
-        <Comment
-          para="Mattress Buying Guide - Duroflex. From our rich experience of 5 decades we know how crucial choosing the right mattress is to get deep and healthy sleep Mattress "
-          name="Aditi Kapoor"
-          work="Customer"
-        />
-        <Comment
-          para="Mattress Buying Guide - Duroflex. From our rich experience of 5 decades we know how crucial choosing the right mattress is to get deep and healthy sleep Mattress "
-          name="Aditi Kapoor"
+          para="I wanted to buy a phone, but I don’t like to order online and I am too lazy to spend hours and days in the market, but via MyShop, I bought my phone from an offline seller without spending hours in market."
+          name="Ram Pathak"
           work="Customer"
         />
       </div>

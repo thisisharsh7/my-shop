@@ -131,6 +131,7 @@
 
   flex-direction: column;
   gap: 4em;
+  justify-content: space-between;
   padding: 2.4em 2.3em 1.8em 2.3em;
   flex: 1;
   align-items: center;
