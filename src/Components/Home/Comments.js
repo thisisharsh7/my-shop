@@ -6,7 +6,7 @@ export default function Comments() {
   return (
     <section className="comments">
       <img src={bgComment} alt="" className="bgComment" />
-      <h1 className="comments-head">Testimonials</h1>
+      <h1 className="comments-head">TEST AUDIENCE REVIEWS</h1>
       <div className="comments-scroll">
         <Comment
           para="I tried so many e-commerce platforms for my business but they all were very costly and complex, MyShop makes managing my online store very easy and convenient. "
@@ -15,7 +15,7 @@ export default function Comments() {
         />
         <Comment
           para="MyShop provides a great user experience for shopping. Usually I used to call the kirana store and order products on phone which was very tough but now with MyShop, it’s been a real smooth journey. "
-          name="Aditi Kapoor"
+          name="Dipti Soman"
           work="Customer"
         />
         <Comment
@@ -25,7 +25,7 @@ export default function Comments() {
         />
         <Comment
           para="I wanted to buy a phone, but I don’t like to order online and I am too lazy to spend hours and days in the market, but via MyShop, I bought my phone from an offline seller without spending hours in market."
-          name="Ram Pathak"
+          name="Bhavi Dhore"
           work="Customer"
         />
       </div>
