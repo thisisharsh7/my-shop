@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-.error {
+.error , .back{
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
   display: grid;
@@ -9,7 +9,7 @@
   text-align: center;
 
 }
-.error div {
+.error div , .back div {
   padding: 1em;
   gap: 0.5em;
   display: flex;
