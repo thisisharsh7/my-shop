@@ -60,63 +60,45 @@ export default function Faq() {
                     <div className='faq-answers'>
                         <details>
                             <summary>
-                                Is Writesonic free?
+                                Is MyShop for both customers and sellers?
                             </summary>
-                            <p>Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content. Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content.</p>
+                            <p>Yes, MyShop is for both sellers and customers.</p>
                         </details>
                         <details>
                             <summary>
-                                Is Writesonic free?
+                                Is MyShop free for sellers?
                             </summary>
-                            <p>Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content. Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content.</p>
+                            <p>Yes, MyShop is free for all sellers.</p>
                         </details>
                         <details>
                             <summary>
-                                Is Writesonic free?
+                                Is MyShop free for customers?
                             </summary>
-                            <p>Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content. Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content.</p>
+                            <p>Yes, MyShop is free for all customers.</p>
                         </details>
                         <details>
                             <summary>
-                                Is Writesonic free?
+                                Do I need to have technical knowledge to sell my products on MyShop?
                             </summary>
-                            <p>Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content. Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content.</p>
+                            <p>You don’t need any technical knowledge to sell your products on MyShop.</p>
                         </details>
                         <details>
                             <summary>
-                                Is Writesonic free?
+                                Can I accept online payments?
                             </summary>
-                            <p>Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content. Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content.</p>
+                            <p>No we don’t provide online payment methods as of now.</p>
                         </details>
                         <details>
                             <summary>
-                                Is Writesonic free?
+                                When can I start selling?
                             </summary>
-                            <p>Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content. Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content.</p>
+                            <p>You can open your online store on MyShop within 30 seconds.</p>
                         </details>
                         <details>
                             <summary>
-                                Is Writesonic free?
+                                What is MyShop and how does it work?
                             </summary>
-                            <p>Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content. Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content.</p>
-                        </details>
-                        <details>
-                            <summary>
-                                Is Writesonic free?
-                            </summary>
-                            <p>Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content. Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content.</p>
-                        </details>
-                        <details>
-                            <summary>
-                                Is Writesonic free?
-                            </summary>
-                            <p>Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content. Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content.</p>
-                        </details>
-                        <details>
-                            <summary>
-                                Is Writesonic free?
-                            </summary>
-                            <p>Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content. Writesonic is for marketers, entrepreneurs, agencies, students - basically anyone who wants to create content.</p>
+                            <p>MyShop is a platform where local sellers can sell their products online without setting up an e-commerce website and customers can see and buy all the products sold in their area without ever leaving their home.</p>
                         </details>
                     </div>
                 </section>

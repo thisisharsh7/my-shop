@@ -40,22 +40,33 @@ footer {
   text-transform: uppercase;
   font-size: 1.5em;
   padding: 1.3em 0em 0.8em 0em;
-  border-bottom: 1.4px solid #5757578a;
+  border-bottom: 1.4px solid #57575734;
   color: black;
 }
-.terms-bg ul,
+.terms-bg ol,
 .policy-bg ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 2em 1em;
 }
-.terms-bg ul li {
-  list-style: circle;
+.terms-bg ol li {
+  list-style: decimal;
   list-style-position: outside;
 }
 .policy-bg ul h2 {
   color: black;
+}
+.terms-bg ol p{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.terms-bg ol li div{
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 .policy-bg ul li {
   margin-top: 1.5em;
