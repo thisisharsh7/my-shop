@@ -22,8 +22,8 @@ export default function Store() {
           Never created an <span>online store </span> before? No coding or
           design skills needed.
         </p>
-        <Link to="/guide">
-          Learn More <img src={arrow} alt="" />{" "}
+        <Link to="/guide" onClick={()=>{window.scrollTo(0,0);}} >
+          Learn More <img src={arrow} alt="" />
         </Link>
         <div className="store-announce">
           <Announcement

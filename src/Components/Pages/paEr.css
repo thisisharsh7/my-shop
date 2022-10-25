@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-.error , .patch{
+.error,
+.patch {
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
   display: grid;
   place-content: center;
   font-size: 18px;
   text-align: center;
-
 }
-.error div , .patch div {
+.error div,
+.patch div {
   padding: 1em;
   gap: 0.5em;
   display: flex;
@@ -22,11 +23,12 @@
   line-height: 0.9em;
   letter-spacing: 0em;
 }
-.patch img{
+.patch img {
   max-width: 366px;
   max-height: 297px;
 }
-.error p:last-of-type , .patch p {
+.error p:last-of-type,
+.patch p {
   color: #6c6b6b;
   font-weight: 400;
   line-height: 1.5em;
@@ -37,29 +39,30 @@
 }
 .error h1 {
   color: #6c6b6b;
- 
+
   font-size: 1.5em;
   font-weight: 400;
   line-height: 1.1em;
   letter-spacing: 0em;
 }
-.error a  , .patch a{
+.error a,
+.patch a {
   font-family: Inter;
   line-height: 1.2em;
   color: #fd6636;
   text-decoration: underline;
 }
-@media only screen and (max-width:520px) {
-  .error{
-    font-size: 15px ;
+@media only screen and (max-width: 520px) {
+  .error {
+    font-size: 15px;
   }
-  .patch img{
+  .patch img {
     width: 100%;
     height: 100%;
     max-width: 209px;
     max-height: 170px;
   }
-  .patch{
+  .patch {
     font-size: 15px;
   }
 }

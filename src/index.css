@@ -5,6 +5,14 @@
   list-style: none;
   text-decoration: none;
 }
+input,
+textarea,
+button,
+select,
+a,
+.hamburger {
+  -webkit-tap-highlight-color: transparent;
+}
 
 body {
   color: black;
@@ -26,13 +34,14 @@ footer {
 /*Terms and condition, Privacy and policy design start*/
 .terms,
 .policy {
+  font-size: 18px;
   padding: 1.5em 3vw;
 }
 .terms-bg,
 .policy-bg {
   border-radius: 0.3em;
   border: 1px solid #57575778;
-  padding: 1.2em 4.5vw;
+  padding: 1.2em 3em;
   color: #575757;
 }
 .terms-bg div h1,
@@ -57,16 +66,15 @@ footer {
 .policy-bg ul h2 {
   color: black;
 }
-.terms-bg ol p{
+.terms-bg ol p {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
 }
-.terms-bg ol li div{
- 
+.terms-bg ol li div {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 20px;
 }
 .policy-bg ul li {
   margin-top: 1.5em;
@@ -82,6 +90,18 @@ footer {
 }
 .policy-bg ul {
   padding: 2em 0.2em;
+}
+@media only screen and (max-width: 800px) {
+  .terms,
+  .policy {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .terms,
+  .policy {
+    font-size: 10px;
+  }
 }
 /*Terms and condition, Privacy and policy design end*/
 
@@ -321,14 +341,16 @@ input:focus {
   gap: 24px;
 }
 .faq-answers details {
-  padding: 1em 1.4em;
+  padding: 1em 1.8em 1em 1.4em;
   border: 1px solid #e5e7eb;
+
   border-radius: 5px;
   font-size: 18px;
   color: #0a2540;
   position: relative;
 }
 .faq-answers details summary {
+  padding-right: 0.5em;
   cursor: pointer;
   position: relative;
 }
@@ -339,18 +361,16 @@ input:focus {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-
-  height: 100%;
+  height: 1.4em;
   width: 15px;
   top: 0;
-  right: -5px;
+  left: 100%;
   transform: rotate(180deg);
   transition: transform 500ms;
 }
 details[open] summary:after {
   transform: rotate(0deg);
   transition: transform 500ms;
-  font-size: 2rem;
 }
 .faq-answers details p {
   color: #6c6b6b;
@@ -393,6 +413,9 @@ details[open] summary:after {
 @media only screen and (max-width: 409px) {
   .faq-answers {
     padding-top: 43px;
+  }
+  .faq-answers details {
+    font-size: 16px;
   }
   #send {
     margin-top: 8px;

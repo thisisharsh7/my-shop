@@ -29,7 +29,7 @@ export default function Header() {
           <ul>
             <li><NavLink to="/contact">Contact Us</NavLink>
             </li>
-            <li><NavLink to="/contact" >Join As Seller</NavLink>
+            <li><NavLink to="/patch" >Join As Seller</NavLink>
             </li>
           </ul>
         </div>
@@ -50,7 +50,7 @@ export default function Header() {
             <li><NavLink to="/contact" style={({ isActive }) => ({
               color: isActive ? '#fd6636' : '',
             })} onClick={toggleShow} >Contact Us</NavLink></li>
-            <li onClick={toggleShow} >Join As Seller</li>
+            <li ><NavLink to="/patch" onClick={toggleShow} >Join As Seller</NavLink></li>
           </ul>
         </div>
       </nav>

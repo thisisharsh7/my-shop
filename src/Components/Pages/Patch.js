@@ -8,7 +8,7 @@ export default function Back() {
         <div className='patch'>
             <div>
                 <img src={patch} alt="" />
-                <p>We are arriving on play store and app store very soon. Back to <Link to="/">Home</Link></p>
+                <p>We are coming on play store and app store very soon. Back to <Link to="/">Home</Link></p>
             </div>
         </div>
     )
