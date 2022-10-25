@@ -2,6 +2,7 @@ import React from "react";
 import fitems from "../Home/Home-Images/fitems.png";
 import arrow from "../Home/Home-Images/warrow.png";
 import sitems from './Home-Images/sitems.png';
+import { Link } from "react-router-dom";
 
 export default function Product() {
   return (
@@ -17,13 +18,10 @@ export default function Product() {
               <span>Wait 3 Days</span> for the product to arrive, now search
               online what you want and buy offline as you like.
             </p>
-            <a
-              href="https://play.google.com/store/apps"
-              target="_blank"
-              rel="noreferrer"
+            <Link to="/patch"
             >
               Download now <img src={arrow} alt="" />
-            </a>
+            </Link>
           </div>
           <img src={sitems} alt="" className="productGroup siproduct" />
 

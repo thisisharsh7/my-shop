@@ -1,13 +1,13 @@
 import React from 'react';
-import './baEr.css';
+import './paEr.css';
 import { Link } from 'react-router-dom';
-import back from '../Images/back';
+import patch from '../Images/patch.png';
 
 export default function Back() {
     return (
-        <div className='back'>
+        <div className='patch'>
             <div>
-                <img src={back} alt="" />
+                <img src={patch} alt="" />
                 <p>We are arriving on play store and app store very soon. Back to <Link to="/">Home</Link></p>
             </div>
         </div>

@@ -4,7 +4,7 @@ import AppleStore from "../Home/Home-Images/apple-pay.png";
 import womanOnline from "../Home/Home-Images/woman-offline.png";
 import womanOffline from "../Home/Home-Images/woman-online.png";
 import womanLike from "../Home/Home-Images/woman-like.png";
-
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   const [offline, setOffline] = useState(1);
@@ -44,13 +44,10 @@ export default function Hero() {
             <p>
               Now search online what you want and buy offline as you like.
             </p>
-            <a
-              href="https://play.google.com/store/apps"
-              target="_blank"
-              rel="noreferrer"
+            <Link to="/patch"
             >
               Join Early Access
-            </a>
+            </Link>
             <ul>
               <li>
                 <img src={GooglePlay} alt="" />
