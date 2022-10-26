@@ -37,7 +37,7 @@ export default function Footer() {
     k.value = "";
   }
   function scrollTop() {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }
   return (
     <footer>

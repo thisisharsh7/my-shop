@@ -1,5 +1,7 @@
 footer {
-  padding: 75px;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding-top: 5.3em;
 }
 .footer-inside {
   display: flex;
@@ -7,70 +9,77 @@ footer {
 }
 .first-list {
   display: flex;
+  background-color: white;
+  padding-bottom: 3.5em;
   justify-content: space-between;
   align-items: flex-start;
-  padding-bottom: 80px;
-  gap: 30px;
+  gap: 2.4em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 .first-list li {
   display: flex;
   flex-direction: column;
-  gap: 12px;
   color: #0a083a;
   font-weight: 600;
-  font-size: 20.5px;
+  font-size: 1.5em;
+  line-height: 1.3em;
+  gap: 0.8em;
 }
 .first-list li a {
-  font-size: 16px;
   color: #6c6c6c;
   font-weight: 450;
-  line-height: 24px;
   width: max-content;
+  font-size: 0.44em;
+  line-height: 1.48em;
 }
 
 .first-list li ul {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 0.55em;
 }
 .first-list li:first-of-type ul li:first-of-type {
   color: #6c6b6b;
-  max-width: 23ch;
-  line-height: 24px;
-  padding-top: 3px;
-  font-size: 16px;
   font-weight: 450;
   cursor: text;
+  font-size: 0.68em;
+  line-height: 1.5em;
+  max-width: 14em;
+}
+.first-list .subscribe {
+  font-size: 1.65em;
 }
 .first-list li:last-of-type ul li:first-of-type {
   flex-direction: row;
   cursor: text;
 }
+
 .subscribe form {
   display: flex;
-  width: 280px;
   align-items: center;
 }
 .subscribe {
   position: relative;
 }
 .subscribe form div {
-  margin-top: 12px;
   background-color: white;
   border: 1.5px solid #d2d2d1;
   border-right: 0px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-size: 0.65em;
 }
 
 .subscribe form input {
   background-color: transparent;
   border: none;
   font-family: Inter;
-  font-size: 14px;
   font-weight: 300;
-  line-height: 24px;
   color: #6c6b6b;
   letter-spacing: 0em;
-  padding: 2.5px 14px 4px 15px;
+  padding: 0.5em 14px 0.5em 15px;
 }
 .subscribe form div:last-of-type {
   background-color: #eb714a;
@@ -79,33 +88,34 @@ footer {
 }
 input:focus {
   outline: none;
+  background-color: white;
 }
 .subscribe form div:last-of-type input {
   color: white;
   font-weight: 400;
   cursor: pointer;
-  padding: 2.5px 14px 4px 15px;
+  padding: 0.5em 14px 0.5em 15px;
 }
 #show {
   color: #eb714a;
   font-family: Inter;
-  font-size: 12px;
   font-weight: 300;
   letter-spacing: 0em;
   text-align: left;
-  bottom: -20px;
   position: absolute;
-  padding-top: 0;
+  margin-left: 0.2em;
+  top: 100%;
+  font-size: 0.6em;
 }
 .attribution {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1.5px solid #c1c0c04e;
-  font-size: 14px;
+  border-top: 1.5px solid #c1c0c046;
   color: #6c6b6b;
-  padding: 36px 0px 9px 0px;
-  margin-right: 20px;
+  margin-right: 50px;
+  padding-top: 1.8em;
+  margin: 1.8em 1em;
 }
 #top-scroll {
   cursor: pointer;
@@ -114,50 +124,64 @@ input:focus {
 }
 @media only screen and (max-width: 1210px) {
   footer {
-    padding: 50px 35px;
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 960px) {
-  footer {
-    padding: 0;
+  .subscribe form div:last-of-type {
+    border-radius: 0em 0.1em 0.1em 0em;
   }
-  .first-list {
-    padding: 60px 24px;
-  }
+
   .detail {
-    border-top: 1.5px solid #c1c0c04e;
+    border-top: 1.5px solid #c1c0c033;
     width: 100%;
     display: flex;
-    padding-top: 28px;
     align-items: center;
     text-align: center;
+    padding-top: 1.5em;
     align-self: center;
   }
   .attribution {
-    margin-right: 0px;
+    margin: 0px;
     text-align: center;
-    padding: 20px 8px;
+    padding: 0;
     border-top: none;
+    font-size: 0.95em;
     justify-content: center;
-    gap: 20px;
+    padding: 20px 20px;
   }
   .first-list {
     border-bottom: none;
-    padding-bottom: 3px;
     flex-direction: column-reverse;
-    gap: 2.5rem;
+    padding-bottom: 0;
+    gap: 3em;
+    padding-left: 3.5em;
+    padding-right: 2em;
+  }
+  .detail .logo {
+    width: 180px;
   }
   #top-scroll {
     display: none;
   }
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 500px) {
+  .first-list {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+@media only screen and (max-width: 310px) {
   .subscribe form {
     flex-wrap: wrap;
     width: 100%;
   }
+  .subscribe form div:last-of-type {
+    width: max-content;
+    margin-top: 10px;
+  }
   .subscribe form div {
-    border-right: 1px solid #6c6b6b82;
+    border-right: 1px solid #6c6b6b44;
   }
 }
 /*footer design end */
@@ -180,8 +204,7 @@ input:focus {
   bottom: 0;
   background-color: #eb714a;
   z-index: 2;
-  margin-left: -2px;
-  margin-top: -2px;
+  border-radius: 0em 0.1em 0.1em 0em;
   right: 0;
 }
 .ploader::after {
