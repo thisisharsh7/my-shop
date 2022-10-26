@@ -45,7 +45,7 @@ export default function Footer() {
         <div>
           <ul className="first-list">
             <li className="detail">
-              <Link to="/home" aria-label="Home">
+              <Link to="/home" aria-label="Home" onClick={scrollTop}>
                 <img src={logo} alt="" className="logo" />
               </Link>
 
@@ -57,10 +57,10 @@ export default function Footer() {
               Our Information
               <ul>
                 <li>
-                  <Link to="/policy">Privacy Policy</Link>
+                  <Link to="/policy" onClick={scrollTop}>Privacy Policy</Link>
                 </li>
                 <li>
-                  <Link to="/terms">Terms and Conditions</Link>
+                  <Link to="/terms" onClick={scrollTop}>Terms and Conditions</Link>
                 </li>
               </ul>
             </li>
