@@ -93,8 +93,7 @@ export default function Guide() {
                 <p>Step 7</p>
                 <h2>Chat with customers directly</h2>
                 <p>
-                  It all starts with a name. Make it memorable. Make it catchy.
-                  This is the brand you’ll be branding.
+                No need to go to WhatsApp, chat directly with your customers here.
                 </p>
               </div>
             </div>
