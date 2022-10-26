@@ -58,9 +58,9 @@ export default function Hero() {
             </ul>
           </div>
           <div className="hero-img">
-            <img src={womanOffline} alt="" className="online" style={{ opacity: online }} />
-            <img src={womanOnline} alt="" className="offline" style={{ opacity: offline }} />
-            <img src={womanLike} alt="" className="like" style={{ opacity: like }} />
+            <img src={womanOffline} alt="" loading="lazy"  className="online" style={{ opacity: online }} />
+            <img src={womanOnline} alt="" loading="lazy"  className="offline" style={{ opacity: offline }} />
+            <img src={womanLike} alt="" loading="lazy"  className="like" style={{ opacity: like }} />
           </div>
         </div>
         <div className="stats">

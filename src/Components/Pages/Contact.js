@@ -57,7 +57,7 @@ export default function Contact() {
                         </form>
                     </div>
                     <div className='contactImg'>
-                        <img src={phoneBg} alt="" />
+                        <img src={phoneBg} alt="" loading='lazy' />
                         <div>
                             <p><span><img src={locat} alt="" /></span><span>Sector-9, Dwarka, New Delhi</span></p>
                             <p><span><img src={msg} alt="" /></span><span>admin@welcome-myshop.com</span></p>

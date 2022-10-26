@@ -1,7 +1,6 @@
 {
   "name": "my-shop",
   "version": "0.1.0",
-  "homepage": "https://welcome-myshop.com/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.7.0",

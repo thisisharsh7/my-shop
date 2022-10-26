@@ -14,7 +14,7 @@ export default function Store() {
       <div className="Intro">
         <picture>
           <source media="(max-width:720px)" srcSet={mbgSt} />
-          <img src={bgSt} alt="" className="bgStore" />
+          <img src={bgSt} alt="" className="bgStore" loading='lazy'  />
         </picture>
         <h1>For sellers</h1>
         <p>A quick guide for our SELLER'S AMRY</p>
