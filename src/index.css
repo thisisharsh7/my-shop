@@ -343,11 +343,11 @@ input:focus {
 .faq-answers details {
   padding: 1em 1.8em 1em 1.4em;
   border: 1px solid #e5e7eb;
-
   border-radius: 5px;
   font-size: 18px;
   color: #0a2540;
   position: relative;
+  line-height: 1.3em;
 }
 .faq-answers details summary {
   padding-right: 0.5em;
@@ -375,9 +375,9 @@ details[open] summary:after {
 .faq-answers details p {
   color: #6c6b6b;
   padding-top: 18px;
-  font-size: 15px;
+  font-size: 1em;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.2em;
   letter-spacing: 0em;
   text-align: left;
 }
