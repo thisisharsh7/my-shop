@@ -69,7 +69,7 @@ export default function Footer() {
               <ul>
                 <li>
                   <a
-                    href="https://www.instagram.com/"
+                    href="https://www.instagram.com/official_myshop/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -78,7 +78,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://www.facebook.com/"
+                    href="https://www.facebook.com/myshopofficial2807/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -87,7 +87,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://twitter.com/"
+                    href="https://twitter.com/myshop2807"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -96,7 +96,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://www.linkedin.com/"
+                    href="https://www.linkedin.com/company/welcome-myshop/"
                     target="_blank"
                     rel="noreferrer"
                   >

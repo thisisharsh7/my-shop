@@ -191,8 +191,7 @@ export default function Guide() {
                   <p>Step 7</p>
                   <h2>Chat with customers directly</h2>
                   <p>
-                    It all starts with a name. Make it memorable. Make it catchy.
-                    This is the brand you’ll be branding.
+                    No need to go to WhatsApp, chat directly with your customers here.
                   </p>
                 </div>
               </div>
@@ -200,7 +199,7 @@ export default function Guide() {
           </div>
           <div className="fb">
             <h1>Join The Seller's Community On Facebook</h1>
-            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+            <a href="https://www.facebook.com/groups/486678616743977/" target="_blank" rel="noreferrer">
               Join Now
             </a>
             <img src={fbI} alt="" />
