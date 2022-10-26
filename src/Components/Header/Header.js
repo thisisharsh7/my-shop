@@ -1,24 +1,25 @@
 import React, { useState } from "react";
 import logo from "../Header/logo.png";
 import hamburger from '../Header/hamburger.svg';
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import './header.css';
 
 
 export default function Header() {
   const [show, setShow] = useState(false);
+  const location = useLocation();
   function toggleShow() {
     show ? setShow(false) : setShow(true);
   }
   return (
     <header>
       <nav>
-        <NavLink to="/home" aria-label="Home" ><img src={logo} alt="" className="logo" /></NavLink>
+        <NavLink to="/" aria-label="Home" ><img src={logo} alt="" className="logo" /></NavLink>
         <div className="desktop-nav">
           <ul>
-            <li><NavLink to="/home" style={({ isActive }) => ({
-              color: isActive ? '#fd6636' : '',
-            })} >Home</NavLink></li>
+            <li><NavLink to="/" style={{
+              color: (location.pathname==="/") ? '#fd6636' : '',
+            }} >Home</NavLink></li>
             <li><NavLink to="/guide" style={({ isActive }) => ({
               color: isActive ? '#fd6636' : '',
             })} >Seller Guide</NavLink></li>
@@ -38,9 +39,9 @@ export default function Header() {
         </div>
         <div className={show ? "mobile-nav active" : "mobile-nav"}>
           <ul>
-            <li><NavLink to="/home" style={({ isActive }) => ({
-              color: isActive ? '#fd6636' : '',
-            })} onClick={toggleShow} >Home</NavLink></li>
+            <li><NavLink to="/" style={{
+              color: (location.pathname==="/") ? '#fd6636' : '',
+            }} onClick={toggleShow} >Home</NavLink></li>
             <li><NavLink to="/guide" style={({ isActive }) => ({
               color: isActive ? '#fd6636' : '',
             })} onClick={toggleShow}  >Seller Guide</NavLink></li>

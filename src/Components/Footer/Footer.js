@@ -45,7 +45,7 @@ export default function Footer() {
         <div>
           <ul className="first-list">
             <li className="detail">
-              <Link to="/home" aria-label="Home" onClick={scrollTop}>
+              <Link to="/" aria-label="Home" onClick={scrollTop}>
                 <img src={logo} alt="" className="logo" />
               </Link>
 

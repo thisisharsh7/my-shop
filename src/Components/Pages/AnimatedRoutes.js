@@ -17,14 +17,13 @@ export default function AnimatedRoutes() {
         <AnimatePresence>
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<Home />} />
-                <Route path="home" element={<Home />} />
                 <Route path="policy" element={<Policy />} />
                 <Route path="terms" element={<Terms />} />
                 <Route path="guide" element={<Guide />} />
                 <Route path="faq" element={<Faq />} />
                 <Route path="contact" element={<Contact />} />
                 <Route path='*' element={<Error />} />
-                <Route path='/patch' element={<Patch />} />
+                <Route path="patch" element={<Patch />} />
             </Routes>
         </AnimatePresence>
     )
