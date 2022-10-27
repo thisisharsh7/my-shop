@@ -40,66 +40,10 @@ export default function Guide() {
               <img src={storeStats} alt="" loading="lazy" />
             </picture>
           </div>
-          <div className="mguideHead">
-            <img src={headList} alt="" loading='lazy' />
-
-            <div className="mguideList">
-              <div className="guideText">
-                <p>Step 1</p>
-                <h2>Name your store</h2>
-                <p>
-                  It all starts with a name. Make it memorable. Make it catchy.
-                </p>
-              </div>
-
-              <div className="guideText">
-                <p>Step 2</p>
-                <h2>Select your category</h2>
-                <p>Choose the category that perfectly describes your business.</p>
-              </div>
-              <div className="guideText">
-                <p>Step 3</p>
-                <h2>Choose a ready-made design</h2>
-                <p>
-                  Find the perfect design theme for your business. Choose
-                  something attractive.
-                </p>
-              </div>
-              <div className="guideText">
-                <p>Step 4</p>
-                <h2>Manage your orders</h2>
-                <p>
-                  Managing orders just got simpler thanks to our order management
-                  tool
-                </p>
-              </div>
-              <div className="guideText">
-                <p>Step 5</p>
-                <h2>Add and manage your products</h2>
-                <p>
-                  You have the product. You have the store. Add your products, set
-                  the price and get ready to sell.
-                </p>
-              </div>
-              <div className="guideText">
-                <p>Step 6</p>
-                <h2>Track Analytics</h2>
-                <p>
-                  MyShop gives you the data you need to better understand your
-                  sales.
-                </p>
-              </div>
-              <div className="guideText">
-                <p>Step 7</p>
-                <h2>Chat with customers directly</h2>
-                <p>
-                  No need to go to WhatsApp, chat directly with your customers here.
-                </p>
-              </div>
-            </div>
-          </div>
-
           <div className="guideList">
+            <div className="desEllipse">
+              <img src={headList} alt="" />
+            </div>
             <div className="isguide">
               <img src={eone} alt="" className="mobEllipse" />
               <div className="sGuide">
@@ -169,8 +113,8 @@ export default function Guide() {
               </div>
             </div>
             <div className="isguide">
-              <img src={esix} alt="" className="mobEllipse" />
-              <div className="sGuide">
+              <img src={esix} alt="" className="mobEllipse " />
+              <div className="sGuide six">
                 <img src={six} alt="" loading='lazy' />
                 <div className="guideText">
                   <p>Step 6</p>

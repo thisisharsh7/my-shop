@@ -485,109 +485,87 @@ details[open] summary:after {
     padding: 36px 10px 30px 10px;
   }
 }
-.mguideHead {
+.mobEllipse {
+  display: none;
+}
+.guideList {
+  font-size: 24px;
+  display: flex;
+  position: relative;
+  gap: 100px;
+  flex-direction: column;
   max-width: 1440px;
   margin: 0 auto;
 }
-.guideList {
-  padding: 10px 15px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  font-size: 16px;
-  gap: 18px;
-}
-.mguideHead {
-  font-size: 20px;
-  padding: 0px 2.4em 7em 3em;
-  display: flex;
-  align-items: flex-start;
-}
-.mguideHead img {
-  max-width: 490px;
+.desEllipse {
+  position: absolute;
+  left: calc(19em + 2em);
+  box-sizing: border-box;
+  width: 1em;
+  margin-top: 7.5em;
+  height: 89.2%;
+  box-sizing: border-box;
 }
 
-.mguideList {
-  flex: 1;
-  display: flex;
-  max-width: 26em;
-  flex-direction: column;
-  padding-left: min(4em, 7vw);
-  gap: 15.38em;
-  padding-top: 5.9em;
-}
-.mguideList .guideText p:last-of-type {
-  font-size: 0.9em;
-  line-height: 1.2em;
-}
-.mguideList .guideText p:first-of-type {
-  font-size: 1.2em;
-}
-.mguideList .guideText h2 {
-  padding-top: 8px;
-  padding-bottom: 16px;
-  font-size: 1.45em;
-}
-.mobEllipse {
-  display: none;
+.desEllipse img {
+  width: 1.4em;
+  height: 100%;
 }
 .sGuide {
   display: flex;
   align-items: center;
-  gap: 1.4em;
+  padding-left: 2em;
+  font-weight: 600;
+  padding-right: 1.5em;
+  gap: 2.5em;
 }
-.isguide img {
-  height: 5.9em;
-}
-.Sguide img {
-  width: 31em;
-}
-
 .guideText {
   display: flex;
   flex-direction: column;
-  font-size: 1em;
-  font-weight: 600;
-  line-height: 1.17em;
-}
-.guideText h2 {
-  font-size: 1.4em;
-  line-height: 1.7em;
-}
-.guideText p:last-of-type {
-  font-size: 0.85em;
-  font-weight: 500;
-  line-height: 1.094em;
-  padding-bottom: 0.5em;
-  color: #717171;
+  gap: 0.4em;
 }
 
-.guide .isguide:nth-of-type(1) .guideText p:nth-of-type(1),
-.mguideList .guideText:nth-of-type(1) p:first-of-type {
+.guideText h2 {
+  font-size: 1.33em;
+  line-height: 1.22em;
+  margin-bottom: 0.4em;
+}
+.guideText p:first-of-type {
+  font-size: 1em;
+
+  line-height: 1.2em;
+}
+.guideText p:last-of-type {
+  font-weight: 500;
+  font-size: 0.85em;
+  max-width: 27em;
+  color: #717171;
+  line-height: 1.18em;
+}
+.sGuide img {
+  width: 19em;
+  height: 18em;
+}
+
+.guide .isguide:nth-of-type(1) .guideText p:nth-of-type(1) {
   color: #f76f0d;
 }
-.guide .isguide:nth-of-type(2) .guideText p:nth-of-type(1),
-.mguideList .guideText:nth-of-type(2) p:first-of-type {
+.guide .isguide:nth-of-type(2) .guideText p:nth-of-type(1) {
   color: #17b31b;
 }
-.guide .isguide:nth-of-type(3) .guideText p:nth-of-type(1),
-.mguideList .guideText:nth-of-type(3) p:first-of-type {
+.guide .isguide:nth-of-type(3) .guideText p:nth-of-type(1) {
   color: #cec540;
 }
-.guide .isguide:nth-of-type(4) .guideText p:nth-of-type(1),
-.mguideList .guideText:nth-of-type(4) p:first-of-type {
+.guide .isguide:nth-of-type(4) .guideText p:nth-of-type(1) {
   color: #a1d774;
 }
-.guide .isguide:nth-of-type(5) .guideText p:nth-of-type(1),
-.mguideList .guideText:nth-of-type(5) p:first-of-type {
+.guide .isguide:nth-of-type(5) .guideText p:nth-of-type(1) {
   color: #92a4e4;
 }
-.guide .isguide:nth-of-type(6) .guideText p:nth-of-type(1),
-.mguideList .guideText:nth-of-type(6) p:first-of-type {
+.guide .isguide:nth-of-type(6) .guideText p:nth-of-type(1) {
   color: #f789d0;
 }
-.guide .isguide:nth-of-type(7) .guideText p:nth-of-type(1),
-.mguideList .guideText:nth-of-type(7) p:first-of-type {
+.guide .isguide:nth-of-type(7) .guideText p:nth-of-type(1) {
   color: #845ef1;
 }
 
@@ -598,6 +576,7 @@ details[open] summary:after {
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-top: 80px;
   gap: 2.2em;
   padding: 4vw 20vw 6vw 7vw;
   border-radius: 6px;
@@ -624,60 +603,43 @@ details[open] summary:after {
   font-size: 1em;
   font-weight: bold;
 }
-.guideList {
-  display: none;
-}
 @media only screen and (max-width: 1120px) {
   .fb {
     font-size: 19px;
   }
-  .mguideHead {
-    font-size: 18.9px;
+  .guideList {
+    font-size: 22.5px;
   }
-  .mguideList {
-    gap: 16em;
-  }
-  .mguideHead h2 {
-    line-height: 1.2em;
+
+  .sGuide {
+    justify-content: space-between;
   }
 }
-@media only screen and (max-width: 970px) {
-  .mguideList {
-    gap: 14.5em;
+@media only screen and (max-width: 960px) {
+  .guideList {
+    font-size: 18.5px;
   }
-}
-@media only screen and (max-width: 900px) {
-  .mguideHead {
-    font-size: 15px;
+  .desEllipse {
+    height: 89.7%;
   }
-  .mguideHead img {
-    width: 50%;
-    height: 2400px;
+
+  .six .guideText {
+    padding-left: 1.8em;
   }
-  .mguideList h2 {
-    line-height: 1.2em;
-  }
-  .mguideList {
-    gap: calc(2400px / 9.85);
-    padding-top: 6.5em;
-    padding-left: 4vw;
-  }
+
   .fb {
     font-size: 16px;
   }
-  .sGuide img {
-    width: 400px;
-  }
-  .mguideHead {
-    padding-left: 2vw;
-  }
 }
 @media only screen and (max-width: 765px) {
-  .guideList {
-    display: flex;
-  }
-  .mguideHead {
+  .desEllipse {
     display: none;
+  }
+  .sGuide {
+    padding: 0em;
+  }
+  .six .guideText {
+    padding-left: 0em;
   }
   .mobEllipse {
     display: block;
@@ -689,6 +651,7 @@ details[open] summary:after {
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
+    gap: 1.5em;
   }
   .isguide {
     display: flex;
@@ -703,6 +666,10 @@ details[open] summary:after {
 }
 
 @media only screen and (max-width: 525px) {
+  .guideList {
+    font-size: 16.5px;
+    gap: 50px;
+  }
   .fb {
     padding: 7vw 22vw 6.7em 11vw;
     box-sizing: border-box;
@@ -719,9 +686,6 @@ details[open] summary:after {
   .guide-intro img {
     height: 383.99969482421875px;
   }
-  .guideText p:last-of-type {
-    font-size: 0.95em;
-  }
 }
 
 @media only screen and (max-width: 605px) {
@@ -733,16 +697,9 @@ details[open] summary:after {
     font-weight: 700;
     line-height: 88px;
   }
-
   .guideList {
     margin-left: 0.5em;
     margin-right: 1.5em;
-    gap: 3.5em;
-  }
-  .guideList h2 {
-    padding-top: 0.18em;
-    line-height: 1.2em;
-    padding-bottom: 0.4em;
   }
 }
 /*seller guide design completed*/
