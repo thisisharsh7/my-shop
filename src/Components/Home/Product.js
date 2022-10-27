@@ -14,16 +14,15 @@ export default function Product() {
             <p>Online shopping for people who love offline shopping.</p>
 
             <p>
-              Now no need to <span>Spend 6 Hours In Market</span> or{" "}
-              <span>Wait 3 Days</span> for the product to arrive, now search
-              online what you want and buy offline as you like.
+              Now you don't have to <span>Spend 6 Hours In Market</span> or{" "}
+              <span>Wait 3 Days</span> for the product you want to arrive, search online for what you want, and buy offline as you like.
             </p>
             <Link to="/patch"
             >
               Download now <img src={arrow} alt="" />
             </Link>
           </div>
-          <img src={sitems} alt="" className="productGroup siproduct" loading='lazy'  />
+          <img src={sitems} alt="" className="productGroup siproduct" loading='lazy' />
 
 
 
