@@ -66,7 +66,7 @@ export default function Hero() {
         <div className="stats">
           <p>
             <span>14+</span>
-            <span>Picodes Covered</span>
+            <span>Pincodes Covered</span>
           </p>
           <p>
             <span>4.7+</span>

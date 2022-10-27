@@ -13,7 +13,7 @@ export default function Why() {
         <div className="announce-group">
           <Announcement
             triLayer={triLayer}
-            headText="Lanch your store"
+            headText="Launch your store"
             paraText="MyShop helps you launch your online store in less than 30 seconds."
           />
           <Announcement
@@ -24,7 +24,7 @@ export default function Why() {
           <Announcement
             triLayer={triLayer}
             headText="Perfect Balance"
-            paraText="Enjoy the benifits of both online and offline shopping right from one app."
+            paraText="Enjoy the benefits of both online and offline shopping right from one app."
           />
         </div>
       </div>

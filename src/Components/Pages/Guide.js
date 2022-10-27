@@ -119,7 +119,7 @@ export default function Guide() {
                 <img src={two} alt="" loading='lazy' />
                 <div className="guideText">
                   <p>Step 2</p>
-                  <h2>Select your cateogary</h2>
+                  <h2>Select your category</h2>
                   <p>
                     Choose the category that perfectly describes your business.
                   </p>
