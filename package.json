@@ -1,6 +1,6 @@
 {
   "name": "my-shop",
-  "homepage": "http://welcome-myshop.com",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
