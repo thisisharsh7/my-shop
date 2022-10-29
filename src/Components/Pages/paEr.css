@@ -34,8 +34,10 @@
   line-height: 1.5em;
   letter-spacing: 0em;
   letter-spacing: 0em;
-  font-style: oblique;
   padding-top: 0.6em;
+}
+.patch p{
+  font-style: oblique;
 }
 .error h1 {
   color: #6c6b6b;

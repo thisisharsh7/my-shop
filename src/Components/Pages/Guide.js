@@ -46,7 +46,7 @@ export default function Guide() {
             </div>
             <div className="isguide">
               <img src={eone} alt="" className="mobEllipse" />
-              <div className="sGuide">
+              <div className="sGuide one">
                 <img src={one} alt="" loading='lazy' />
                 <div className="guideText">
                   <p>Step 1</p>

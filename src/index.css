@@ -502,8 +502,8 @@ details[open] summary:after {
   left: calc(19em + 2em);
   box-sizing: border-box;
   width: 1em;
-  margin-top: 7.5em;
-  height: 89.2%;
+  margin-top: 6.9em;
+  height: 89.3%;
   box-sizing: border-box;
 }
 
@@ -544,7 +544,10 @@ details[open] summary:after {
 }
 .sGuide img {
   width: 19em;
-  height: 18em;
+  height: 17em;
+}
+.one img{
+  height: 16.5em;
 }
 
 .guide .isguide:nth-of-type(1) .guideText p:nth-of-type(1) {
