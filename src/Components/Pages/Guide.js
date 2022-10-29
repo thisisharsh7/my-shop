@@ -37,7 +37,7 @@ export default function Guide() {
             </h1>
             <picture>
               <source media="(max-width:600px)" srcSet={twoStoreStats} />
-              <img src={storeStats} alt="" loading="lazy" />
+              <img src={storeStats} alt="" loading="lazy" width={5.15} height={100} />
             </picture>
           </div>
           <div className="guideList">
@@ -47,7 +47,7 @@ export default function Guide() {
             <div className="isguide">
               <img src={eone} alt="" className="mobEllipse" />
               <div className="sGuide one">
-                <img src={one} alt="" loading='lazy' />
+                <img src={one} alt="" loading='lazy' width={100} height={100} />
                 <div className="guideText">
                   <p>Step 1</p>
                   <h2>Name your store</h2>
@@ -60,7 +60,7 @@ export default function Guide() {
             <div className="isguide">
               <img src={etwo} alt="" className="mobEllipse" />
               <div className="sGuide">
-                <img src={two} alt="" loading='lazy' />
+                <img src={two} alt="" loading='lazy' width={100} height={100} />
                 <div className="guideText">
                   <p>Step 2</p>
                   <h2>Select your category</h2>
@@ -73,7 +73,7 @@ export default function Guide() {
             <div className="isguide">
               <img src={ethree} alt="" className="mobEllipse" />
               <div className="sGuide">
-                <img src={three} alt="" loading='lazy' />
+                <img src={three} alt="" loading='lazy' width={100} height={100} />
                 <div className="guideText">
                   <p>Step 3</p>
                   <h2>Choose a ready-made design</h2>
@@ -87,7 +87,7 @@ export default function Guide() {
             <div className="isguide">
               <img src={efour} alt="" className="mobEllipse" />
               <div className="sGuide">
-                <img src={four} alt="" loading='lazy' />
+                <img src={four} alt="" loading='lazy' width={100} height={100} />
                 <div className="guideText">
                   <p>Step 4</p>
                   <h2>Manage your orders</h2>
@@ -101,7 +101,7 @@ export default function Guide() {
             <div className="isguide">
               <img src={efive} alt="" className="mobEllipse" />
               <div className="sGuide">
-                <img src={five} alt="" loading='lazy' />
+                <img src={five} alt="" loading='lazy' width={100} height={100} />
                 <div className="guideText">
                   <p>Step 5</p>
                   <h2>Add and manage your products</h2>
@@ -115,7 +115,7 @@ export default function Guide() {
             <div className="isguide">
               <img src={esix} alt="" className="mobEllipse " />
               <div className="sGuide six">
-                <img src={six} alt="" loading='lazy' />
+                <img src={six} alt="" loading='lazy' width={100} height={100} />
                 <div className="guideText">
                   <p>Step 6</p>
                   <h2>Track Analytics</h2>
@@ -129,7 +129,7 @@ export default function Guide() {
             <div className="isguide">
               <img src={eseven} alt="" className="mobEllipse" />
               <div className="sGuide">
-                <img src={seven} alt="" loading='lazy' />
+                <img src={seven} alt="" loading='lazy' width={100} height={100} />
                 <div className="guideText">
                   <p>Step 7</p>
                   <h2>Chat with customers directly</h2>
@@ -145,7 +145,7 @@ export default function Guide() {
             <a href="https://www.facebook.com/groups/486678616743977/" target="_blank" rel="noreferrer">
               Join Now
             </a>
-            <img src={fbI} alt="" loading='lazy' />
+            <img src={fbI} alt="" loading='lazy' width={100} height={100} />
           </div>
         </section>
       </motion.main>

@@ -23,10 +23,6 @@
   line-height: 0.9em;
   letter-spacing: 0em;
 }
-.patch img {
-  max-width: 366px;
-  max-height: 297px;
-}
 .error p:last-of-type,
 .patch p {
   color: #6c6b6b;
@@ -36,7 +32,7 @@
   letter-spacing: 0em;
   padding-top: 0.6em;
 }
-.patch p{
+.patch p {
   font-style: oblique;
 }
 .error h1 {

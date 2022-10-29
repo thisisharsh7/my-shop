@@ -50,17 +50,17 @@ export default function Hero() {
             </Link>
             <ul>
               <li>
-                <img src={GooglePlay} alt="" />
+                <img src={GooglePlay} alt=""  loading="lazy" width={177} height={55.5}/>
               </li>
               <li>
-                <img src={AppleStore} alt="" />
+                <img src={AppleStore} alt="" loading="lazy" width={177} height={55.5}  />
               </li>
             </ul>
           </div>
           <div className="hero-img">
-            <img src={womanOffline} alt="" className="online" style={{ opacity: online }} />
-            <img src={womanOnline} alt="" className="offline" style={{ opacity: offline }} />
-            <img src={womanLike} alt="" className="like" style={{ opacity: like }} />
+            <img src={womanOffline} alt="" className="online" loading="lazy" width={100} height={100} style={{ opacity: online }} />
+            <img src={womanOnline} alt="" className="offline" loading="lazy" width={100} height={100} style={{ opacity: offline }} />
+            <img src={womanLike} alt="" className="like" loading="lazy" width={100} height={100} style={{ opacity: like }} />
           </div>
         </div>
         <div className="stats">

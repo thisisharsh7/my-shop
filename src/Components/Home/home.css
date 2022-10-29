@@ -750,6 +750,7 @@
 .hero-img .offline {
   width: 580px;
   top: -22px;
+  height: 100%;
 }
 .hero-img .online {
   right: -38px;
@@ -784,7 +785,7 @@
     left: 32px;
   }
   .hero-img .like {
-    right: -60px;
+    right: -20px;
   }
 }
 @media only screen and (max-width: 1017px) {

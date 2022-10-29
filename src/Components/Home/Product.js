@@ -22,11 +22,11 @@ export default function Product() {
               Download now <img src={arrow} alt="" />
             </Link>
           </div>
-          <img src={sitems} alt="" className="productGroup siproduct" loading='lazy' />
+          <img src={sitems} alt="" className="productGroup siproduct"/>
 
 
 
-          <img src={fitems} alt="" className="productGroup fiproduct" loading='lazy' />
+          <img src={fitems} alt="" className="productGroup fiproduct"/>
         </div>
       </div>
     </section>
