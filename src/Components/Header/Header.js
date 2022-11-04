@@ -18,7 +18,7 @@ export default function Header() {
         <div className="desktop-nav">
           <ul>
             <li><NavLink to="/" style={{
-              color: (location.pathname==="/") ? '#fd6636' : '',
+              color: (location.pathname === "/") ? '#fd6636' : '',
             }} >Home</NavLink></li>
             <li><NavLink to="/guide" style={({ isActive }) => ({
               color: isActive ? '#fd6636' : '',
@@ -26,6 +26,9 @@ export default function Header() {
             <li><NavLink to="/faq" style={({ isActive }) => ({
               color: isActive ? '#fd6636' : '',
             })} >FAQs</NavLink></li>
+            <li><NavLink to="/blog" style={({ isActive }) => ({
+              color: isActive ? '#fd6636' : '',
+            })} >Blog</NavLink></li>
           </ul>
           <ul>
             <li><NavLink to="/contact">Contact Us</NavLink>
@@ -40,7 +43,7 @@ export default function Header() {
         <div className={show ? "mobile-nav active" : "mobile-nav"}>
           <ul>
             <li><NavLink to="/" style={{
-              color: (location.pathname==="/") ? '#fd6636' : '',
+              color: (location.pathname === "/") ? '#fd6636' : '',
             }} onClick={toggleShow} >Home</NavLink></li>
             <li><NavLink to="/guide" style={({ isActive }) => ({
               color: isActive ? '#fd6636' : '',
@@ -48,6 +51,9 @@ export default function Header() {
             <li><NavLink to="/faq" style={({ isActive }) => ({
               color: isActive ? '#fd6636' : '',
             })} onClick={toggleShow}  >FAQs</NavLink></li>
+            <li><NavLink to="/blog" style={({ isActive }) => ({
+              color: isActive ? '#fd6636' : '',
+            })} onClick={toggleShow}  >Blog</NavLink></li>
             <li><NavLink to="/contact" style={({ isActive }) => ({
               color: isActive ? '#fd6636' : '',
             })} onClick={toggleShow} >Contact Us</NavLink></li>

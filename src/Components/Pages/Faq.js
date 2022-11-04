@@ -28,7 +28,7 @@ export default function Faq() {
 
     }
     return (
-        <>
+        <div className='page-body'>
             <Header />
             <motion.main
                 initial={{ opacity: 0 }}
@@ -104,6 +104,6 @@ export default function Faq() {
                 </section>
             </motion.main>
             <Footer />
-        </>
+        </div>
     )
 }

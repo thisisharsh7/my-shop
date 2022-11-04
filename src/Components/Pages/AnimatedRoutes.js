@@ -10,6 +10,7 @@ import Patch from './Patch';
 import '../Home/home.css';
 import { AnimatePresence } from "framer-motion";
 import { Route, Routes, useLocation } from 'react-router-dom';
+import Blog from './Blog';
 
 export default function AnimatedRoutes() {
     const location = useLocation();
@@ -22,8 +23,9 @@ export default function AnimatedRoutes() {
                 <Route path="guide" element={<Guide />} />
                 <Route path="faq" element={<Faq />} />
                 <Route path="contact" element={<Contact />} />
-                <Route path='*' element={<Error />} />
                 <Route path="patch" element={<Patch />} />
+                <Route path="blog" element={<Blog />} />
+                <Route path='*' element={<Error />} />
             </Routes>
         </AnimatePresence>
     )

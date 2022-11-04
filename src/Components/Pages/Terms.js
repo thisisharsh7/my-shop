@@ -4,7 +4,7 @@ import Footer from "../Footer/Footer";
 
 export default function Terms() {
   return (
-    <>
+    <div className="page-body">
       <Header />
       <main>
         <section className="terms">
@@ -714,6 +714,6 @@ export default function Terms() {
         </section>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

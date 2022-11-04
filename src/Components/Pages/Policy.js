@@ -4,7 +4,7 @@ import Footer from '../Footer/Footer';
 
 export default function Policy() {
   return (
-    <>
+    <div className="page-body">
       <Header />
       <main>
         <section className="policy">
@@ -181,6 +181,6 @@ export default function Policy() {
         </section>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

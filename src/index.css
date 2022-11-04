@@ -20,6 +20,11 @@ body {
   font-family: "Inter", sans-serif;
   margin: 0 auto;
 }
+.page-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 main,
 header,
 footer {
@@ -27,9 +32,174 @@ footer {
 }
 header,
 footer {
-  max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 1vw;
 }
+footer {
+  margin-top: auto;
+}
+
+/*blog section design start*/
+.blog {
+  font-size: 12px;
+  padding: 5em 3.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6em;
+}
+.blog h1 {
+  font-size: 3em;
+  font-weight: 500;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+.blog-list {
+  display: flex;
+  justify-content: center;
+  gap: 6em;
+}
+.latest {
+  padding-top: 2.9em;
+  border-top: 0.5px solid black;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 4.5em;
+}
+
+
+.slatest {
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+.slatest img {
+  height: 100%;
+  width: 100%;
+}
+.slatest div {
+  display: flex;
+  gap: 0.5em;
+  flex-direction: column;
+}
+.slatest h2 {
+  font-size: 1.85em;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+.slatest p {
+  font-size: 1.5em;
+  line-height: 1.4em;
+  color: #fd6636;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 6.1em;
+  width: max(580px, 40%);
+}
+.search-in {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px black solid;
+  border-radius: 0.3em;
+  padding: 1.8em 2.5em 1.8em 2em;
+}
+.search-in img {
+  cursor: pointer;
+  margin-left: 10px;
+  height: 19.999767303466797px;
+  width: 20.000255584716797px;
+
+}
+.search-in input {
+  font-size: 1.4em;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.popular {
+  font-size: 1.112em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.popular h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.popular-list {
+  padding-top: 2.5em;
+  border-top: 0.5px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 2.1em;
+  font-size: 0.9em;
+}
+.popular-list h3 {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+.popular-list p {
+  color: #fd6636;
+  font-weight: 400;
+}
+.spopular {
+  display: flex;
+  gap: 1.6em;
+  align-items: center;
+}
+.spopular div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+.spopular img {
+  height: 93px;
+  width: 134px;
+}
+@media only screen and (max-width:1390px) {
+  .latest{
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+@media only screen and (max-width: 735px) {
+  .search-in input{
+    font-size: 14px;
+  }
+  .popular {
+    display: none;
+  }
+  .right {
+    max-width: 100%;
+  }
+  .blog-list {
+    flex-direction: column-reverse;
+  }
+  .latest {
+    border-top: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .blog {
+    padding-left: 20px;
+    padding-right: 34px;
+    gap: 10px;
+    font-size: 9px;
+  }
+  .blog-list {
+    border-top: 0.5px solid black;
+    padding-top: 35px;
+    gap: 0px;
+  }
+}
+
+/*blog section design end*/
 
 /*Terms and condition, Privacy and policy design start*/
 .terms,
@@ -244,10 +414,6 @@ footer {
 }
 /*contact design end here*/
 
-
-
-
-
 /*faq design start here*/
 .faq {
   padding: 80px;
@@ -427,12 +593,6 @@ details[open] summary:after {
 }
 /*faq design end here*/
 
-
-
-
-
-
-
 /*guide design start here*/
 .guideList {
   margin-bottom: 5em;
@@ -556,7 +716,7 @@ details[open] summary:after {
   width: 19em;
   height: 17em;
 }
-.one img{
+.one img {
   height: 16.5em;
 }
 

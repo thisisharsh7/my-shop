@@ -33,7 +33,7 @@ export default function Contact() {
         }
     }
     return (
-        <>
+        <div className='page-body'>
             <Header />
 
             <motion.main
@@ -68,6 +68,6 @@ export default function Contact() {
                 </section>
             </motion.main>
             <Footer />
-        </>
+        </div>
     )
 }

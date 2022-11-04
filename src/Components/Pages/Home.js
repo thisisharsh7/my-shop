@@ -11,7 +11,7 @@ import Footer from '../Footer/Footer';
 
 export default function Home() {
     return (
-        <>
+        <div className='page-body'>
             <Header />
             <motion.main
                 initial={{ opacity: 0 }}
@@ -26,6 +26,6 @@ export default function Home() {
                 <Suggestion />
             </motion.main>
             <Footer />
-        </>
+        </div>
     )
 }

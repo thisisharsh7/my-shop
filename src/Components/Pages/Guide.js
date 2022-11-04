@@ -23,7 +23,7 @@ import Footer from '../Footer/Footer';
 
 export default function Guide() {
   return (
-    <>
+    <div className="page-body">
       <Header />
       <motion.main
         initial={{ opacity: 0 }}
@@ -150,6 +150,6 @@ export default function Guide() {
         </section>
       </motion.main>
       <Footer />
-    </>
+    </div>
   );
 }
