@@ -115,7 +115,7 @@ export default function Blog() {
                         <PopularBlog showPDetail={showPDetail} />
                     </div>
                 </section>
-                <div className='page-shift'>
+                <div className={(show) ? 'blog-single' : 'page-shift'}>
                     <ul>
                         <li className='setPage' onClick={changePage}>1</li>
                         <li onClick={changePage}>2</li>
