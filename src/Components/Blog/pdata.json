@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 3,
     "bimg": "../Images/blogImg",
     "title": "Customers of this website may share contents.",
     "date": "December 9, 2019",
@@ -12,7 +12,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 4,
     "bimg": "../Images/blogImg",
     "title": "Most political campaigning, commercial solicitation, chain letters",
     "date": "December 9, 2019",
@@ -24,9 +24,9 @@
     ]
   },
   {
-    "id": 3,
+    "id": 5,
     "bimg": "../Images/blogImg",
-    "title": "Lauram Ipsum Not knowing Lauram Ipsum",
+    "title": "Lauram Ipsum Not knowing Lauram Ipsum wait",
     "date": "December 9, 2019",
     "detail": [
       "../Images/blogImg",

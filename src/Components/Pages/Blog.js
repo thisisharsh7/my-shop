@@ -7,10 +7,14 @@ import SearchBlog from '../Blog/SearchBlog';
 import { useState } from 'react';
 import LatestBlog from '../Blog/LatestBlog';
 import data from '../Blog/data.json';
+import Detail from '../Blog/Detail';
+import arrow from '../Images/arrow.png';
 
 
-export default function Blog(props) {
+export default function Blog() {
     const [getBlog, setBlog] = useState(data);
+    const [show, getshow] = useState(false);
+    const [place, setPlace] = useState(-1);
     const [setList, getList] = useState({
         "first": 0,
         "last": 1,
@@ -62,7 +66,24 @@ export default function Blog(props) {
         document.querySelector('input').value = "";
         window.scrollTo(0, 0);
     }
-
+    function showDetail(e) {
+        (show) ? getshow(false) : getshow(true);
+        window.scrollTo(0, 0);
+        const idx = Number(e.target.parentElement.parentElement.className);
+        if (idx > 0) {
+            setPlace(idx - 1);
+            console.log(idx);
+        }
+    }
+    function showPDetail(e) {
+        getshow(true);
+        const idx = Number(e.target.parentElement.parentElement.className);
+        if (idx > 0) {
+            setPlace(idx - 1);
+            console.log(idx);
+        }
+        window.scrollTo(0, 0);
+    }
 
     return (
         <div className='page-body'>
@@ -72,17 +93,26 @@ export default function Blog(props) {
                 animate={{ opacity: 1 }}
             >
 
-
                 <section className='blog'>
-                    <div className='blog-head'>
-                        <h1>Latest posts</h1>
+                    <div className={(show) ? 'blog-head new-head' : 'blog-head'}>
+                        <h1 className={(show) ? 'blog-single' : ''}>Latest posts</h1>
+                        <div className={(show) ? 'detail-head' : 'blog-single detail-head'}>
+                            <span onClick={showDetail}>
+                                <img src={arrow} alt="" /> Latest posts
+                            </span>
+                            <h2>{data[place]?.title}</h2>
+                            <p>{data[place]?.date}</p>
+                        </div>
                     </div>
                     <LatestBlog gettingBlog={getBlog}
                         first={(setList.first)} last={(setList.last) * 8}
-                        showDetail={props.showDetail} />
+                        showDetail={showDetail} setShow={show} />
+                    <div className={(show) ? 'latest' : 'blog-single latest'}>
+                        <Detail />
+                    </div>
                     <div className='right'>
                         <SearchBlog BlogShow={BlogSee} />
-                        <PopularBlog showDetail={props.showDetail} />
+                        <PopularBlog showPDetail={showPDetail} />
                     </div>
                 </section>
                 <div className='page-shift'>

@@ -217,21 +217,20 @@ footer {
   margin-top: 1.5em;
   gap: 0.5em;
 }
-.blog-head .detail-head a {
+.blog-head .detail-head span {
   margin-bottom: 1.8em;
   width: max-content;
   display: flex;
   align-items: center;
+  cursor: pointer;
   gap: 1em;
-}
-.blog-head .detail-head a img {
-  height: 26.25px;
-  width: 26.25px;
-}
-.blog-head .detail-head a {
   font-size: 28px;
   font-weight: 500;
   line-height: 34px;
+}
+.blog-head .detail-head span img {
+  height: 26.25px;
+  width: 26.25px;
 }
 .blog-head {
   display: flex;
@@ -314,11 +313,11 @@ footer {
     gap: 10px;
     font-size: 8.8px;
   }
-  .blog-head .detail-head a img {
+  .blog-head .detail-head span img {
     width: 15px;
     height: 15px;
   }
-  .blog-head .detail-head a {
+  .blog-head .detail-head span {
     font-size: 18px;
     line-height: 20px;
   }
@@ -326,7 +325,9 @@ footer {
     display: none;
   }
 }
-
+.blog-single {
+  display: none;
+}
 /*blog detail desing end*/
 
 /*blog section design end*/
