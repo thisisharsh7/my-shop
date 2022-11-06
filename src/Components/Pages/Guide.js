@@ -52,7 +52,7 @@ export default function Guide() {
                   <p>Step 1</p>
                   <h2>Name your store</h2>
                   <p>
-                    It all starts with a name. Make it memorable. Make it catchy.
+                    It all starts with a name. Write down the name of your store.
                   </p>
                 </div>
               </div>
