@@ -46,7 +46,7 @@ footer {
   font-size: 12px;
   padding: 0em 3.5em 5em 3.5em;
   display: grid;
-  grid-template-columns: 1fr minmax(320px, 0.38fr);
+  grid-template-columns: 1fr minmax(320px, 0.5fr);
   grid-column-gap: 4em;
 }
 .blog a {
@@ -128,7 +128,7 @@ footer {
   border: none;
 }
 .popular {
-  font-size: 1.112em;
+  font-size: 1.29em;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -148,7 +148,7 @@ footer {
 .popular-list h3 {
   font-weight: 400;
   font-size: 1em;
-  line-height: 1.4em;
+  line-height: 1.25em;
 }
 .popular-list p {
   color: #fd6636;
@@ -163,7 +163,7 @@ footer {
 .spopular div {
   display: flex;
   flex-direction: column;
-  gap: 0.8em;
+  gap: 0.45em;
 }
 .spopular img {
   height: 93px;
