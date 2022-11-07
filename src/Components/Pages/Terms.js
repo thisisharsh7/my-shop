@@ -1,10 +1,20 @@
 import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import { Helmet } from "react-helmet-async";
 
 export default function Terms() {
   return (
     <div className="page-body">
+      <Helmet>
+        <title>MyShop - Terms and Condition</title>
+        <meta
+          name="description"
+          content="With our new app, you can see all the products being sold in your neigborhood market from the comfort of your own home."
+        />
+        <link rel="canonical" href="/terms" />
+        <meta name='robots' content='noindex' />
+      </Helmet>
       <Header />
       <main>
         <section className="terms">

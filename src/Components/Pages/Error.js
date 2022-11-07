@@ -1,10 +1,20 @@
 import React from 'react';
 import './paEr.css';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 export default function Error() {
     return (
         <div className='error'>
+            <Helmet>
+                <title>404 Error</title>
+                <meta
+                    name="description"
+                    content="With our new app, you can see all the products being sold in your neigborhood market from the comfort of your own home."
+                />
+                <link rel="canonical" href="/*" />
+                <meta name='robots' content='noindex' />
+            </Helmet>
             <div>
                 <p>404</p>
                 <h1>Page Not Found</h1>
