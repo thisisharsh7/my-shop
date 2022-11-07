@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import { Helmet } from 'react-helmet-async';
 
 export default function Faq() {
     const form = useRef();
@@ -29,6 +30,11 @@ export default function Faq() {
     }
     return (
         <div className='page-body'>
+            <Helmet>
+                <title>FAQs</title>
+                <meta name="description" content="Have a question? Here's the answer." />
+                <link rel="canonical" href="/faq" />
+            </Helmet>
             <Header />
             <motion.main
                 initial={{ opacity: 0 }}

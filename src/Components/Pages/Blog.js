@@ -9,6 +9,7 @@ import LatestBlog from '../Blog/LatestBlog';
 import data from '../Blog/data.json';
 import Detail from '../Blog/Detail';
 import arrow from '../Images/arrow.png';
+import { Helmet } from 'react-helmet-async';
 
 
 export default function Blog() {
@@ -87,6 +88,11 @@ export default function Blog() {
 
     return (
         <div className='page-body'>
+            <Helmet>
+                <title>MyShop Blog</title>
+                <meta name="description" content="Visit MyShop blog to get latest tips and tricks on how to grow your online business." />
+                <link rel="canonical" href="/blog" />
+            </Helmet>
             <Header />
             <motion.main
                 initial={{ opacity: 0 }}

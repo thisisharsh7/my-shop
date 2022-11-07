@@ -20,10 +20,16 @@ import headList from "../Images/Guide/headList.png";
 import { motion } from "framer-motion";
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import { Helmet } from "react-helmet-async";
 
 export default function Guide() {
   return (
     <div className="page-body">
+      <Helmet>
+        <title>Seller Guide</title>
+        <meta name="description" content="Sell anything online with MyShop. Learn more about the Seller app here." />
+        <link rel="canonical" href="/guide" />
+      </Helmet>
       <Header />
       <motion.main
         initial={{ opacity: 0 }}

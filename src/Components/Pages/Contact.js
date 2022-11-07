@@ -7,6 +7,7 @@ import emailjs from '@emailjs/browser';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 
 export default function Contact() {
     const form = useRef();
@@ -34,6 +35,11 @@ export default function Contact() {
     }
     return (
         <div className='page-body'>
+            <Helmet>
+                <title>Contact Us</title>
+                <meta name="description" content="We are here for you! How can we help?" />
+                <link rel="canonical" href="/contact" />
+            </Helmet>
             <Header />
 
             <motion.main
