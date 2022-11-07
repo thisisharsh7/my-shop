@@ -10,7 +10,7 @@ export default function Error() {
                 <title>404 Error</title>
                 <meta
                     name="description"
-                    content="With our new app, you can see all the products being sold in your neigborhood market from the comfort of your own home."
+                    content="The url you trying to visit does not exit. Please check the url again."
                 />
                 <link rel="canonical" href="/*" />
                 <meta name='robots' content='noindex' />
