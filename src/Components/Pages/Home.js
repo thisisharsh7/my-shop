@@ -1,9 +1,9 @@
 import React from 'react';
 import Hero from '../Home/Hero';
 import Product from '../Home/Product';
-import Store from '../Home/Store';
+import Store from '../Home/Announcement/Store';
 import Why from '../Home/Why';
-import Comments from '../Home/Comments';
+import Reviews from '../Home/Comment/Reviews';
 import Suggestion from '../Home/Suggestion';
 import { motion } from 'framer-motion';
 import Header from '../Header/Header';
@@ -31,7 +31,7 @@ export default function Home() {
                 <Product />
                 <Store />
                 <Why />
-                <Comments />
+                <Reviews />
                 <Suggestion />
             </motion.main>
             <Footer />

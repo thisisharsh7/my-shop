@@ -1,6 +1,6 @@
 import React from "react";
-import Announcement from "../Home/Short/Annoucement";
-import triLayer from "../Home/Home-Images/triLayer.png";
+import Announcement from "./Announcement/Annoucement";
+import triLayer from "./Home-Images/triLayer.png";
 
 export default function Why() {
   return (
