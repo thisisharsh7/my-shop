@@ -1,5 +1,4 @@
 import React from 'react';
-import bImg from '../Images/blogImg.png';
 import pdata from './pdata.json';
 
 export default function PopularBlog(props) {
@@ -10,10 +9,16 @@ export default function PopularBlog(props) {
             <div className='popular-list'>
                 {
                     pdata.map((sdata) => {
+                        let pic = '';
+                        try {
+                            pic = require(`${sdata.bimg}.png`);
+                        } catch (err) {
+                            pic = require(`./image/noImage.webp`);
+                        }
                         return (
                             <div className={sdata.id} key={sdata.id} >
                                 <div className='spopular' onClick={props.showPDetail} >
-                                    <img src={bImg} alt="" loading='lazy' width={100} height={100} />
+                                    <img src={pic} alt="" loading='lazy' width={100} height={100} />
                                     <div>
                                         <h3>{sdata.title}</h3>
                                         <p>{sdata.date}</p>

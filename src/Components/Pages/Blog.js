@@ -15,7 +15,7 @@ import { Helmet } from 'react-helmet-async';
 export default function Blog() {
     const [getBlog, setBlog] = useState(data);
     const [show, getshow] = useState(false);
-    const [place, setPlace] = useState(-1);
+    const [place, setPlace] = useState(0);
     const [setList, getList] = useState({
         "first": 0,
         "last": 1,
@@ -114,7 +114,7 @@ export default function Blog() {
                         first={(setList.first)} last={(setList.last) * 8}
                         showDetail={showDetail} setShow={show} />
                     <div className={(show) ? 'latest' : 'blog-single latest'}>
-                        <Detail />
+                        <Detail place={place} />
                     </div>
                     <div className='right'>
                         <SearchBlog BlogShow={BlogSee} />
