@@ -5,7 +5,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import './header.css';
 
 
-export default function Header() {
+export default function Header(props) {
   const [show, setShow] = useState(false);
   const location = useLocation();
   function toggleShow() {
@@ -14,7 +14,9 @@ export default function Header() {
   return (
     <header>
       <nav>
-        <NavLink to="/" aria-label="Home" ><img src={logo} alt="" className="logo" /></NavLink>
+        <div className="home-logo">
+          <NavLink to="/" aria-label="Home" ><img src={logo} alt="" className="logo" /><p>{props.text}</p></NavLink>
+        </div>
         <div className="desktop-nav">
           <ul>
             <li><NavLink to="/" style={{

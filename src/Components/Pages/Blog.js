@@ -93,7 +93,7 @@ export default function Blog() {
                 <meta name="description" content="Visit MyShop blog to get latest tips and tricks on how to grow your online business." />
                 <link rel="canonical" href="/blog" />
             </Helmet>
-            <Header />
+            <Header text={"Blog"} />
             <motion.main
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

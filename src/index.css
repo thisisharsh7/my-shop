@@ -40,6 +40,20 @@ footer {
 }
 
 /*blog section design start*/
+.home-logo {
+  position: relative;
+}
+.home-logo p {
+  position: absolute;
+  left: 28%;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0px;
+  color: #fd6636;
+  top: 100%;
+}
 .blog {
   margin: 0 auto;
   max-width: 1520px;
