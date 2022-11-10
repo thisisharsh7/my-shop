@@ -33,7 +33,8 @@ footer {
 }
 header,
 footer {
-  margin: 0 1vw;
+  margin: 0 auto;
+  max-width: 1520px;
 }
 footer {
   margin-top: auto;
@@ -212,6 +213,9 @@ footer {
 @media only screen and (max-width: 500px) {
   .page-shift {
     font-size: 3px;
+  }
+  .home-logo p {
+    font-size: 12px;
   }
 }
 
