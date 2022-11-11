@@ -16,10 +16,10 @@ export default function Footer() {
       sBg.classList.toggle("floader");
       emailjs
         .sendForm(
-          "service_u65dn0o",
-          "template_cwxksxg",
+          "service_vy4bh66",
+          "template_t008xo1",
           subscribe.current,
-          "kaobwBiU0Spgr3VIe"
+          "YcHPgYcsCdqM8scSE"
         )
         .then(
           (result) => {

@@ -16,7 +16,7 @@ export default function Faq() {
             s.innerText = "Query cannot be blank";
         } else {
             pBg.classList.toggle('ploader');
-            emailjs.sendForm('service_u65dn0o', 'template_k1jhtyk', form.current, 'kaobwBiU0Spgr3VIe').then((result) => {
+            emailjs.sendForm('service_vy4bh66', 'template_rygoc6m', form.current, 'YcHPgYcsCdqM8scSE').then((result) => {
 
                 s.innerText = "Great! We will post the answer to your query soon.";
                 pBg.classList.toggle('ploader');

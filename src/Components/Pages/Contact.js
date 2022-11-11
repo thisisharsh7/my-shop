@@ -21,7 +21,7 @@ export default function Contact() {
         const name_pattern = /^[a-zA-Z ]*$/;
         if (email.value !== " " && name.value !== " " && msg.value !== " " && email_pattern.test(email.value) && name_pattern.test(name.value)) {
             cBg.classList.toggle('cloader');
-            emailjs.sendForm('service_u65dn0o', 'template_cwxksxg', form.current, 'kaobwBiU0Spgr3VIe').then((result) => {
+            emailjs.sendForm('service_vy4bh66', 'template_t008xo1', form.current, 'YcHPgYcsCdqM8scSE').then((result) => {
                 cBg.classList.toggle('cloader');
                 alert('message send');
             }, (error) => {
