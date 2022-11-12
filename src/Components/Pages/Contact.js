@@ -19,9 +19,20 @@ export default function Contact() {
         const msg = document.getElementById("message");
         const email_pattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
         const name_pattern = /^[a-zA-Z ]*$/;
-        if (email.value !== " " && name.value !== " " && msg.value !== " " && email_pattern.test(email.value) && name_pattern.test(name.value)) {
+        if (
+            email.value !== " "
+            && name.value !== " "
+            && msg.value !== " "
+            && email_pattern.test(email.value)
+            && name_pattern.test(name.value
+            )) {
             cBg.classList.toggle('cloader');
-            emailjs.sendForm('service_vy4bh66', 'template_t008xo1', form.current, 'YcHPgYcsCdqM8scSE').then((result) => {
+            emailjs.sendForm(
+                'service_vy4bh66',
+                'template_t008xo1',
+                form.current,
+                'YcHPgYcsCdqM8scSE'
+            ).then((result) => {
                 cBg.classList.toggle('cloader');
                 alert('message send');
             }, (error) => {

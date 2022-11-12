@@ -14,23 +14,21 @@ export default function Footer() {
     e.preventDefault();
     if (/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(k.value)) {
       sBg.classList.toggle("floader");
-      emailjs
-        .sendForm(
-          "service_vy4bh66",
-          "template_t008xo1",
-          subscribe.current,
-          "YcHPgYcsCdqM8scSE"
-        )
-        .then(
-          (result) => {
-            s.innerText = "Done!";
-            sBg.classList.toggle("floader");
-          },
-          (error) => {
-            alert("server error");
-            sBg.classList.toggle("floader");
-          }
-        );
+      emailjs.sendForm(
+        'service_vy4bh66',
+        'template_t008xo1',
+        subscribe.current,
+        'YcHPgYcsCdqM8scSE'
+      ).then(
+        (result) => {
+          s.innerText = "Done!";
+          sBg.classList.toggle("floader");
+        },
+        (error) => {
+          alert("server error");
+          sBg.classList.toggle("floader");
+        }
+      );
     } else {
       s.innerText = "Please enter a valid email ID";
     }
